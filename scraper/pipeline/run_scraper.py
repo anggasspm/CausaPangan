@@ -1,11 +1,11 @@
 from core.fetcher import fetch_rss
 from core.parser import relevan, deteksi_komoditas, deteksi_wilayah
 from core.normalizer import normalisasi_artikel
+from core.article_fetcher import perkaya_artikel
 from config.sumber import SUMBER_BERITA
 from storage.local_store import simpan_batch
-import json
 
-def run(debug=True):
+def run(debug=False, fetch_isi_lengkap=True):
     hasil = []
     for sumber in SUMBER_BERITA:
         try:
@@ -24,13 +24,21 @@ def run(debug=True):
 
             if not relevan(entry.title, getattr(entry, "summary", "")):
                 continue
+
             artikel = normalisasi_artikel(entry, sumber["nama"])
             artikel["komoditas_terdeteksi"] = komoditas_match
             artikel["wilayah_terdeteksi"] = deteksi_wilayah(teks)
             hasil.append(artikel)
 
+    print(f"[INFO] {len(hasil)} artikel lolos filter relevansi.")
+
+    if fetch_isi_lengkap and hasil:
+        print("[INFO] Mengambil isi artikel lengkap (ini butuh waktu, ada delay antar-request)...")
+        hasil = perkaya_artikel(hasil)
+
     simpan_batch(hasil)
     print(f"Selesai. {len(hasil)} artikel relevan disimpan.")
 
+
 if __name__ == "__main__":
-    run()
+    run(debug=True)
