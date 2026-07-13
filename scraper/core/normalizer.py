@@ -12,12 +12,14 @@ def ke_utc_iso8601(dt_struct, asumsi_wib=True) -> str:
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 def normalisasi_artikel(entry, sumber_nama: str) -> dict:
+    url = entry.get("link") or entry.get("id") or ""
+
     return {
         "judul": entry.title,
-        "url": entry.link,
+        "url": url,
         "sumber_media": sumber_nama,
         "tanggal_terbit": ke_utc_iso8601(entry.published_parsed),
-        "isi_teks": getattr(entry, "summary", ""),   # internal only, bukan field kontrak
-        "komoditas_terdeteksi": [],  # diisi step filter
+        "isi_teks": getattr(entry, "summary", ""),
+        "komoditas_terdeteksi": [],
         "wilayah_terdeteksi": [],
     }
