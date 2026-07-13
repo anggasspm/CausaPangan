@@ -57,6 +57,7 @@ BOILERPLATE_PATTERNS = [
     r"Pewarta\s*:.*",
     r"Copyright\s*©.*",
     r"Dilarang keras.*",
+    r"Baca juga\s*:.*",  
 ]
 
 
