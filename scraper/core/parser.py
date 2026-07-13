@@ -16,4 +16,4 @@ def deteksi_wilayah(teks: str) -> list[str]:
 
 def relevan(judul: str, ringkasan: str) -> bool:
     teks = f"{judul} {ringkasan}"
-    return bool(deteksi_komoditas(teks)) and bool(deteksi_wilayah(teks))
+    return bool(deteksi_komoditas(teks))  # wilayah dilonggarkan dulu
