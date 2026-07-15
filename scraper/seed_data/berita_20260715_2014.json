@@ -45,9 +45,7 @@
       "cabai_rawit_merah",
       "cabai_merah_keriting"
     ],
-    "wilayah_terdeteksi": [
-      "3302"
-    ],
+    "wilayah_terdeteksi": [],
     "isi_teks_status": "fallback"
   }
 ]
