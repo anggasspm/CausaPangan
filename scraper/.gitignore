@@ -7,6 +7,7 @@ ENV/
 # Python cache
 __pycache__/
 *.py[cod]
+# seed_data/*.json
 
 # Environment variables
 .env
