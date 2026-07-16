@@ -1,5 +1,6 @@
 from datetime import datetime
 import pytz
+from core.gnews_resolver import resolve_url_asli, is_gnews_redirect
 
 WIB = pytz.timezone("Asia/Jakarta")
 
@@ -13,6 +14,13 @@ def ke_utc_iso8601(dt_struct, asumsi_wib=True) -> str:
 
 def normalisasi_artikel(entry, sumber_nama: str) -> dict:
     url = entry.get("link") or entry.get("id") or ""
+
+    # Google News RSS: link mentahnya redirect, bukan URL artikel asli.
+    # Resolve di sini supaya field 'url' yang tersimpan (JSON & Supabase)
+    # sudah URL asli media, bukan news.google.com -- juga dibutuhkan
+    # article_fetcher biar selector per-domain bisa match.
+    if is_gnews_redirect(url):
+        url = resolve_url_asli(url)
 
     return {
         "judul": entry.title,

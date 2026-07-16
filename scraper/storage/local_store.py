@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+from storage.supabase_store import simpan_ke_supabase
 
 
 def _muat_json(path: str) -> list[dict]:
@@ -58,3 +59,10 @@ def simpan_batch(data: list[dict], folder="seed_data"):
         f"({len(data)} artikel run ini) dan {latest_path} "
         f"({len(hasil_akhir)} total setelah gabung & dedup)"
     )
+
+    # Push ke Supabase (tabel artikel_mentah) -- dipanggil TERAKHIR, setelah
+    # JSON lokal aman tersimpan. Kalau ini gagal (DATABASE_URL belum di-set,
+    # psycopg2 belum terinstall, atau koneksi gagal), pipeline tetap selesai
+    # dengan sukses dan data tidak hilang -- lihat supabase_store.py untuk
+    # detail penanganan errornya.
+    simpan_ke_supabase(data)
