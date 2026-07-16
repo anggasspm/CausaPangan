@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+# seed_data/*.json
+
+# Environment variables
+.env
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
