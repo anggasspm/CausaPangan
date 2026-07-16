@@ -1,5 +1,5 @@
 import os
-os.environ["DATABASE_URL"] = "postgresql://postgres.zhhjiovwqtkehvkzaeax:SmartComfest2025!@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
+os.environ.get("DATABASE_URL")
 
 from storage.supabase_store import simpan_ke_supabase
 
