@@ -1,0 +1,61 @@
+name: Scraper Berita Harga Pangan
+
+on:
+  schedule:
+    # Cron pakai UTC. 6 jam sekali cocok dengan interval scheduler.py lama:
+    # 00:00, 06:00, 12:00, 18:00 UTC = 07:00, 13:00, 19:00, 01:00 WIB
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch: {} # tombol "Run workflow" manual di tab Actions, buat testing
+
+permissions:
+  contents:
+    write # wajib eksplisit -- default GITHUB_TOKEN bisa read-only
+    # tergantung setting repo (Settings > Actions > General),
+    # jangan andalkan default karena git push di step terakhir
+    # akan gagal diam-diam kalau token cuma read-only
+
+# Cegah dua run scraper jalan bersamaan (misal manual trigger pas jadwal cron
+# juga jalan) -- local_store.py kamu baca+tulis latest.json, race condition
+# antar dua proses bisa bikin salah satu penulisan tertimpa/rusak.
+concurrency:
+  group: scraper-berita
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30 # jaga-jaga kalau ada situs lambat/hang, jangan biarkan runner ngambang lama
+
+    defaults:
+      run:
+        working-directory: scraper
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scraper/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Jalankan scraper
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -m pipeline.run_scraper
+
+      # seed_data/*.json dihasilkan run_scraper.py -- commit balik ke repo
+      # supaya latest.json ter-update di git history juga, bukan cuma hidup
+      # di runner yang dihapus begitu job selesai.
+      - name: Commit hasil scrape ke repo
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Scraper"
+          git add seed_data/
+          git diff --staged --quiet || git commit -m "chore: update seed_data hasil scraping [skip ci]"
+          git push
