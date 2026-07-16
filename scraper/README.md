@@ -1,196 +1,268 @@
-# Scraper — Sistem Peringatan Dini & Rekomendasi Aksi Harga Pangan
+# Scraper Berita Harga Pangan
 
-Modul ini adalah bagian **Scraper Berita** dari pipeline data (Role: NLP & ML Engineer).
-Tugasnya: mengambil berita ekonomi/pangan dari sumber RSS, memfilter yang relevan
-dengan komoditas prioritas, mengambil isi artikel lengkap, lalu menyimpannya dalam
-format terstruktur untuk dikonsumsi tahap **NER & Event Classifier** berikutnya.
+Bagian **Role 1** dari sistem Peringatan Dini & Rekomendasi Aksi Harga Pangan (AIC Compfest 18).
+Modul ini bertugas mengambil (scrape) berita seputar harga pangan dari beberapa media daring,
+mendeteksi komoditas & wilayah yang relevan secara sederhana (keyword-based), mengambil isi
+artikel lengkap, lalu menyimpan hasilnya ke JSON lokal dan/atau Supabase (Postgres) — sebagai
+bahan mentah untuk Role 2 (NLP & Event Classifier) dan Role 3 (Model Prediksi).
 
-Alur lengkap sistem: `Scraper Berita → NLP (NER + Event Classifier) → Model Time Series
-→ Recommendation Engine → API → Dashboard` (lihat PRD Bagian 5.1).
+> Scraper ini **tidak** melakukan klasifikasi penyebab kenaikan harga (`penyebab` di
+> `API_CONTRACT.md`). Tugasnya cuma mengumpulkan & memfilter artikel yang _kemungkinan_ relevan,
+> lengkap dengan deteksi komoditas & wilayah dasar. Klasifikasi lebih dalam jadi tugas Role 2.
 
 ---
 
-## 1. Struktur Folder
+## Struktur Folder
 
 ```
 scraper/
 ├── config/
-│   ├── komoditas.py       # daftar komoditas prioritas + sinonim untuk filtering
-│   ├── wilayah.py         # daftar provinsi/kota target (kode Kemendagri)
-│   └── sumber.py          # daftar sumber RSS berita
+│   ├── komoditas.py      # keyword per komoditas (beras, cabai, bawang, migor, dst)
+│   ├── sumber.py         # daftar sumber RSS yang di-scrape
+│   └── wilayah.py        # daftar kode wilayah (Kemendagri/BPS) target
 ├── core/
-│   ├── fetcher.py         # fetch RSS feed
-│   ├── parser.py          # deteksi relevansi (komoditas & wilayah)
-│   ├── normalizer.py      # normalisasi entry RSS ke schema kontrak
-│   └── article_fetcher.py # fetch isi artikel lengkap dari halaman berita
+│   ├── fetcher.py         # fetch RSS & HTML mentah (dengan retry)
+│   ├── gnews_resolver.py  # resolve redirect Google News RSS -> URL asli
+│   ├── article_fetcher.py # fetch isi artikel lengkap dari halaman berita
+│   ├── normalizer.py      # normalisasi entry RSS -> struktur artikel standar
+│   └── parser.py          # deteksi komoditas & wilayah dari teks (keyword matching)
 ├── pipeline/
-│   ├── run_scraper.py     # orchestrator utama
-|   └── scheduler.py       # automasi
+│   ├── run_scraper.py     # entrypoint utama: fetch -> filter -> enrich -> simpan
+│   └── scheduler.py       # scheduler untuk run lokal/server (BUKAN dipakai di GitHub Actions)
 ├── storage/
-│   └── local_store.py     # simpan hasil ke JSON lokal (seed data)
-├── seed_data/              # output JSON, dipakai Role 1 untuk seed Firestore
+│   ├── local_store.py     # simpan ke JSON (snapshot per-run + latest.json gabungan)
+│   └── supabase_store.py  # simpan ke Supabase/Postgres (upsert, best-effort)
+├── seed_data/              # hasil scraping (snapshot per-run + latest.json)
+├── test.py                 # cek cepat semua sumber RSS bisa di-fetch
+├── testdb.py                # tes koneksi & insert dummy ke Supabase
 ├── requirements.txt
-└── README.md               # dokumen ini
+├── .env.example              # contoh env var yang dibutuhkan
+└── README.md
 ```
 
 ---
 
-## 2. Setup
+## Alur Kerja Pipeline (`run_scraper.py`)
+
+1. **Fetch RSS** dari semua sumber di `config/sumber.py` (`core/fetcher.py`).
+2. **Deteksi komoditas** per entry berdasarkan keyword di `config/komoditas.py`
+   (`core/parser.py::deteksi_komoditas`).
+3. **Filter relevansi** — entry dibuang kalau tidak match komoditas apa pun
+   (`core/parser.py::relevan`). Deteksi wilayah saat ini **tidak** dipakai sebagai syarat filter,
+   sengaja dilonggarkan supaya tidak kehilangan berita nasional yang tetap relevan.
+4. **Normalisasi** entry ke struktur artikel standar, termasuk resolve URL asli kalau sumbernya
+   Google News redirect (`core/normalizer.py`, `core/gnews_resolver.py`).
+5. **Deteksi wilayah** dari judul + ringkasan (`core/parser.py::deteksi_wilayah`) — hasilnya bisa
+   ambigu (misal "Semarang" bisa Kabupaten atau Kota) sehingga kadang mengembalikan lebih dari
+   satu kode wilayah kalau tidak ada penanda eksplisit ("Kota .../Kab. ...") di teks.
+6. **Ambil isi artikel lengkap** dengan fetch ke halaman aslinya, bukan cuma ringkasan RSS
+   (`core/article_fetcher.py`) — pakai selector spesifik per situs kalau terdaftar, atau fallback
+   ke heuristik generik (cari container dengan `<p>` terbanyak).
+7. **Simpan**:
+   - JSON snapshot per-run: `seed_data/berita_YYYYMMDD_HHMM.json`
+   - JSON gabungan (dedup by URL): `seed_data/latest.json`
+   - Upsert ke Supabase tabel `artikel_mentah` (kalau `DATABASE_URL` tersedia) — kegagalan di
+     langkah ini **tidak** menggagalkan pipeline, karena JSON lokal sudah tersimpan duluan.
+
+Jalankan manual:
+
+```bash
+cd scraper
+python -m pipeline.run_scraper
+```
+
+Secara default `fetch_isi_lengkap=True`, jadi proses akan lebih lambat karena ada jeda
+(`DELAY_ANTAR_REQUEST = 1.5` detik) antar-request ke setiap artikel — supaya sopan ke server
+sumber berita dan menghindari rate limit/block.
+
+---
+
+## Setup Lokal
+
+### 1. Install dependencies
 
 ```bash
 cd scraper
 python -m venv venv
-source venv/Scripts/activate      # Windows Git Bash
-# source venv/bin/activate        # macOS/Linux
-
+source venv/bin/activate    # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Dependency utama: `feedparser`, `requests`, `beautifulsoup4`, `lxml`, `tenacity`,
-`python-dateutil`, `pytz`.
+### 2. Setup environment variable
 
----
-
-## 3. Cara Menjalankan
-
-Jalankan **sebagai module** dari root folder `scraper/` (bukan langsung
-`python pipeline/run_scraper.py`, karena akan menyebabkan `ModuleNotFoundError`):
+Salin `.env.example` menjadi `.env`, lalu isi `DATABASE_URL` dengan connection string Supabase:
 
 ```bash
-python -m pipeline.run_scraper
+cp .env.example .env
 ```
 
-Mode debug (menampilkan semua judul yang diproses beserta hasil deteksi komoditasnya):
-
-```python
-# di pipeline/run_scraper.py
-if __name__ == "__main__":
-    run(debug=True)
+```env
+# scraper/.env
+DATABASE_URL=postgresql://postgres.xxxx:PASSWORD@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
 ```
 
-Untuk menonaktifkan fetch isi artikel lengkap (lebih cepat, hanya pakai summary RSS —
-berguna saat testing filter tanpa menunggu proses fetch satu-per-satu):
+> `.env` **tidak boleh di-commit**. Sudah dimasukkan ke `.gitignore`. Kalau butuh connection
+> string yang valid, minta ke pemilik project Supabase — jangan pernah hardcode ke kode maupun
+> commit ke git, walau di branch pribadi.
 
-```python
-run(debug=True, fetch_isi_lengkap=False)
+Kalau `.env` tidak diisi / `DATABASE_URL` kosong, pipeline tetap jalan normal dan cuma
+menyimpan ke JSON lokal (`seed_data/`) — koneksi Supabase bersifat best-effort, bukan wajib untuk
+development.
+
+### 3. Uji sumber RSS
+
+Cek semua sumber di `config/sumber.py` bisa diakses:
+
+```bash
+python test.py
 ```
 
----
+### 4. Uji koneksi Supabase (opsional)
 
-## 4. Output
-
-Setiap run menghasilkan dua file di `seed_data/`:
-
-- `berita_YYYYMMDD_HHMM.json` — snapshot per-run (untuk histori/debug)
-- `latest.json` — snapshot terbaru (dipakai Role 1 untuk seed Firestore/Docker Compose,
-  dan oleh Role 2 lain untuk mulai NER)
-
-### Struktur tiap artikel
-
-```json
-{
-  "judul": "Harga pangan Senin ini, cabai rawit Rp57.250/kg dan telur ayam Rp28.600/kg",
-  "url": "https://jatim.antaranews.com/berita/1081408/...",
-  "sumber_media": "Antara Jatim - Ekonomi",
-  "tanggal_terbit": "2026-07-12T20:53:31Z",
-  "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis ...",
-  "komoditas_terdeteksi": ["cabai_rawit_merah"],
-  "wilayah_terdeteksi": [],
-  "isi_teks_status": "fallback"
-}
+```bash
+python testdb.py
 ```
 
-Field `judul`, `url`, `sumber_media`, `tanggal_terbit` **wajib match** dengan schema
-`sumber_berita` di `API_CONTRACT.md` (Bagian 3.1). Timestamp selalu ISO 8601 UTC.
-
-Field tambahan (internal, tidak masuk API response akhir, tapi dipakai tahap NLP berikutnya):
-
-| Field | Keterangan |
-|---|---|
-| `isi_teks` | Isi artikel lengkap (bukan cuma cuplikan RSS), sudah dibersihkan dari boilerplate |
-| `komoditas_terdeteksi` | Hasil deteksi keyword komoditas, list kosong jika tidak ada match |
-| `wilayah_terdeteksi` | Hasil deteksi keyword nama kota, **saat ini masih kasar** (lihat Known Issues) |
-| `isi_teks_status` | `"ok"` = selector spesifik situs berhasil, `"fallback"` = pakai heuristik generik, `"gagal_pakai_summary_rss"` = gagal fetch artikel penuh, isi_teks masih summary RSS pendek |
+Ini akan insert satu baris dummy ke tabel `artikel_mentah` (dibuat otomatis kalau belum ada).
 
 ---
 
-## 5. Sumber Berita yang Digunakan
+## Otomatisasi via GitHub Actions
 
-| Sumber | RSS URL | Status |
-|---|---|---|
-| Antara - Ekonomi | `antaranews.com/rss/ekonomi.xml` | Aktif |
-| Antara - Bisnis | `antaranews.com/rss/ekonomi-bisnis.xml` | Aktif |
-| Antara Jabar - Ekonomi | `jabar.antaranews.com/rss/ekonomi.xml` | Aktif |
-| Antara Jatim - Ekonomi | `jatim.antaranews.com/rss/ekonomi.xml` | Aktif |
-| Antara Jateng - Ekonomi | `jateng.antaranews.com/rss/ekonomi.xml` | Aktif |
-| Liputan6 - News | `feed.liputan6.com/rss/news` | Aktif (general news, noise lebih tinggi) |
-| Kompas - Bisnis Keuangan | `kompas.com/getrss/bisniskeuangan` | **Tidak aktif**, dieksklusi |
+Pipeline dijadwalkan berjalan otomatis tiap 6 jam lewat `.github/workflows/scraper.yml`
+(00:00, 06:00, 12:00, 18:00 UTC / 07:00, 13:00, 19:00, 01:00 WIB), atau bisa dipicu manual lewat
+tab **Actions > Scraper Berita Harga Pangan > Run workflow**.
 
-> Tambahkan sumber RSS regional Antara lain (Jabar/Jatim/Jateng/dst) sesuai provinsi
-> final yang dipilih tim (PRD Bagian 13, keputusan terbuka #10).
+### Isi workflow (`.github/workflows/scraper.yml`)
+
+```yaml
+name: Scraper Berita Harga Pangan
+
+on:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scraper-berita
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    defaults:
+      run:
+        working-directory: scraper
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scraper/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Jalankan scraper
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -c "from pipeline.run_scraper import run; run(debug=False)"
+
+      - name: Commit hasil scrape ke repo
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Scraper"
+          git add seed_data/
+          git diff --staged --quiet || git commit -m "chore: update seed_data hasil scraping [skip ci]"
+          git push
+```
+
+### Penjelasan tiap bagian
+
+| Bagian                                      | Fungsi                                                                                                                                                                                                    |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `on.schedule`                               | Trigger otomatis 4x/hari via cron (waktu UTC, GitHub tidak menjamin presisi ke detik — bisa telat beberapa menit saat traffic Actions tinggi)                                                             |
+| `on.workflow_dispatch`                      | Tombol "Run workflow" manual di tab Actions, dipakai untuk testing tanpa menunggu jadwal                                                                                                                  |
+| `permissions.contents: write`               | Wajib eksplisit — default `GITHUB_TOKEN` bisa read-only tergantung setting repo, dan step `git push` di akhir akan gagal diam-diam kalau ini tidak diset                                                  |
+| `concurrency`                               | Mencegah dua run jalan bersamaan (misal manual trigger pas jadwal cron juga jalan) — `local_store.py` baca+tulis `latest.json`, race condition antar dua proses bisa bikin penulisan saling menimpa/korup |
+| `timeout-minutes: 30`                       | Jaga-jaga kalau ada situs sumber lambat/hang, runner tidak menggantung lama-lama dan menghabiskan minutes gratis                                                                                          |
+| `working-directory: scraper`                | Semua step `run` dieksekusi relatif dari folder `scraper/`, sama seperti kalau dijalankan manual dari situ                                                                                                |
+| `cache: pip`                                | Mempercepat run berikutnya dengan cache dependency, key cache mengikuti hash `requirements.txt`                                                                                                           |
+| `env: DATABASE_URL`                         | Inject secret sebagai environment variable — otomatis terbaca oleh `os.environ.get("DATABASE_URL")` di `supabase_store.py` tanpa perlu file `.env` di runner                                              |
+| `run(debug=False)`                          | Sengaja tidak memanggil `python -m pipeline.run_scraper` langsung, karena entrypoint `__main__` di file itu default `debug=True` (log verbose per-artikel) — kurang cocok untuk log CI terjadwal          |
+| `git diff --staged --quiet \|\| git commit` | Commit hanya dibuat kalau memang ada perubahan di `seed_data/`, menghindari commit kosong tiap run                                                                                                        |
+| `[skip ci]`                                 | Mencegah commit hasil scrape memicu workflow lain yang listen ke event `push`                                                                                                                             |
+
+### Setup yang wajib dilakukan sebelum workflow bisa jalan
+
+1. **Tambahkan secret** `DATABASE_URL` di repo:
+   **Settings > Secrets and variables > Actions > New repository secret**, isi dengan connection
+   string Supabase (pakai password yang sudah diverifikasi aman, bukan yang pernah ke-hardcode di
+   riwayat kode). Tanpa secret ini, scraper tetap jalan dan tetap commit `seed_data/*.json`, hanya
+   saja tidak ada data yang masuk ke Supabase.
+2. **Pastikan permission workflow sudah benar**: **Settings > Actions > General > Workflow
+   permissions**, pilih **"Read and write permissions"**. `permissions: contents: write` di YAML
+   saja kadang tidak cukup kalau setting repo di halaman ini masih dibatasi read-only.
+3. **Push file `.github/workflows/scraper.yml`** ke branch default — workflow terjadwal
+   (`schedule`) hanya aktif kalau file-nya sudah ada di branch default repo, bukan di branch lain.
+
+### Hal lain yang perlu diketahui
+
+- `pipeline/scheduler.py` **tidak dipakai** di Actions — file itu untuk run di server/mesin yang
+  hidup terus-menerus (pakai `schedule` + infinite loop). Di GitHub Actions, penjadwalan sudah
+  di-handle oleh `on.schedule`, jadi yang dipanggil langsung `run_scraper.run()` sekali per
+  trigger, lalu proses selesai dan runner dimatikan.
+- Hasil `seed_data/*.json` di-commit balik ke repo otomatis setelah setiap run, supaya
+  `latest.json` di git history tetap sinkron dengan yang ada di Supabase — berguna juga sebagai
+  histori/debug yang gampang diinspeksi manual tanpa perlu query database.
+- Kalau butuh cek apakah run terakhir berhasil (misal banyak sumber RSS gagal), lihat log di tab
+  **Actions**, bukan cuma commit history — commit hanya menunjukkan ada/tidaknya perubahan data,
+  bukan status keberhasilan tiap sumber.
 
 ---
 
-## 6. Filter Relevansi
+## Catatan & Keterbatasan yang Perlu Diketahui Role Lain
 
-Artikel dianggap relevan jika judul/summary-nya mengandung salah satu sinonim
-komoditas prioritas (lihat `config/komoditas.py`). Filter **tidak** mewajibkan
-deteksi wilayah — karena judul berita jarang eksplisit menyebut nama kota, dan
-deteksi wilayah presisi didelegasikan ke tahap NER berikutnya.
-
-Komoditas yang sudah terverifikasi ter-capture dari sumber saat ini: **beras,
-cabai rawit merah, bawang merah**. Komoditas lain (cabai merah keriting, minyak
-goreng) belum ada di sample harian — sinonim di `komoditas.py` perlu ditinjau
-ulang secara berkala.
-
----
-
-## 7. Fetch Isi Artikel Lengkap
-
-`core/article_fetcher.py` mengambil isi artikel penuh dari halaman berita
-(bukan cuma cuplikan 1-2 kalimat dari RSS), supaya NER & event classifier
-punya teks yang lebih kaya.
-
-Strategi:
-1. Coba CSS selector spesifik per situs (`SITE_SELECTORS`) — paling akurat.
-2. Kalau situs belum terdaftar atau selector gagal match, fallback ke heuristik
-   generik (ambil container dengan jumlah `<p>` terbanyak).
-3. Bersihkan boilerplate (byline "Pewarta:", "Copyright ©", disclaimer,
-   "Baca juga:") dari kedua jalur ekstraksi.
-
-Ada delay 1.5 detik antar-request ke situs sumber untuk menghindari rate-limit/block.
-
-> **Catatan:** selector khusus untuk `antaranews.com` sengaja tidak didaftarkan.
-> Struktur HTML situs ini tidak match dengan selector `div.post-content.clearfix`
-> yang umum dipakai, sementara fallback generik justru terbukti menghasilkan
-> ekstraksi bersih dan akurat. Semua artikel Antara di sample saat ini berstatus
-> `isi_teks_status: "fallback"` — ini bukan bug, melainkan keputusan desain.
+- **Kode wilayah di `config/wilayah.py` belum final** — perlu diverifikasi ulang terhadap tabel
+  resmi Kemendagri/BPS sebelum dipakai untuk join ke data harga Bapanas/PIHPS.
+- **Deteksi wilayah dari teks berbasis keyword nama kota, bukan NER** — akurasinya terbatas,
+  terutama untuk nama kota ambigu (lihat poin 5 di alur kerja). Kalau Role 2/3 butuh deteksi
+  lokasi yang lebih akurat, sebaiknya diperkaya dengan NER di tahap pemrosesan lanjutan, bukan
+  mengandalkan hasil `wilayah_terdeteksi` dari scraper sebagai kebenaran final.
+- **`isi_teks_status`** pada tiap artikel menandakan kualitas ekstraksi isi:
+  - `ok` — berhasil pakai selector spesifik situs
+  - `fallback` — berhasil pakai heuristik generik (situs belum terdaftar di `SITE_SELECTORS`)
+  - `gagal_pakai_summary_rss` — gagal ambil isi lengkap, artikel tetap disimpan dengan ringkasan
+    RSS apa adanya supaya data tidak hilang total
+- **`SITE_SELECTORS`** di `core/article_fetcher.py` baru mencakup Liputan6, Detik, Bisnis.com,
+  dan Kompas. Antara sengaja tidak didaftarkan karena fallback generik terbukti lebih akurat untuk
+  situs tersebut — lihat komentar di kode sebelum menambahkan selector baru untuk Antara.
+- **Resolver Google News** (`core/gnews_resolver.py`) memakai endpoint internal
+  (`batchexecute`) yang tidak resmi didokumentasikan Google, jadi berpotensi berhenti berfungsi
+  sewaktu-waktu tanpa pemberitahuan. Kalau resolver ini tiba-tiba banyak gagal, itu tanda skema
+  internal Google berubah, bukan bug di kode kita — cek dulu sebelum panik debug.
+- **Kolom `sudah_diproses`** di tabel `artikel_mentah` sengaja tidak disentuh oleh upsert scraper
+  (lihat `storage/supabase_store.py`). Kolom ini murni milik pipeline NLP/model (Role 2/3) untuk
+  menandai artikel yang sudah diproses — scraper hanya pemilik kolom konten.
 
 ---
 
-## 8. Known Issues
+## Troubleshooting Singkat
 
-- **Kompas RSS tidak aktif** per Juli 2026, dieksklusi dari daftar sumber.
-- **`wilayah_terdeteksi` sebagian besar kosong** karena deteksi keyword nama kota
-  di judul/summary jarang match. Ini didelegasikan ke NER (bukan scope scraper).
-- **RSS Antara regional kadang mengembalikan field `link` kosong** — sudah
-  ditangani dengan fallback ke field `id` di `normalizer.py`.
-- **Liputan6 - News memiliki noise tinggi** (general news, bukan khusus ekonomi),
-  sebagian besar entry tidak relevan dan ter-filter otomatis. Pertimbangkan
-  mengganti dengan kanal ekonomi spesifik Liputan6 jika tersedia RSS-nya.
-
----
-
-## 9. Untuk Role 1 (Data & Infrastructure Engineer)
-
-File `seed_data/latest.json` adalah output yang siap dikonsumsi untuk seed
-Firestore / Docker Compose (sesuai API_CONTRACT.md Bagian 6). Struktur field
-`judul`, `url`, `sumber_media`, `tanggal_terbit` sudah match schema `sumber_berita`.
-
-## 10. Untuk Role 2 (NER & Event Classifier)
-
-Field `isi_teks` di tiap artikel adalah input utama untuk NER dan event
-classifier (kategorisasi ke 7 kategori `penyebab` sesuai API_CONTRACT.md
-Bagian 5.1). Perhatikan field `isi_teks_status` — kalau bernilai
-`"gagal_pakai_summary_rss"`, teksnya pendek dan hasil ekstraksi entitas
-mungkin kurang kaya untuk artikel tersebut.
+| Gejala                                                    | Kemungkinan Penyebab                               | Solusi                                                                                                                                                            |
+| --------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `test.py` melaporkan "GAGAL" untuk suatu sumber           | RSS down / berubah struktur / rate limit           | Cek URL manual di browser, biarkan `tenacity` retry otomatis handle gangguan sementara                                                                            |
+| `testdb.py` error `psycopg2` tidak ketemu                 | Belum install dependencies                         | `pip install -r requirements.txt`                                                                                                                                 |
+| `testdb.py` jalan tapi tidak insert apa pun               | `DATABASE_URL` kosong/salah                        | Cek isi `.env`, pastikan credential masih valid di Supabase                                                                                                       |
+| Workflow Actions gagal di step `git push`                 | Permission token read-only                         | Cek **Settings > Actions > General > Workflow permissions**, pastikan "Read and write permissions" aktif, atau `permissions: contents: write` di YAML sudah benar |
+| Artikel banyak `isi_teks_status: gagal_pakai_summary_rss` | Situs sumber berubah struktur HTML / block scraper | Cek manual, mungkin perlu update `SITE_SELECTORS` atau `HEADERS` User-Agent                                                                                       |
