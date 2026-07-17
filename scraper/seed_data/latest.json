@@ -145,5 +145,19 @@
     ],
     "wilayah_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Prabowo Pimpin Panen Raya Serentak dari Malang",
+    "url": "https://www.liputan6.com/news/read/8248398/prabowo-pimpin-panen-raya-serentak-dari-malang",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T00:52:21Z",
+    "isi_teks": "Liputan6.com, Jakarta -PresidenPrabowo Subiantobertolak menuju ProvinsiJawa Timurdalam rangkakunjungan kerjapada Jumat (17/7/2026).\nDia dijadwalkan memimpin panen raya serentak di Kabupaten Malang sebagai bagian dari sinergi TNI dalam mendukung program ketahanan pangan nasional.\nPrabowo bersama rombongan terbatas lepas landas dari Pangkalan TNI AU Halim Perdanakusuma, Jakarta dengan menggunakan Pesawat Kepresidenan Indonesia-1.\n\"Bapak Presiden Prabowo akan memimpin panen raya serentak tebu, padi dan kedelai yang dilaksanakan di 43 titik di seluruh Indonesia. Kegiatan ini menjadi wujud sinergi TNI dalam mendukung percepatan terwujudnya swasembada pangan nasional,\" jelas Teddy dikutip dari siaran pers, Jumat (17/7/2026).\nSetibanya di Lanud Abdulrachman Saleh Kabupaten Malang, Prabowo akan langsung menuju panen raya yang terintegrasi secara nasional.\nKegiatan tersebut meliputi panen tebu yang didampingi TNI Angkatan Udara di 8 titik lokasi, panen padi oleh TNI Angkatan Darat di 31 titik lokasi, serta panen kedelai oleh TNI Angkatan Laut di 4 lokasi.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3573"
+    ],
+    "isi_teks_status": "ok"
   }
 ]
