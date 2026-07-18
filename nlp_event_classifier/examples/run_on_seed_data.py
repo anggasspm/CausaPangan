@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import sys
 from pathlib import Path
 
 from nlp_event_classifier.classifier import EventClassifier
@@ -75,6 +76,22 @@ def main() -> None:
         n_failed,
         out_path,
     )
+    if len(articles) > 0 and n_failed == len(articles):
+        logger.error(
+            "Semua %d artikel gagal diklasifikasi (kemungkinan semua provider "
+            "LLM down/quota habis). Menandai job sebagai gagal.",
+            n_failed,
+        )
+        sys.exit(1)
+
+    if n_failed > 0:
+        logger.warning(
+            "%d dari %d artikel gagal diklasifikasi (infra-fail per-artikel). "
+            "Artikel ini TIDAK ditulis sebagai penyebab=null -- perlu di-retry "
+            "run berikutnya.",
+            n_failed,
+            len(articles),
+        )
 
 
 if __name__ == "__main__":
