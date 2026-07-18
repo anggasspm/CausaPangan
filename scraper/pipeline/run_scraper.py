@@ -1,5 +1,5 @@
 from core.fetcher import fetch_rss
-from core.parser import relevan, deteksi_komoditas, deteksi_wilayah
+from core.parser import relevan, deteksi_komoditas, deteksi_wilayah, deteksi_provinsi
 from core.normalizer import normalisasi_artikel
 from core.article_fetcher import perkaya_artikel
 from config.sumber import SUMBER_BERITA
@@ -28,6 +28,14 @@ def run(debug=False, fetch_isi_lengkap=True):
             artikel = normalisasi_artikel(entry, sumber["nama"])
             artikel["komoditas_terdeteksi"] = komoditas_match
             artikel["wilayah_terdeteksi"] = deteksi_wilayah(teks)
+
+            # Fallback level provinsi -- HANYA diisi kalau tidak ada
+            # kota/kabupaten spesifik yang terdeteksi. Kalau wilayah_terdeteksi
+            # sudah ada isinya, provinsi_terdeteksi dikosongkan supaya tidak
+            # ambigu field mana yang harus dipakai consumer downstream.
+            wilayah_kota = artikel["wilayah_terdeteksi"]
+            artikel["provinsi_terdeteksi"] = [] if wilayah_kota else deteksi_provinsi(teks)
+
             hasil.append(artikel)
 
     print(f"[INFO] {len(hasil)} artikel lolos filter relevansi.")
