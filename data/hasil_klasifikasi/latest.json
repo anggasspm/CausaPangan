@@ -26,8 +26,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
@@ -57,7 +57,7 @@
       "3302"
     ],
     "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Meningkatnya permintaan sayuran setelah kegiatan belajar mengajar di sekolah kembali berlangsung.",
+    "penyebab_detail": "Meningkatnya permintaan setelah kegiatan belajar mengajar di sekolah kembali berlangsung.",
     "llm_certainty": 0.9,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
@@ -72,10 +72,10 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai offtaker untuk membeli gabah dan jagung jika harganya jatuh di bawah ketentuan pemerintah.",
-    "llm_certainty": 0.85,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah dengan harga yang ditentukan pemerintah.",
+    "llm_certainty": 0.9,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
@@ -119,8 +119,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jabar.antaranews.com/berita/699364/kuningan-tambah-luasan-tanam-padi-5671-hektare-di-juli-2026",
@@ -381,6 +381,51 @@
     "penyebab": "cuaca_gagal_panen",
     "penyebab_detail": "Kekeringan di Kabupaten Subang, Jawa Barat, menyebabkan gagal panen padi.",
     "llm_certainty": 0.9,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5655475/khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
+    "judul": "Khofifah: Kolaborasi jadikan Jatim produsen gula-lumbung padi nasional",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-18T05:27:38+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082997/gubernur-khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
+    "judul": "Gubernur Khofifah: Kolaborasi jadikan Jatim produsen gula-lumbung padi nasional",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-18T05:28:56+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912181/didier-deschamps-akhiri-keberasamaan-dengan-timnas-prancis",
+    "judul": "Didier Deschamps Akhiri Keberasamaan dengan Timnas Prancis",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-18T02:33:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
   }
