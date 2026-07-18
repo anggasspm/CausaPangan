@@ -41,8 +41,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
@@ -72,7 +72,7 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah dengan harga yang ditentukan pemerintah.",
+    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah jika harga jual di pasaran tak sesuai dengan yang ditetapkan pemerintah.",
     "llm_certainty": 0.9,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
@@ -119,8 +119,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jabar.antaranews.com/berita/699364/kuningan-tambah-luasan-tanam-padi-5671-hektare-di-juli-2026",
@@ -211,8 +211,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638856/presiden-prabowo-tinjau-hilirisasi-tebu-menjadi-bioetanol-di-malang",
@@ -260,8 +260,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/humaniora/911949/kualitas-sumber-air-menurun-sistem-pengolahan-berbasis-uji-lokasi-jadi-kebutuhan-mendesak",
@@ -319,9 +319,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/hiburan/912046/nama-buah-iblis-inazuma-anggota-pasukan-revolusioner-yang-selamatkan-luffy-di-one-piece",
@@ -411,8 +411,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://mediaindonesia.com/piala-dunia-2026/912181/didier-deschamps-akhiri-keberasamaan-dengan-timnas-prancis",
