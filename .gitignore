@@ -19,3 +19,6 @@ venv/
 
 # OS
 .DS_Store
+
+# Output/generated data -- hasil run lokal, bukan source code
+out/
