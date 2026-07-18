@@ -41,3 +41,19 @@ WILAYAH_TARGET = {
     "3577": {"nama": "Kota Madiun", "kota": ["Madiun"]},
     "3578": {"nama": "Kota Surabaya", "kota": ["Surabaya"]},
 }
+
+
+# PROVINSI_TARGET: kode provinsi (2 digit, Kemendagri) -- dipakai HANYA
+# sebagai fallback lemah saat artikel tidak menyebut kota/kabupaten
+# spesifik apapun, tapi jelas membahas provinsi secara umum (mis. berita
+# nasional soal harga PIHPS yang bilang "Jawa Tengah" tanpa sebut kota).
+#
+# SENGAJA field ini TERPISAH dari wilayah_terdeteksi (yang formatnya kode
+# 4-digit kab/kota) -- supaya tidak mencampur granularitas berbeda dalam
+# satu array yang sama, dan tidak mengubah kontrak Article milik Role 2
+# tanpa mereka sadari. Lihat provinsi_terdeteksi di parser.py & run_scraper.py.
+PROVINSI_TARGET = {
+    "32": {"nama": "Jawa Barat", "alias": ["jawa barat", "jabar"]},
+    "33": {"nama": "Jawa Tengah", "alias": ["jawa tengah", "jateng"]},
+    "35": {"nama": "Jawa Timur", "alias": ["jawa timur", "jatim"]},
+}

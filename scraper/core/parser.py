@@ -1,6 +1,6 @@
 import re
 from config.komoditas import KOMODITAS_KEYWORDS
-from config.wilayah import WILAYAH_TARGET
+from config.wilayah import WILAYAH_TARGET, PROVINSI_TARGET
 
 
 def deteksi_komoditas(teks: str) -> list[str]:
@@ -62,6 +62,30 @@ def deteksi_wilayah(teks: str) -> list[str]:
             hasil.update(daftar_kode)
 
     return list(hasil)
+
+
+def deteksi_provinsi(teks: str) -> list[str]:
+    """
+    Deteksi kode_provinsi (2 digit) yang disebut dalam teks.
+
+    Dipakai SEBAGAI FALLBACK TERPISAH -- untuk kasus artikel yang tidak
+    menyebut kota/kabupaten spesifik apapun (wilayah_terdeteksi kosong)
+    tapi jelas membahas satu/lebih provinsi secara umum. Ini mayoritas
+    kasus untuk berita ekonomi nasional (Bulog, Kementan, PIHPS) yang
+    bicara level provinsi/nasional, bukan kota tertentu.
+
+    SENGAJA dikembalikan sebagai field terpisah (provinsi_terdeteksi),
+    BUKAN digabung ke dalam wilayah_terdeteksi -- supaya tidak mencampur
+    kode 4-digit (kab/kota) dengan kode 2-digit (provinsi) dalam satu
+    array yang sama, yang akan salah diinterpretasikan sebagai kode
+    kab/kota oleh consumer downstream (Role 2/Role 1 backend).
+    """
+    teks_lower = teks.lower()
+    hasil = []
+    for kode_provinsi, data in PROVINSI_TARGET.items():
+        if any(alias in teks_lower for alias in data["alias"]):
+            hasil.append(kode_provinsi)
+    return hasil
 
 
 def relevan(judul: str, ringkasan: str) -> bool:
