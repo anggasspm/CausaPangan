@@ -1,0 +1,64 @@
+name: Event Classifier (NLP)
+
+on:
+  # Jalan otomatis setiap kali workflow scraper selesai -- classifier butuh
+  # seed_data/latest.json yang sudah ter-update oleh scraper duluan.
+  workflow_run:
+    workflows: ["Scraper Berita Harga Pangan"]
+    types: [completed]
+  workflow_dispatch: {}   # buat testing manual, tidak perlu nunggu scraper jalan
+
+permissions:
+  contents: write
+
+concurrency:
+  group: event-classifier
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    # Kalau workflow ini dipicu oleh workflow_run, cuma lanjut kalau
+    # scraper-nya sendiri sukses -- tidak ada gunanya klasifikasi data
+    # yang gagal ter-scrape (latest.json bisa jadi belum ter-update).
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # Ambil commit terbaru dari branch yang sama, bukan ref lama --
+          # penting karena scraper baru saja commit seed_data/latest.json.
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: nlp_event_classifier/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r nlp_event_classifier/requirements.txt
+
+      - name: Jalankan event classifier
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python -m nlp_event_classifier.examples.run_on_seed_data \
+            --input scraper/seed_data/latest.json \
+            --output data/hasil_klasifikasi/latest.json
+
+      - name: Commit hasil klasifikasi ke repo
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Classifier"
+          git add data/hasil_klasifikasi/
+          git diff --staged --quiet || git commit -m "chore: update hasil klasifikasi NLP [skip ci]"
+          git push
