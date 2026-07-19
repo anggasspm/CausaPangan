@@ -389,5 +389,33 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Viral Bocah jadi Korban Challenge Cabai-Freezer, Pria Depok Ditangkap",
+    "url": "https://www.liputan6.com/news/read/8249591/viral-bocah-jadi-korban-challenge-cabai-freezer-pria-depok-ditangkap",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-19T00:54:29Z",
+    "isi_teks": "Liputan6.com, Jakarta -Polres MetroDepoktelah menangkap D tersangka kekerasan terhadap dua anak di bawah umur. Tersangka memberikan tantangan atau challenge kepada kedua korban dan kemudian aksinya viral dan dikecam.\nTantangan yang diberikan tersangka yakni menyuruh kedua korban memakan cabai jika berhasil mendapatkan uang Rp 9 ribu namun apabila gagal akan dimasukan ke dalam freezer.\nKasat Reskrim Polres Metro Depok, AKBP Made Gede Oka Utama membenarkan adanya kekerasan terhadap anak yang dilakukan tersangka. Polres Metro Depok telah menindaklanjuti laporan dan melakukan penanganan kekerasan terhadap ke dua orang anak.\n“Sudah kita tetapkan juga sebagai tersangka pihak terlapor, sampai dengan saat ini masih proses pemberkasan perkarakan,” ujar Oka, saat ditemui Liputan6.com, Minggu (19/7/2026).\nPolres Metro Depok telah melakukan upaya paksa penahanan terhadap tersangka. Saat ini Polres Metro Depok sedang melakukan pemberkasan untuk segera melakukan proses hukum di pengadilan.\n“Kita akan segera lakukan pemberkasan dan kita limpahkan ke penuntut umum,” terang Oka.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3276"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Harga Cabai di Bangka Masih Tinggi, Cabai Rawit Tembus Rp75 Ribu per Kg",
+    "url": "https://mediaindonesia.com/nusantara/912305/harga-cabai-di-bangka-masih-tinggi-cabai-rawit-tembus-rp75-ribu-per-kg",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-18T22:10:00Z",
+    "isi_teks": "Yang terpenting, memastikan penerapan aturan dalam melindungi anak.\nHarga kebutuhan pokok, khususnya komoditas cabai di sejumlah pasar tradisional di Kabupaten Bangka, Provinsi Bangka Belitung (Babel), terpantau masih tinggi hingga Minggu (19/7/2026).\nDiPasar Kite Sungailiat, Kabupaten Bangka, harga cabai rawit saat ini dijual seharga Rp75.000 per kilogram. Sementara itu, cabai merah keriting dibanderol Rp48.000 per kilogram.\nMita, salah seorang pedagang di Pasar Kite, mengungkapkan bahwa terjadi kenaikan harga khususnya pada komoditas cabai merah keriting. Sebelumnya, harga cabai merah keriting berada di kisaran Rp45.000 per kilogram.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
