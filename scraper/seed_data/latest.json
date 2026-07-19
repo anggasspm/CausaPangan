@@ -417,5 +417,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Cegah Stunting Sejak Dini, 300 Balita di Brebes dapat Bantuan Gizi",
+    "url": "https://mediaindonesia.com/nusantara/912352/cegah-stunting-sejak-dini-300-balita-di-brebes-dapat-bantuan-gizi",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-19T01:49:00Z",
+    "isi_teks": "Yang terpenting, memastikan penerapan aturan dalam melindungi anak.\nUPAYA melahirkan generasi yang sehat dan cerdas terus diperkuat Pemerintah Kabupaten/PemkabBrebes, Jawa Tengah. Melalui pemberian bantuan pangan bergizi kepada balita,Pemkab Brebesberupaya memastikan anak-anak mendapatkan asupan gizi yang cukup sebagai langkah nyata menekan angkastunting.\nBupati Brebes, Paramitha Widya Kusuma menyerahkan secara langsung Bantuan Penurunan Stunting dan Cadangan Pangan Pemerintah Daerah (CPPD) kepada keluarga penerima manfaat di Balai Desa Wanatirta dan Balai Desa Winduaji, Kecamatan Paguyangan, Kabupaten Brebes.\nSebanyak 300 balita di Desa Wanatirta dan Desa Winduaji menerima bantuan berupa beras Fortivit, telur, susu serta beras dari Cadangan Pangan Pemerintah Daerah. Bantuan akan disalurkan dalam dua tahap selama semester ini sebagai bagian dari intervensi pemenuhan gizi bagi balita yang berisiko mengalami stunting.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
