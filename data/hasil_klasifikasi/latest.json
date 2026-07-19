@@ -26,8 +26,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
@@ -41,8 +41,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
@@ -72,10 +72,10 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai offtaker gabah dan jagung untuk menjaga harga di tingkat petani.",
-    "llm_certainty": 0.85,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah jika harga jual di pasaran tak sesuai dengan yang ditetapkan pemerintah.",
+    "llm_certainty": 0.9,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
@@ -179,8 +179,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://www.liputan6.com/news/read/8248398/prabowo-pimpin-panen-raya-serentak-dari-malang",
@@ -379,7 +379,7 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "cuaca_gagal_panen",
-    "penyebab_detail": "Kekeringan di Kabupaten Subang, Jawa Barat, menyebabkan gagal panen padi.",
+    "penyebab_detail": "Kekeringan di Kabupaten Subang menyebabkan gagal panen padi di 1.348 hektare areal persawahan.",
     "llm_certainty": 0.9,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
@@ -487,7 +487,7 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.8,
+    "llm_certainty": 0.95,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
@@ -500,6 +500,38 @@
       "beras"
     ],
     "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/912469/perokok-dewasa-mulai-beralih-ke-produk-tembakau-alternatif",
+    "judul": "Perokok Dewasa Mulai Beralih ke Produk Tembakau Alternatif",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-19T10:03:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/pria-di-depok-ditangkap-usai-challenge-2-bocah-makan-cabai-hingga-masuk-freezer-27osEkRXnuU",
+    "judul": "Pria di Depok Ditangkap usai Challenge 2 Bocah Makan Cabai hingga Masuk Freezer",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-19T09:00:04+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3276"
+    ],
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
