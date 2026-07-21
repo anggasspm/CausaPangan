@@ -563,5 +563,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Anomali Ekonomi Beras: Perubahan Kebijakan Mendesak",
+    "url": "https://mediaindonesia.com/opini/912860/anomali-ekonomi-beras-perubahan-kebijakan-mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T15:15:00Z",
+    "isi_teks": "Penantian 16 tahun Spanyol untuk kembali menjadi juara Piala Dunia telah tuntas.\nLAPORAN rutin bulanan Badan Pusat Statistik (BPS) pada awal Juli 2026 menunjukkan bahwaharga panganbergolak (volatile food/VF) menjadi kontributor terbesar (5,58%) pada lajuinflasiJuni 2026 yang mencapai 3,34% (yoy). Laju inflasi ekonomi 2026 diprakirakan akan lebih tinggi daripada target resmi pemerintah 2,5% plus minus 1% karena faktor VF yang sangat dominan, seperti harga beras, cabai merah, daging ayam ras, cabai rawit, dan bawang merah.\nAndil inflasi inti hanya 2,76% dan andil harga yang diatur pemerintah (administered price/AP) juga tidak terlalu besar, 3,42%. Oleh karena itu, lonjakan harga pangan menjadi agenda mendesak yang perlu diselesaikan pemerintah agar pembangunan ekonomi Indonesia terus berada pada jalur yang diharapkan.\nKhusus tentang harga beras, BPS juga mencatat terjadi anomali serius karena harga tetap mahal di tengah laporan produksi tinggi dan rekor stok atau cadangan beras pemerintah (CBP) 5,2 juta ton, yang dikuasai Perum Bulog.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
