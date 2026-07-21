@@ -23,6 +23,15 @@ def list_prediksi(db: Session, kode_wilayah: str, kode_komoditas: str | None = N
     otomatis mengembalikan list kosong -- bukan error -- karena ini
     query SELECT biasa.
     """
+    def iso(dt):
+        """Convert datetime object (dari kolom TIMESTAMPTZ) ke string ISO 8601
+        format 'YYYY-MM-DDTHH:mm:ssZ' sesuai API_CONTRACT §1 -- SQLAlchemy
+        balikin objek datetime, bukan string, jadi wajib dikonversi manual
+        sebelum masuk Pydantic model yang expect str."""
+        if dt is None:
+            return None
+        return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     query = """
         SELECT p.kode_wilayah, w.nama_kota, w.kode_provinsi, w.nama_provinsi,
                p.kode_komoditas, p.nama_komoditas, p.harga_terakhir, p.satuan,
@@ -43,6 +52,7 @@ def list_prediksi(db: Session, kode_wilayah: str, kode_komoditas: str | None = N
     result = []
     for r in rows:
         row = dict(r)
+        row["terakhir_diperbarui"] = iso(row["terakhir_diperbarui"])
         # susun ulang jadi bentuk nested sesuai API_CONTRACT §3.1
         row["rekomendasi"] = None
         if row["rekomendasi_target"]:
@@ -62,7 +72,9 @@ def list_prediksi(db: Session, kode_wilayah: str, kode_komoditas: str | None = N
             WHERE kode_wilayah = :kw AND kode_komoditas = :kk
             ORDER BY tanggal_terbit DESC
         """), {"kw": row["kode_wilayah"], "kk": row["kode_komoditas"]}).mappings().all()
-        row["sumber_berita"] = [dict(s) for s in sumber]
+        row["sumber_berita"] = [
+            {**dict(s), "tanggal_terbit": iso(s["tanggal_terbit"])} for s in sumber
+        ]
         result.append(row)
     return result
 
