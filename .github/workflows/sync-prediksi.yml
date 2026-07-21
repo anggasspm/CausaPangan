@@ -1,0 +1,55 @@
+name: Sync Prediksi ke Database
+
+on:
+  # Jalan otomatis setiap kali workflow classifier selesai -- sync_prediksi.py
+  # butuh data/hasil_klasifikasi/latest.json yang sudah ter-update duluan.
+  workflow_run:
+    workflows: ["Event Classifier (NLP)"]
+    types: [completed]
+  workflow_dispatch: {}   # buat testing manual, tidak perlu nunggu classifier jalan
+
+permissions:
+  contents: read   # cuma baca data/hasil_klasifikasi/, tidak commit apa pun balik ke repo
+
+concurrency:
+  group: sync-prediksi
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # Sama seperti classifier.yml -- kalau dipicu workflow_run, cuma lanjut
+    # kalau classifier-nya sendiri sukses. Data klasifikasi bisa jadi belum
+    # ter-update kalau classifier gagal.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # Ambil commit terbaru dari branch yang sama, bukan ref lama --
+          # penting karena classifier baru saja commit hasil_klasifikasi/latest.json.
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Jalankan sync_prediksi.py
+        env:
+          # WAJIB pakai connection string Session Pooler (bukan direct
+          # connection) -- GitHub Actions runner cuma IPv4, direct connection
+          # Supabase IPv6-only bakal gagal resolve DNS (sama kayak masalah
+          # yang kita alami waktu setup lokal kemarin).
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python backend/scripts/sync_prediksi.py
