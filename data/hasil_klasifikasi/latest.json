@@ -26,8 +26,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
@@ -41,8 +41,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
@@ -57,10 +57,10 @@
       "3302"
     ],
     "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Meningkatnya permintaan setelah kegiatan belajar mengajar di sekolah kembali berlangsung.",
-    "llm_certainty": 0.9,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "penyebab_detail": "Kenaikan harga cabai dipicu oleh meningkatnya permintaan dari sektor kuliner dan kantin setelah aktivitas sekolah kembali aktif pasca-libur.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.liputan6.com/news/read/8247169/kopdes-disiapkan-jadi-penyalur-bantuan-dan-pembeli-gabah",
@@ -72,10 +72,10 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah jika harga jual di pasaran tak sesuai dengan yang ditetapkan pemerintah.",
-    "llm_certainty": 0.9,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai offtaker gabah dan jagung jika harga pasar berada di bawah harga ketentuan pemerintah.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
@@ -149,8 +149,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.antaranews.com/berita/5653317/harga-cabai-rawit-rp45000-kg-telur-ayam-rp26000-kg-per-jumat-pagi",
@@ -228,8 +228,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638852/presiden-berangkat-ke-malang-pimpin-panen-lahan-binaan-tni",
@@ -305,8 +305,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
@@ -319,9 +319,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/hiburan/912046/nama-buah-iblis-inazuma-anggota-pasukan-revolusioner-yang-selamatkan-luffy-di-one-piece",
@@ -334,9 +334,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1082871/harga-pangan-sabtu-ini-cabai-rawit-rp57250-kg-dan-telur-ayam-rp20550-kg",
@@ -350,8 +350,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.liputan6.com/photo/read/8248937/lahan-bekas-lumpur-banjir-bandang-disulap-menjadi-areal-pertanian-di-pidie-jaya",
@@ -366,8 +366,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/jabar/berita/912142/1000-hektare-lebih-pesawahan-di-subang-terancam-gagal-panen-akibat-kekeringan",
@@ -379,10 +379,10 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "cuaca_gagal_panen",
-    "penyebab_detail": "Kekeringan di Kabupaten Subang, Jawa Barat, menyebabkan gagal panen padi.",
-    "llm_certainty": 0.9,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "penyebab_detail": "Kekeringan di Kabupaten Subang menyebabkan 1.348 hektare persawahan terancam gagal panen.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.antaranews.com/berita/5655475/khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
@@ -396,8 +396,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jatim.antaranews.com/berita/1082997/gubernur-khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
@@ -425,9 +425,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.antaranews.com/berita/5655745/pihps-harga-telur-ayam-rp29300-kg-bawang-merah-rp43800-kg",
@@ -563,10 +563,10 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah memperkuat program Stabilisasi Pasokan dan Harga Pangan (SPHP) beras untuk mengantisipasi dampak El Nino ekstrem.",
-    "llm_certainty": 0.9,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "penyebab_detail": "Pemerintah memperkuat program SPHP dan menyalurkan bantuan pangan beras untuk menjaga stabilitas pasokan serta harga beras.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://kumparan.com/pandangan-jogja/menelusuri-jejak-kuliner-jawa-di-serat-centhini-ada-kuluban-hingga-beras-kencur-27pAVJ6BTQd",
@@ -579,9 +579,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/megapolitan/912760/restoran-di-menteng-kebakaran-dipicu-bara-alat-pemanggang",
@@ -595,8 +595,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/politik-dan-hukum/912746/prabowo-soroti-kebocoran-ekonomi-dan-kelangkaan-minyak-goreng",
@@ -609,9 +609,9 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.8,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://mediaindonesia.com/nusantara/912737/harga-pangan-di-sumut-naik-cabai-merah-tembus-rp44500-per-kg-di-medan",
@@ -670,7 +670,82 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://www.antaranews.com/video/5658548/serapan-gabah-bulog-lebihi-target-di-yogyakarta-amankan-stok-pangan",
+    "judul": "Serapan gabah Bulog lebihi target, D.I. Yogyakarta amankan stok pangan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-21T00:49:28+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083559/harga-pangan-selasa-ini-cabai-rawit-rp47300-kg-dan-telur-ayam-rp30350-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp47.300/kg dan telur ayam Rp30.350/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-20T20:35:39+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tiiief370/kemarau-ancam-produksi-padi-indramayu-petani-minta-air-segera-digelontorkan",
+    "judul": "Kemarau Ancam Produksi Padi Indramayu, Petani Minta Air Segera Digelontorkan",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-20T23:37:27+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Kekeringan melanda areal tanaman padi di Kabupaten Indramayu, mengancam produksi padi.",
+    "llm_certainty": 0.9,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/913007/bapanas-dorong-penyaluran-beras-sphp-lewat-koperasi-desa-merah-putih",
+    "judul": "Bapanas Dorong Penyaluran Beras SPHP Lewat Koperasi Desa Merah Putih",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T23:53:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah mematangkan peran Koperasi Desa/Kelurahan Merah Putih untuk mendukung distribusi pangan, termasuk penyaluran beras SPHP.",
     "llm_certainty": 0.8,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/agus-yang-dikerjakan-presiden-besar-tak-seperti-makan-cabai-langsung-pedas-27pZKL0rhdY",
+    "judul": "Agus: Yang Dikerjakan Presiden Besar, Tak Seperti Makan Cabai Langsung Pedas",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-21T00:51:43+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
   }
