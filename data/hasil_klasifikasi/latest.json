@@ -11,8 +11,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
@@ -72,7 +72,7 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai penyalur bantuan dan pembeli gabah untuk stabilisasi harga.",
+    "penyebab_detail": "Pemerintah menetapkan Koperasi Desa Merah Putih sebagai infrastruktur untuk menyalurkan bantuan dan sebagai pembeli gabah jika harga jual di pasaran tak sesuai dengan yang ditetapkan pemerintah.",
     "llm_certainty": 0.9,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
@@ -89,8 +89,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://www.antaranews.com/berita/5652721/pemkab-kuningan-tambah-luas-tanam-padi-5671-hektare-pada-juli-2026",
@@ -134,8 +134,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jabar.antaranews.com/berita/699357/bulog-serap-158-ribu-ton-beras-hasil-panen-dari-petani-indramayu",
@@ -228,8 +228,8 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
-    "provider_used": "openrouter",
-    "model_used": "meta-llama/llama-3.3-70b-instruct"
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   },
   {
     "url": "https://jateng.antaranews.com/berita/638852/presiden-berangkat-ke-malang-pimpin-panen-lahan-binaan-tni",
@@ -379,7 +379,7 @@
     ],
     "wilayah_terdeteksi": [],
     "penyebab": "cuaca_gagal_panen",
-    "penyebab_detail": "Kekeringan di Subang, Jawa Barat, menyebabkan gagal panen padi di 1.348 hektare areal persawahan.",
+    "penyebab_detail": "Kekeringan di Kabupaten Subang, Jawa Barat, menyebabkan gagal panen padi.",
     "llm_certainty": 0.9,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
@@ -656,6 +656,21 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
+    "provider_used": "openrouter",
+    "model_used": "meta-llama/llama-3.3-70b-instruct"
+  },
+  {
+    "url": "https://mediaindonesia.com/opini/912860/anomali-ekonomi-beras-perubahan-kebijakan-mendesak",
+    "judul": "Anomali Ekonomi Beras: Perubahan Kebijakan Mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T15:15:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.8,
     "provider_used": "openrouter",
     "model_used": "meta-llama/llama-3.3-70b-instruct"
   }
