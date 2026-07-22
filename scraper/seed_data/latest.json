@@ -799,5 +799,18 @@
       "33"
     ],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bulog Bengkulu lampaui target serapan gabah hingga 127 persen",
+    "url": "https://www.antaranews.com/berita/5661631/bulog-bengkulu-lampaui-target-serapan-gabah-hingga-127-persen",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-22T11:13:29Z",
+    "isi_teks": "Bengkulu (ANTARA) - Perum Bulog Kantor Wilayah Bengkulu menyerap 4.069 ton gabah dan beras pada Musim Tanam (MT) I 2026 atau mencapai 127 persen dari target nasional untuk Provinsi Bengkulu sebesar 3.185 ton.\nPemimpin Wilayah Perum Bulog Kanwil Bengkulu Dody Syahrial di Bengkulu, Rabu, mengatakan capaian tersebut melampaui target berkat sinergi Bulog dengan pemerintah daerah, TNI-Polri, instansi teknis, mitra penggilingan padi, dan penyuluh pertanian.\nMenurut Dody, penyuluh pertanian berperan penting dalam menyampaikan informasi mengenai potensi serta perkembangan panen sehingga Bulog dapat melakukan penyerapan gabah dan beras secara cepat dan tepat.\nIa mengatakan sinergi seluruh pemangku kepentingan perlu terus diperkuat menghadapi Musim Tanam II 2026 agar hasil panen petani dapat terserap secara optimal.\nSelain menjaga kesejahteraan petani, penyerapan hasil panen juga bertujuan memperkuat Cadangan Beras Pemerintah (CBP) dan menjaga stabilitas pasokan serta harga pangan.\nDody memastikan Bulog akan terus menyerap hasil panen petani sesuai ketentuan pemerintah.\nIa optimistis penyerapan gabah dan beras pada Musim Tanam II 2026 dapat lebih optimal melalui kolaborasi pemerintah daerah, TNI-Polri, Bank Indonesia, instansi teknis, penyuluh pertanian, dan mitra kerja.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
