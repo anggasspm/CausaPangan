@@ -825,5 +825,59 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bulog NTT pastikan stok beras 30.000 ton aman tiga bulan",
+    "url": "https://www.antaranews.com/berita/5662349/bulog-ntt-pastikan-stok-beras-30000-ton-aman-tiga-bulan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-23T00:16:08Z",
+    "isi_teks": "Kupang, NTT (ANTARA) - Perum Bulog Kantor Wilayah Nusa Tenggara Timur (NTT) memastikan stok beras cadangan pemerintah sebanyak 30.000 ton dalam kondisi aman dan mencukupi kebutuhan masyarakat hingga tiga bulan ke depan.\nKepala Perum Bulog Kanwil NTT Arrahim K. Kanam di Kupang, Kamis, mengatakan stok tersebut tersebar di seluruh gudang Bulog di wilayah NTT dan disiapkan untuk mendukung penyaluran bantuan pangan, program Stabilisasi Pasokan dan Harga Pangan (SPHP), serta mengantisipasi kondisi darurat.\n\"Masyarakat NTT tidak perlu khawatir. Saat ini stok beras cadangan pemerintah yang dikuasai Bulog NTT mencapai 30.000 ton. Jumlah ini kami pastikan aman untuk memenuhi kebutuhan masyarakat hingga tiga bulan ke depan,\" katanya.\nAdapun di NTT, kebutuhan beras diperkirakan mencapai sekitar 5.000 ton per bulan.\nArrahim mengatakan Bulog terus melakukan pemantauan dan pengelolaan rantai pasok agar distribusi beras berjalan lancar di seluruh kabupaten dan kota di NTT.\nMenurut dia, Bulog juga berkoordinasi dengan pemerintah daerah, Dinas Pertanian, Dinas Perdagangan, serta pemangku kepentingan lainnya untuk menjaga stabilitas pasokan dan harga pangan.\nSelain beras, Bulog NTT juga memastikan ketersediaan komoditas pangan lainnya, seperti minyak goreng dan gula pasir, untuk memenuhi kebutuhan masyarakat.\nIa menambahkan Bulog akan terus melakukan pengadaan beras secara berkelanjutan dan mengoptimalkan distribusi hingga ke wilayah kepulauan dan daerah terluar guna menjaga ketahanan pangan di NTT.\nLebih lanjut, Arrahim mengatakan Perum Bulog Kanwil NTT telah menuntaskan penyaluran bantuan pangan alokasi Februari–Maret 2026 kepada 837.612 keluarga penerima manfaat (KPM) yang tersebar di 22 kabupaten/kota di NTT. Penyaluran tersebut berlangsung pada periode 1 April hingga 30 Juni 2026.\nIa menyampaikan bantuan yang disalurkan terdiri atas 16.752.240 kilogram beras dan 3.350.448 liter minyak goreng. Adapun seluruh komoditas bantuan telah diterima oleh masyarakat penerima di berbagai wilayah NTT.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga cabai rawit tembus Rp95.000 per kilogram",
+    "url": "https://jatim.antaranews.com/berita/1084125/harga-cabai-rawit-tembus-rp95000-per-kilogram",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-22T19:35:01Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp95.000 per kilogram (kg), sedangkan telur ayam ras Rp35.000 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Kamis pukul 08.24 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp66.250 per kg, bawang putih Rp57.500 per kg.\nSelain itu, beras kualitas bawah I di harga Rp18.050 per kg, beras kualitas bawah II Rp18.000 per kg. Sedangkan beras kualitas medium I Rp19.500 per kg, dan beras kualitas medium II di harga Rp19.500 per kg\nLalu, beras kualitas super I di harga Rp20.150 per kg, dan beras kualitas super II Rp20.000 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp87.500 per kg, cabai merah keriting Rp87.500 per kg, dan cabai rawit hijau Rp50.000 per kg.\nKemudian, daging ayam ras segar Rp43.750 per kg, daging sapi kualitas I Rp152.500 per kg, daging sapi kualitas II di harga Rp136.250 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp25.000 per kg, gula pasir lokal Rp20.250 per kg.\nSementara itu, minyak goreng curah di harga Rp21.250 per liter, minyak goreng kemasan bermerek I di harga Rp27.250 per liter, serta minyak goreng kemasan bermerek II di harga Rp26.000 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "BNN Musnahkan 3,3 Ton Narkotika Hasil Lima Pengungkapan Kasus",
+    "url": "https://www.liputan6.com/news/read/8252697/bnn-musnahkan-33-ton-narkotika-hasil-lima-pengungkapan-kasus",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-22T20:26:40Z",
+    "isi_teks": "Liputan6.com, Jakarta -BadanNarkotikaNasional (BNN) memusnahkan barang bukti narkotika golongan I dalam peringatanHari Anti Narkotika Internasional, Kamis (23/7/2026). Total barang bukti seberat 3,3 ton yang disita selama Juni-Juli 2026.\nDeputi Pemberantasan Narkotika BNN Irjen Pol Aswin Sipayung menjelaskan bahwa barang bukti yang akan dimusnahkan ini merupakan pengungkapan lima kasus tindak pidana narkotika yang berhasil diungkap di tiga wilayah berbeda, yakni Bali, Gresik Jawa Timur, dan DKI Jakarta.\n\"Sesuai ketentuan peraturan perundang-undangan, sebagian barang bukti disisihkan untuk kepentingan pembuktian perkara, pemeriksaan uji laboratorium, dan kepentingan penyidikan, sedangkan sisanya dimusnahkan,\" kata Aswin dalam konferensi pers di Balai Rehabilitasi BNN, Kamis (23/7/2026).\nPemusnahan disaksikan oleh unsur aparat penegak hukum, instansi terkait, serta masyarakat sebagai bentuk keterbukaan dalam penanganan barang bukti narkotika.\nAswin menambahkan, barang bukti narkotika dan prekursor narkotika yang diamankan tersebut terdiri dari 3.006 gram hashish, 8.966,32 gram sabu, 3.370.000 gram bunga ganja Thailand, 890 mililiter cairan prekursor, 1.840 mililiter cairan kimia, serta 585,44 gram padatan kimia.\nNamun sebelum dilakukan pemusnahan, sebagian barang bukti telah disisihkan guna kepentingan pemeriksaan laboratorium dan pembuktian perkara di persidangan.\nSehingga total barang bukti yang dimusnahkan sebanyak 2.996 gram hashish, 8.876,08 gram sabu, 3.360.604 gram bunga ganja Thailand, 860 mililiter cairan prekursor, 1.780 mililiter cairan kimia, dan 582,19 gram padatan kimia.\n\"Total keseluruhan barang bukti yang dimusnahkan pada hari ini adalah 3.058,27 gram dan 2.640 mililiter,\" ungkap Aswin.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "35"
+    ],
+    "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Pemerintah Salurkan Bantuan Beras Tahap Kedua untuk 33,24 Juta KPM Mulai Agustus",
+    "url": "https://ekonomi.republika.co.id/berita/tim5ks370/pemerintah-salurkan-bantuan-beras-tahap-kedua-untuk-3324-juta-kpm-mulai-agustus",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-22T22:50:52Z",
+    "isi_teks": "Pemerintah menyiapkan hampir satu juta ton beras untuk penyaluran bantuan pangan.\nREPUBLIKA.CO.ID, JAKARTA -- Kepala Badan Pangan Nasional (Bapanas) Andi Amran Sulaiman memastikan pemerintah akan mulai menyalurkanbantuan pangan berastahap kedua kepada 33,24 juta Keluarga Penerima Manfaat (KPM) di seluruh Indonesia. Banpang tersebut diserahkan mulai Agustus 2026.\nPenyaluran bantuan tersebut mencakup alokasi Juli hingga September dengan total volume 997,2 ribu ton beras. Perum Bulog menyalurkan bantuan secaraone shootatau sekaligus sebagai bagian dari upaya menjaga daya beli masyarakat dan memperkuatketahanan pangandi tengah musim kemarau.\n\"Bantuan pangan beras tahap kedua alokasi Juli-September akan disalurkan mulai Agustus kepada 33,24 juta KPM,\" kata Amran, di Jakarta, Kamis (23/7/2026).\nSelain bantuan pangan, pemerintah juga terus menggulirkan program Stabilisasi Pasokan dan Harga Pangan (SPHP) beras. Hingga 22 Juli 2026, realisasi penyaluranSPHPtelah mencapai 507,75 ribu ton atau 61,32 persen dari target 828 ribu ton untuk periode Maret-Desember.\nAmran mengatakan pemerintah memastikan cadangan beras nasional dalam kondisi memadai untuk mendukung berbagai intervensi tersebut. Per 22 Juli 2026, stok Cadangan Beras Pemerintah (CBP) yang dikelolaPerum Bulogtelah mencapai 5,24 juta ton.\nPenguatan stok dan penyaluran beras itu turut menopang stabilitas harga. Data Badan Pusat Statistik (BPS) menunjukkaninflasi berassecara tahunan pada Juni 2026 melandai menjadi 3,98 persen dari 4,55 persen pada Mei, sedangkan inflasi bulanan tercatat 0,45 persen.\nJl. KH Abdullah Syafei No.30, RT.4/RW.6, Bukit Duri, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12840\nBukit Duri, Kec. Tebet\nJakarta Selatan, Jakarta 12840\nEmail:sekretariat@republika.co.id (Redaksi)marketing@republika.co.id ( Marketing )event_management@republika.co.id ( Kerjasama )cc@republika.co.id ( Customer Care )",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
