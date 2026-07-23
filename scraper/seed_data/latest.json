@@ -905,5 +905,31 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "15 Dampak Jarang Makan Sayur bagi Kesehatan",
+    "url": "https://mediaindonesia.com/humaniora/914204/15-dampak-jarang-makan-sayur-bagi-kesehatan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T09:00:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nSAYURadalah bagian dari tumbuhan yang dapat dikonsumsi sebagai makanan dan biasanya digunakan sebagai sumber nutrisi dalam menu sehari-hari.\nSayuran dapat berasal dari berbagai bagian tanaman, seperti daun, batang, akar, bunga, buah, maupun biji, yang mengandung berbagai zat gizi penting bagi tubuh.\nSayur kaya akan serat yang membantu melancarkan proses pencernaan. Kurang mengonsumsi sayur dapat menyebabkan masalah seperti sulit buang air besar atau sembelit.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T06:59:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nMENJAGA stabilitas harga bahan pokok dan barang penting, Pemerintah Kota Padang melalui Dinas Perdagangan menggelar kegiatanPasar Murahdi Halaman Masjid Raya Ganting, Kecamatan Padang Timur, Kota Padang, Rabu (22/7).\nKegiatan ini merupakan bagian dari rangkaian Operasi Pasar Murah yang dilaksanakan di tiga titik kecamatan, yakni Kecamatan Padang Barat (21/7/2026), Kecamatan Padang Timur (22/7/2026), dan Kecamatan Pauh (23/7/2026).\nPasar murah tersebut menyediakan berbagai kebutuhan dasar masyarakat, seperti beras, minyak goreng, gula, cabai, bawang, dan komoditas penting lainnya. Seluruh barang dijual dengan harga yang jauh lebih terjangkau dibandingkan harga pasaran.",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]

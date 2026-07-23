@@ -1,0 +1,41 @@
+[
+  {
+    "judul": "Harga cabai rawit tembus Rp95.000 per kilogram",
+    "url": "https://jatim.antaranews.com/berita/1084125/harga-cabai-rawit-tembus-rp95000-per-kilogram",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-22T19:35:01Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp95.000 per kilogram (kg), sedangkan telur ayam ras Rp35.000 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Kamis pukul 08.24 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp66.250 per kg, bawang putih Rp57.500 per kg.\nSelain itu, beras kualitas bawah I di harga Rp18.050 per kg, beras kualitas bawah II Rp18.000 per kg. Sedangkan beras kualitas medium I Rp19.500 per kg, dan beras kualitas medium II di harga Rp19.500 per kg\nLalu, beras kualitas super I di harga Rp20.150 per kg, dan beras kualitas super II Rp20.000 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp87.500 per kg, cabai merah keriting Rp87.500 per kg, dan cabai rawit hijau Rp50.000 per kg.\nKemudian, daging ayam ras segar Rp43.750 per kg, daging sapi kualitas I Rp152.500 per kg, daging sapi kualitas II di harga Rp136.250 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp25.000 per kg, gula pasir lokal Rp20.250 per kg.\nSementara itu, minyak goreng curah di harga Rp21.250 per liter, minyak goreng kemasan bermerek I di harga Rp27.250 per liter, serta minyak goreng kemasan bermerek II di harga Rp26.000 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "15 Dampak Jarang Makan Sayur bagi Kesehatan",
+    "url": "https://mediaindonesia.com/humaniora/914204/15-dampak-jarang-makan-sayur-bagi-kesehatan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T09:00:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nSAYURadalah bagian dari tumbuhan yang dapat dikonsumsi sebagai makanan dan biasanya digunakan sebagai sumber nutrisi dalam menu sehari-hari.\nSayuran dapat berasal dari berbagai bagian tanaman, seperti daun, batang, akar, bunga, buah, maupun biji, yang mengandung berbagai zat gizi penting bagi tubuh.\nSayur kaya akan serat yang membantu melancarkan proses pencernaan. Kurang mengonsumsi sayur dapat menyebabkan masalah seperti sulit buang air besar atau sembelit.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T06:59:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nMENJAGA stabilitas harga bahan pokok dan barang penting, Pemerintah Kota Padang melalui Dinas Perdagangan menggelar kegiatanPasar Murahdi Halaman Masjid Raya Ganting, Kecamatan Padang Timur, Kota Padang, Rabu (22/7).\nKegiatan ini merupakan bagian dari rangkaian Operasi Pasar Murah yang dilaksanakan di tiga titik kecamatan, yakni Kecamatan Padang Barat (21/7/2026), Kecamatan Padang Timur (22/7/2026), dan Kecamatan Pauh (23/7/2026).\nPasar murah tersebut menyediakan berbagai kebutuhan dasar masyarakat, seperti beras, minyak goreng, gula, cabai, bawang, dan komoditas penting lainnya. Seluruh barang dijual dengan harga yang jauh lebih terjangkau dibandingkan harga pasaran.",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  }
+]
