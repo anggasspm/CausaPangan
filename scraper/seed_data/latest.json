@@ -957,5 +957,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Zulkifli Hasan Pastikan Stok Pangan Nasional Aman",
+    "url": "https://mediaindonesia.com/jabar/berita/914480/zulkifli-hasan-pastikan-stok-pangan-nasional-aman",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-24T05:58:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nMENTERI Koordinator Bidang PanganZulkifli Hasanmemastikan ketersediaan pangan nasional dalam kondisiamanmenghadapi musim kemarau saat ini.\nIa meminta masyarakat tidak perlu khawatir terhadap ancaman krisis pangan meski saat ini sebagian besar wilayah di Tanah Air tidak diguyur hujan.\nHal ini disampaikan Zulkifli usai menghadiri deklarasi aksi Pilah Sampah Bersama dari Rumah di Bandung, Jumat (24/7). Kegiatan ini dihadiri juga Gubernur Jawa Barat Dedi Mulyadi, Wali Kota Bandung Muhammad Farhan, dan Kapolda Jawa Barat Irjen Pipit Rismanto.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
