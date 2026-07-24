@@ -15,25 +15,10 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://www.liputan6.com/news/read/8247169/kopdes-disiapkan-jadi-penyalur-bantuan-dan-pembeli-gabah",
-    "judul": "Kopdes Disiapkan Jadi Penyalur Bantuan dan Pembeli Gabah",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-07-15T08:41:38+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai penyalur barang subsidi dan off-taker gabah sesuai harga yang ditetapkan pemerintah.",
-    "llm_certainty": 0.85,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.antaranews.com/berita/5652668/pemkab-ciamis-dorong-pengembangan-padi-organik",
-    "judul": "Pemkab Ciamis dorong pengembangan padi organik",
+    "url": "https://www.antaranews.com/berita/5655475/khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
+    "judul": "Khofifah: Kolaborasi jadikan Jatim produsen gula-lumbung padi nasional",
     "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-16T05:30:21+00:00",
+    "tanggal_terbit": "2026-07-18T05:27:38+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
