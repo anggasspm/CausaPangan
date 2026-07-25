@@ -1,0 +1,28 @@
+[
+  {
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp46.200/kg dan telur ayam Rp28.200/kg",
+    "url": "https://jatim.antaranews.com/berita/1084461/harga-pangan-jumat-ini-cabai-rawit-rp46200-kg-dan-telur-ayam-rp28200-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-23T20:44:12Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp46.200 per kilogram (kg), sedangkan telur ayam ras Rp28.200 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Jumat pukul 10.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp42.500 per kg, bawang putih Rp42.000 per kg.Selain itu, beras kualitas bawah I di harga Rp14.700 per kg, beras kualitas bawah II Rp14.450 per kg. Sedangkan beras kualitas medium I Rp15.900 per kg, dan beras kualitas medium II di harga Rp15.600 per kg.\nLalu, beras kualitas super I di harga Rp17.000 per kg, dan beras kualitas super II Rp16.450 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp44.250 per kg, cabai merah keriting Rp40.400 per kg, dan cabai rawit hijau Rp47.300 per kg.\nKemudian, daging ayam ras segar Rp35.900 per kg, daging sapi kualitas I Rp148.750 per kg, daging sapi kualitas II di harga Rp141.750 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.050 per kg, gula pasir lokal Rp18.900 per kg.\nSementara itu, minyak goreng curah di harga Rp20.150 per liter, minyak goreng kemasan bermerek I di harga Rp23.900 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.700 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Akad Massal di Batang Perluas Jangkauan KPR Subsidi ke Perdesaan",
+    "url": "https://mediaindonesia.com/ekonomi/914531/akad-massal-di-batang-perluas-jangkauan-kpr-subsidi-ke-perdesaan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-24T07:51:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nPEMILIHAN KabupatenBatang, Jawa Tengah, sebagai lokasiakad massal62.000 KPR rumah subsidi menunjukkan perluasan jangkauan pembiayaan perumahan bagi masyarakat hingga wilayah perdesaan.\nKomisioner Badan Pengelola Tabungan Perumahan Rakyat (BP Tapera) Heru Pudyo Nugroho mengatakan kawasan perumahan yang menjadi pusat kegiatan akad massal berada di wilayah perdesaan dengan lokasi yang strategis.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  }
+]
