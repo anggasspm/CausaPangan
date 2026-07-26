@@ -1088,8 +1088,8 @@
       "beras"
     ],
     "wilayah_terdeteksi": [
-      "3274",
-      "3209"
+      "3209",
+      "3274"
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
@@ -1130,6 +1130,34 @@
       "bawang_merah"
     ],
     "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Menambah masa tanam untuk dongkrak produksi padi di perbatasan",
+    "url": "https://www.antaranews.com/berita/5666715/menambah-masa-tanam-untuk-dongkrak-produksi-padi-di-perbatasan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-26T04:07:01Z",
+    "isi_teks": "Natuna (ANTARA) - Hamparan laut biru menjadi pemandangan yang lebih dominan daripada daratan di Kabupaten Natuna, Provinsi Kepulauan Riau, sebab sekitar 98 persen wilayah itu berupa perairan.\nDaratan yang terbatas dan jumlah petani yang sedikit membuat ruang untuk mengembangkan sektor pertanian tidak seluas daerah lain. Namun, keterbatasan itu tidak dijadikan alasan oleh pemerintah daerah untuk menyerah.\nPemerintah Kabupaten Natuna terus berupaya mewujudkan program swasembada pangan nasional, khusus beras.\nBersama petani yang tetap bertahan mengolah sawah, pemerintah daerah berusaha mencari cara agar setiap jengkal tanah yang tersedia dapat memberikan hasil maksimal.\nSalah satu upaya yang dilakukan ialah dengan mendorong petani mengoptimalkan lahan yang sama secara berulang melalui peningkatan indeks pertanaman atau meningkatkan masa tanam.\nPetani diarahkan menanam padi hingga dua bahkan tiga kali dalam setahun pada lahan yang sama, sehingga produksi gabah kering dapat meningkat meski luas lahan pertanian di Natuna terbatas.\nStrategi tersebut dinilai memungkinkan karena padi merupakan tanaman pangan yang memiliki masa tanam relatif singkat, yakni sekitar tiga bulan hingga siap dipanen. Setelah dipanen, bulir padi atau gabah akan melalui proses pengeringan dan penggilingan untuk memisahkan kulitnya hingga menjadi beras yang siap dikonsumsi.\nDengan siklus tanam yang cepat, petani memiliki peluang untuk meningkatkan frekuensi panen dalam satu tahun, sehingga produktivitas lahan dapat dimaksimalkan tanpa harus membuka lahan pertanian baru.\nUpaya tersebut tidak berhenti pada ajakan semata. Pemerintah daerah berusaha mengurangi beban biaya produksi petani sekaligus menjaga agar tidak terjadi gagal panen. Berbagai dukungan diberikan, mulai dari alat dan mesin pertanian (alsintan) hingga sarana produksi pertanian (saprodi).\nMelalui bantuan alsintan, Pemkab Natuna menghadirkan dukungan berupa Sistem Jaringan Irigasi Air Tanah (JIAT) dan Sistem Irigasi Perpompaan (Irpom). Infrastruktur tersebut menjadi penting bagi petani, terutama untuk memastikan tanaman padi tetap mendapatkan pasokan air saat menghadapi musim kemarau.\nSementara itu, bantuan saprodi diberikan dalam bentuk benih padi, pupuk gratis, hingga pupuk bersubsidi. Bantuan itu bersumber dari APBN dan APBD sebagai stimulus untuk kebutuhan produksi.\nPada semester I 2026, pupuk subsidi kembali diberikan kepada 733 petani yang tergabung dalam kelompok tani aktif. Total pupuk yang disalurkan mencapai 188,53 ton, terdiri atas pupuk NPK, urea, dan organik.\nIrpom juga sedang dalam proses pengerjaan sebanyak lima unit. Tiga di antaranya dibangun di Pulau Serasan, salah satu pulau terdepan Indonesia.\nEditor: Sapto Heru Purnomojoyo",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Kebakaran Ruko di Pasar Modern BSB Semarang, Diduga akibat Kebocoran Gas",
+    "url": "https://mediaindonesia.com/nusantara/914949/kebakaran-ruko-di-pasar-modern-bsb-semarang-diduga-akibat-kebocoran-gas",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-26T03:02:00Z",
+    "isi_teks": "Gangguan kesehatan mental pada anak sering luput dari perhatian.\nKEBAKARANmelanda sebuah ruko di kawasanPasar Modern BSB, Jalan Jatibarang, Kecamatan Mijen, Kota Semarang, Jawa Tengah, pada Minggu (26/7) siang. Puluhan petugas pemadam kebakaran beserta sejumlah armada dan satu unit tangki PDAM Semarang dikerahkan ke lokasi untuk memadamkan api.\nBerdasarkan pemantauan di lokasi sekitar pukul 11.30 WIB, ratusan pengunjung di kawasan Pasar Modern BSB tiba-tiba berhamburan keluar dari kompleks pertokoan. Tak lama berselang, kepulan asap hitam terlihat membumbung tinggi dari salah satu ruko, diiringi teriakan histeris para pengunjung dan pedagang.\nCuaca panas yang menyengat di Kota Semarang menambah keriuhan suasana. Tak lama kemudian, empat mobil pemadam kebakaran tiba di lokasi dan petugas langsung melakukan proses pemadaman untuk melokalisasi api yang terus berkobar.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3374"
+    ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
   }
