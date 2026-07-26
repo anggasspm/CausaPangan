@@ -13,5 +13,20 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5657765/bulog-kanwil-yogyakarta-serap-gabah-berbagai-kualitas-dari-petani",
+    "judul": "Bulog Kanwil Yogyakarta serap gabah berbagai kualitas dari petani",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-20T07:14:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
