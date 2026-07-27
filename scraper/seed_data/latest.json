@@ -1088,8 +1088,8 @@
       "beras"
     ],
     "wilayah_terdeteksi": [
-      "3209",
-      "3274"
+      "3274",
+      "3209"
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
@@ -1158,6 +1158,20 @@
     "wilayah_terdeteksi": [
       "3374"
     ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "BGN Larang Dapur Makan Bergizi Gratis Gunakan Gas Melon, Beras SPHP, dan MinyaKita",
+    "url": "https://mediaindonesia.com/humaniora/915166/bgn-larang-dapur-makan-bergizi-gratis-gunakan-gas-melon-beras-sphp-dan-minyakita",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-27T02:25:00Z",
+    "isi_teks": "Penguatan patroli bagian dari upaya menjaga keamanan.\nKEPALABadan Gizi Nasional(BGN)Sudaryonomenegaskan bahwa dapur Satuan Pelayanan Pemenuhan Gizi (SPPG)",
+    "komoditas_terdeteksi": [
+      "beras",
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
   }
