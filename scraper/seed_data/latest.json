@@ -1174,5 +1174,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bersahabat dengan El Nino, Petani Pidie Aceh Panen Bawang Merah",
+    "url": "https://mediaindonesia.com/nusantara/915281/bersahabat-dengan-el-nino-petani-pidie-aceh-panen-bawang-merah",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-27T06:54:00Z",
+    "isi_teks": "Penguatan patroli bagian dari upaya menjaga keamanan.\nFENOMENA alamEl Ninotidak selamanya membawa dampak buruk bagi sektor pertanian. Di Kabupaten Pidie, ProvinsiAceh, para petani membuktikan bahwa dengan strategi yang tepat, cuaca panas ekstrem justru bisa menjadi peluang keuntungan.\nAlih-alih memaksakan diri menanam padi di tengah krisis air, para petani di beberapa kecamatan memilih untuk bersahabat dengan alam. Mereka mengalihkan komoditas tanam dari padi kebawang merahyang lebih tahan terhadap kondisi kering.\nBerdasarkan amatan di lapangan, aktivitas panen raya bawang merah terlihat ramai di Kecamatan Simpang Tiga, Kecamatan Peukan Baro, dan Kecamatan Pidie. Langkah ini diambil sebagai solusi cerdas menghadapi musim tanam gadu (musim tanam kedua) yang biasanya terkendala pasokan air irigasi.",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
