@@ -1481,5 +1481,61 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "PIHPS: Harga cabai rawit Rp54.350/kg, telur ayam Rp29.600/kg",
+    "url": "https://www.antaranews.com/berita/5670349/pihps-harga-cabai-rawit-rp54350-kg-telur-ayam-rp29600-kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-28T19:00:19Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp54.350 per kilogram (kg), sedangkan telur ayam ras Rp29.600 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 08.11 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp40.800 per kg, bawang putih Rp42.250 per kg.\nSelain itu, beras kualitas bawah I di harga Rp14.800 per kg, beras kualitas bawah II Rp14.550 per kg. Sedangkan, beras kualitas medium I Rp16.400 per kg, dan beras kualitas medium II di harga Rp16.200 per kg.\nLalu, beras kualitas super I di harga Rp17.700 per kg, dan beras kualitas super II Rp17.150 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.100 per kg, cabai merah keriting Rp48.150 per kg, dan cabai rawit hijau Rp51.950 per kg.\nKemudian, daging ayam ras segar Rp39.650 per kg, daging sapi kualitas I Rp151.100 per kg, dan daging sapi kualitas II di harga Rp142.100 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, dan gula pasir lokal Rp19.100 per kg.\nSementara itu, minyak goreng curah di harga Rp20.500 per liter, minyak goreng kemasan bermerek I di harga Rp24.300 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.450 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Stok beserta harga beras di Pasar Induk Garut tercatat stabil pada kemarau ini",
+    "url": "https://jabar.antaranews.com/berita/700601/stok-beserta-harga-beras-di-pasar-induk-garut-tercatat-stabil-pada-kemarau-ini",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T18:21:42Z",
+    "isi_teks": "Garut (ANTARA) - Stok dan harga beras di Pasar Induk Guntur, Kabupaten Garut, Jawa Barat, dalam kondisi stabil di musim kemarau dengan harga jual sebesar Rp15 ribu per kilogram, di mana harga yang stabil menandakan pasokan beras normal dan stok cukup untuk memenuhi kebutuhan pasar.\n\"Hasil pemantauan di lapangan untuk beras ini tersedia aman, dengan harga stabil di angka Rp15 ribu per kilogram untuk beras bagus,\" kata Kepala Sub Bagian Tata Usaha Unit Pelaksana Teknis Pasar Guntur pada Dinas Perindustrian, Perdagangan, dan Energi Sumber Daya Mineral (Disperindag ESDM) Kabupaten Garut Yusep Suryaman saat meninjau ketersediaan pangan pokok di Pasar Guntur, Garut, Selasa.\nIa mengatakan hasil pengecekan di pasar tidak ditemukan adanya kelangkaan atau keterlambatan pasokan beras dari distributor ke pedagang di Pasar Guntur selama musim kemarau.\nPasokan beras ke pedagang, kata dia, berdasarkan keterangan dari sejumlah pedagang masih tergolong normal dengan angka penjualan setiap harinya untuk setiap toko rata-rata sekitar 1 ton.\n\"Kami melihatnya sampai saat ini dalam kondisi normal. Biasanya kalau pasokan turun mempengaruhi harga jual, sekarang harga jual stabil, artinya stok aman,\" katanya.\nIa menyampaikan, beras yang dijual di Pasar Induk Guntur dipasok dari wilayah Garut dengan kualitas terbaik. Ada juga dipasok dari daerah lain di sejumlah daerah di Jawa Barat seperti Tasikmalaya, Kota Banjar, bahkan ada dari Indramayu.\n\"Beras yang dijual di Garut didatangkan dari berbagai daerah, tidak hanya Garut, tapi ada juga dari daerah lain, seperti dari Indramayu juga ada,\" katanya.\nSalah seorang pedagang beras, Eneng mengatakan beras yang dijualnya dipasok dari petani di berbagai daerah Kabupaten Garut, ada juga dipasok dari daerah Kabupaten Subang.\nSaat musim kemarau, menurut dia, biasanya pasokan beras menjadi turun karena gagal panen, kemudian harga menjadi naik. Namun untuk saat ini kondisinya masih stabil meski ada kenaikan dari sebelumnya Rp14.500, kemudian saat kemarau menjadi Rp15.000 per kilogram.\nTerkait permintaan pasar, kata dia, selama musim kemarau ini masih bisa terpenuhi dengan angka penjualan setiap harinya rata-rata sebanyak 1 ton beras.\n\"Untuk penjualan sehari bisa sampai 1 ton,\" katanya.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "32"
+    ],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Petani Garut tetap tanam padi manfaatkan irigasi di tengah kemarau",
+    "url": "https://jabar.antaranews.com/berita/700599/petani-garut-tetap-tanam-padi-manfaatkan-irigasi-di-tengah-kemarau",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T18:16:34Z",
+    "isi_teks": "Garut (ANTARA) - Sejumlah petani di Desa/Kecamatan Samarang, Kabupaten Garut, Jawa Barat, tetap antusias menanam padi saat musim kemarau dengan memanfaatkan sumber pengairan irigasi yang masih terdapat cukup air untuk kebutuhan lahan sawah selama awal tanam.\n\"Daerah sini Alhamdulillah tidak terpengaruh kemarau, airnya tersedia lumayan besar untuk mengairi sawah,\" kata seorang petani, Asep (75) di area persawahan Kampung Lengkong Kaler, Samarang, Garut, Selasa.\nIa mengatakan area pertanian di daerah Desa Samarang merupakan lahan produktif yang selalu bertahan menanam padi, meski saat ini sedang musim kemarau.\nSelama musim kemarau, kata dia, petani memanfaatkan sumber air yang cukup melimpah dari Sungai Cikamiri yang mengalir lancar ke daerah pertanian salah satunya ke Kampung Lengkong Kaler.\n\"Sumber airnya dari Sungai Cikamiri lumayan besar sehingga bisa sampai ke sini,\" katanya.\nSelain Asep, petani lainnya Idang (55) di desa tersebut menambahkan, area persawahan yang selama ini digarapnya cukup terpenuhi kebutuhan airnya yang menggantungkan dari aliran air irigasi pertanian.\nMeski kondisi aliran irigasi pertanian di kampungnya sudah rusak, kata dia, pihaknya masih bisa mengandalkan untuk memenuhi kebutuhan air sawahnya.\n\"Saya berharap ada perbaikan jalur air agar bisa lebih maksimal mengairi sawahnya. Pengajuan sudah tapi sampai saat ini belum dibangun,\" katanya.\nIa menambahkan, lahan sawah di daerah tersebut produksinya cukup bagus dalam 1 hektare bisa sampai 10 ton gabah.\nNamun di tengah produksi gabah yang cukup baik itu, kata dia, seringkali mendapatkan gangguan hama tikus yang merusak tanaman padi terutama menjelang panen yang akhirnya menurunkan produktivitas.\n\"Persoalan di daerah kami ini soal hama tikus, sangat merusak, dampaknya ke hasil panen menurun,\" katanya.\nKepala Dinas Pertanian Kabupaten Garut Ardhy Firdian membenarkan banyak petani yang tetap bertahan memilih menanam padi meski di tengah musim kemarau.\nDaerah itu, menurut dia, biasanya bukan kawasan lahan tadah hujan, dan sumber airnya bagus, kemudian jaringan irigasinya beroperasi normal sehingga bisa membagi air dengan baik.\n\"Kami juga mengimbau petani untuk terlebih dahulu melihat kondisi air sebelum menanam padi, kalau dipastikan yakin cukup airnya, boleh saja menanam padi,\" katanya.\nIa menyebutkan, Dinas Pertanian Garut menargetkan tanaman padi tahun 2026 seluas 112.314 hektare kemudian target luas panen sekitar 106.718 hektare dengan target produksi 631.490 ton atau sekitar 6 ton gabah kering giling per hektare sawah.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "32"
+    ],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp54.350/kg dan telur ayam Rp29.600/kg",
+    "url": "https://jatim.antaranews.com/berita/1085777/harga-pangan-rabu-ini-cabai-rawit-rp54350-kg-dan-telur-ayam-rp29600-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-28T19:05:12Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp54.350 per kilogram (kg), sedangkan telur ayam ras Rp29.600 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 08.11 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp40.800 per kg, bawang putih Rp42.250 per kg.Selain itu, beras kualitas bawah I di harga Rp14.800 per kg, beras kualitas bawah II Rp14.550 per kg. Sedangkan, beras kualitas medium I Rp16.400 per kg, dan beras kualitas medium II di harga Rp16.200 per kg.\nLalu, beras kualitas super I di harga Rp17.700 per kg, dan beras kualitas super II Rp17.150 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.100 per kg, cabai merah keriting Rp48.150 per kg, dan cabai rawit hijau Rp51.950 per kg.\nKemudian, daging ayam ras segar Rp39.650 per kg, daging sapi kualitas I Rp151.100 per kg, dan daging sapi kualitas II di harga Rp142.100 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, dan gula pasir lokal Rp19.100 per kg.\nSementara itu, minyak goreng curah di harga Rp20.500 per liter, minyak goreng kemasan bermerek I di harga Rp24.300 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.450 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
