@@ -13,5 +13,50 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5655745/pihps-harga-telur-ayam-rp29300-kg-bawang-merah-rp43800-kg",
+    "judul": "PIHPS: Harga telur ayam Rp29.300/kg, bawang merah Rp43.800/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-18T18:05:10+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083076/harga-telur-ayam-rp29300-kg-bawang-merah-rp43800-kg",
+    "judul": "Harga telur ayam Rp29.300/kg, bawang merah Rp43.800/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-18T19:23:11+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/912469/perokok-dewasa-mulai-beralih-ke-produk-tembakau-alternatif",
+    "judul": "Perokok Dewasa Mulai Beralih ke Produk Tembakau Alternatif",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-19T10:03:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
