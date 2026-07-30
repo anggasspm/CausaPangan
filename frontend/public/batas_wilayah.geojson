@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.386, -5.922],
+            [108.815, -6.744],
+            [108.625, -7.771],
+            [106.386, -7.424],
+            [106.386, -5.922]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "provinsi": "Jawa Tengah"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [108.815, -6.744],
+            [111.491, -6.446],
+            [110.871, -8.187],
+            [108.625, -7.771],
+            [108.815, -6.744]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [111.491, -6.446],
+            [114.510, -7.608],
+            [114.281, -8.775],
+            [110.871, -8.187],
+            [111.491, -6.446]
+          ]
+        ]
+      }
+    }
+  ]
+}

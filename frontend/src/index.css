@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 10; 
+}
+
+/* Memulihkan gaya gambar dan div agar ubin peta (tiles) tidak tertutup atau rusak */
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  transition: none;
+}
+
+.leaflet-tile {
+  visibility: inherit !important;
+}
+
+/* Memastikan kontainer div khusus buatan kita untuk marker tidak berbenturan dengan bawaan Leaflet */
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
