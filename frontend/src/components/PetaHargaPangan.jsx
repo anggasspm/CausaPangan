@@ -1,19 +1,30 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import {
   MapPin,
   TrendingUp,
   TrendingDown,
   Minus,
   Newspaper,
-  Info,
+  Activity,
+  AlertTriangle,
+  CheckCircle2,
+  Package,
+  ChevronRight,
+  Lightbulb,
   ArrowUpRight,
-  X,
+  X
 } from "lucide-react";
 
-/* ------------------------------------------------------------------ */
-/* Data acuan — sesuai API_CONTRACT.md (kota x komoditas x tanggal)     */
-/* Data di bawah adalah data tiruan untuk keperluan purwarupa tampilan. */
-/* ------------------------------------------------------------------ */
+import { MapContainer, TileLayer, Marker, ZoomControl, GeoJSON } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+});
 
 const KOMODITAS = [
   { kode: "beras", label: "Beras" },
@@ -33,83 +44,40 @@ const PENYEBAB_LABEL = {
   faktor_global: "Faktor Harga Global",
 };
 
+// Data lokasi telah dikonversi dari x, y menjadi koordinat asli (lat, lng)
 const CITIES = [
-  { kode: "3273", nama: "Kota Bandung", provinsi: "Jawa Barat", x: 17, y: 56 },
-  { kode: "3209", nama: "Kab. Cirebon", provinsi: "Jawa Barat", x: 30, y: 34 },
-  { kode: "3206", nama: "Kab. Tasikmalaya", provinsi: "Jawa Barat", x: 22, y: 68 },
-  { kode: "3275", nama: "Kota Bekasi", provinsi: "Jawa Barat", x: 9, y: 28 },
-  { kode: "3374", nama: "Kota Semarang", provinsi: "Jawa Tengah", x: 46, y: 24 },
-  { kode: "3301", nama: "Kab. Cilacap", provinsi: "Jawa Tengah", x: 37, y: 71 },
-  { kode: "3302", nama: "Kab. Banyumas", provinsi: "Jawa Tengah", x: 33, y: 62 },
-  { kode: "3372", nama: "Kota Surakarta (Solo)", provinsi: "Jawa Tengah", x: 52, y: 55 },
-  { kode: "3310", nama: "Kab. Klaten", provinsi: "Jawa Tengah", x: 49, y: 49 },
-  { kode: "3578", nama: "Kota Surabaya", provinsi: "Jawa Timur", x: 78, y: 29 },
-  { kode: "3510", nama: "Kab. Banyuwangi", provinsi: "Jawa Timur", x: 96, y: 61 },
-  { kode: "3509", nama: "Kab. Jember", provinsi: "Jawa Timur", x: 86, y: 63 },
-  { kode: "3573", nama: "Kota Malang", provinsi: "Jawa Timur", x: 74, y: 55 },
+  { kode: "3273", nama: "Kota Bandung", provinsi: "Jawa Barat", lat: -6.9175, lng: 107.6191 },
+  { kode: "3209", nama: "Kab. Cirebon", provinsi: "Jawa Barat", lat: -6.7320, lng: 108.5523 },
+  { kode: "3206", nama: "Kab. Tasikmalaya", provinsi: "Jawa Barat", lat: -7.3195, lng: 108.2040 },
+  { kode: "3275", nama: "Kota Bekasi", provinsi: "Jawa Barat", lat: -6.2383, lng: 106.9756 },
+  { kode: "3374", nama: "Kota Semarang", provinsi: "Jawa Tengah", lat: -6.9666, lng: 110.4166 },
+  { kode: "3301", nama: "Kab. Cilacap", provinsi: "Jawa Tengah", lat: -7.7300, lng: 109.0160 },
+  { kode: "3302", nama: "Kab. Banyumas", provinsi: "Jawa Tengah", lat: -7.5145, lng: 109.2965 },
+  { kode: "3372", nama: "Kota Surakarta (Solo)", provinsi: "Jawa Tengah", lat: -7.5666, lng: 110.8283 },
+  { kode: "3310", nama: "Kab. Klaten", provinsi: "Jawa Tengah", lat: -7.7056, lng: 110.6014 },
+  { kode: "3578", nama: "Kota Surabaya", provinsi: "Jawa Timur", lat: -7.2504, lng: 112.7688 },
+  { kode: "3510", nama: "Kab. Banyuwangi", provinsi: "Jawa Timur", lat: -8.2192, lng: 114.3692 },
+  { kode: "3509", nama: "Kab. Jember", provinsi: "Jawa Timur", lat: -8.1725, lng: 113.7000 },
+  { kode: "3573", nama: "Kota Malang", provinsi: "Jawa Timur", lat: -7.9797, lng: 112.6304 },
 ];
 
-// Beberapa kombinasi kota x komoditas dikurasi manual untuk menunjukkan
-// variasi kondisi nyata; sisanya dibangkitkan deterministik agar tampilan
-// tetap konsisten setiap kali dimuat ulang.
 const KURASI = {
   "3301|cabai_rawit_merah": {
     persentase_perubahan: 15.4, arah: "naik", confidence: 0.82, tier_data: "solid",
-    penyebab: "cuaca_gagal_panen",
-    penyebab_detail: "Curah hujan tinggi di sentra produksi menyebabkan gagal panen parsial pada tanaman cabai.",
+    penyebab: "cuaca_gagal_panen", penyebab_detail: "Curah hujan tinggi di sentra produksi menyebabkan gagal panen parsial pada tanaman cabai.",
     rekomendasi: { target: "distributor", aksi: "Cari alternatif pasokan dari sentra produksi di luar wilayah terdampak sebelum harga naik lebih lanjut.", urgensi: "tinggi" },
     sumber_berita: [{ judul: "Hujan penyebab utama gagal panen cabai di sentra produksi", tanggal_terbit: "2026-07-10" }],
   },
   "3573|bawang_merah": {
     persentase_perubahan: -6.2, arah: "turun", confidence: 0.35, tier_data: "estimasi",
-    penyebab: "lonjakan_permintaan_musiman",
-    penyebab_detail: "Indikasi awal penurunan permintaan pasca periode konsumsi tinggi, namun sinyal masih lemah.",
+    penyebab: "lonjakan_permintaan_musiman", penyebab_detail: "Indikasi awal penurunan permintaan pasca periode konsumsi tinggi, namun sinyal masih lemah.",
     rekomendasi: null,
     sumber_berita: [{ judul: "Harga bawang merah mulai melandai di sejumlah pasar", tanggal_terbit: "2026-07-08" }],
   },
-  "3509|cabai_merah_keriting": {
-    persentase_perubahan: 12.1, arah: "naik", confidence: 0.74, tier_data: "solid",
-    penyebab: "gangguan_distribusi",
-    penyebab_detail: "Masa transisi sentra panen antar wilayah menyebabkan celah pasokan sementara ke pasar besar.",
-    rekomendasi: { target: "distributor", aksi: "Percepat re-routing pasokan dari wilayah yang sedang panen untuk menutup celah distribusi.", urgensi: "tinggi" },
-    sumber_berita: [{ judul: "Transisi sentra panen pengaruhi pasokan cabai antar wilayah", tanggal_terbit: "2026-07-06" }],
-  },
-  "3310|minyak_goreng": {
-    persentase_perubahan: 4.8, arah: "naik", confidence: 0.6, tier_data: "solid",
-    penyebab: "faktor_global",
-    penyebab_detail: "Fluktuasi harga CPO dunia turut memengaruhi harga minyak goreng kemasan curah.",
-    rekomendasi: { target: "pedagang", aksi: "Pertimbangkan diversifikasi pemasok untuk menjaga margin di tengah fluktuasi harga bahan baku impor.", urgensi: "sedang" },
-    sumber_berita: [{ judul: "Harga CPO dunia bergerak naik, minyak goreng ikut terdampak", tanggal_terbit: "2026-07-05" }],
-  },
   "3209|beras": {
     persentase_perubahan: 0.6, arah: "stabil", confidence: 0.7, tier_data: "solid",
-    penyebab: null, penyebab_detail: null, rekomendasi: null,
-    sumber_berita: [],
-  },
-  "3275|cabai_rawit_merah": {
-    persentase_perubahan: 8.3, arah: "naik", confidence: 0.55, tier_data: "solid",
-    penyebab: "lonjakan_permintaan_musiman",
-    penyebab_detail: "Permintaan meningkat menjelang periode hari besar, sementara pasokan relatif tetap.",
-    rekomendasi: { target: "pedagang", aksi: "Tambah stok bertahap menjelang periode permintaan tinggi untuk hindari kehabisan pasokan.", urgensi: "sedang" },
-    sumber_berita: [{ judul: "Permintaan cabai meningkat jelang hari besar", tanggal_terbit: "2026-07-09" }],
-  },
-  "3372|beras": {
-    persentase_perubahan: 3.2, arah: "naik", confidence: 0.71, tier_data: "solid",
-    penyebab: "kebijakan_pemerintah",
-    penyebab_detail: "Penyesuaian skema distribusi beras SPHP berdampak pada harga eceran sementara.",
-    rekomendasi: { target: "distributor", aksi: "Koordinasikan jadwal penyaluran dengan program SPHP setempat untuk stabilkan harga.", urgensi: "sedang" },
-    sumber_berita: [{ judul: "Penyesuaian skema SPHP pengaruhi harga beras eceran", tanggal_terbit: "2026-07-07" }],
-  },
-  "3302|cabai_rawit_merah": {
-    persentase_perubahan: 17.9, arah: "naik", confidence: 0.88, tier_data: "solid",
-    penyebab: "cuaca_gagal_panen",
-    penyebab_detail: "Tingkat kegagalan panen akibat hujan dan angin dilaporkan tinggi di wilayah ini pada periode berjalan.",
-    rekomendasi: { target: "distributor", aksi: "Prioritaskan alokasi pasokan cadangan ke wilayah ini mengingat tingkat dampak yang tinggi.", urgensi: "tinggi" },
-    sumber_berita: [
-      { judul: "Petani laporkan kegagalan panen signifikan akibat cuaca", tanggal_terbit: "2026-07-11" },
-      { judul: "Harga cabai di sejumlah pasar tradisional melonjak", tanggal_terbit: "2026-07-12" },
-    ],
-  },
+    penyebab: null, penyebab_detail: null, rekomendasi: null, sumber_berita: [],
+  }
 };
 
 function seededRandom(seed) {
@@ -139,54 +107,65 @@ function generateRecord(kodeWilayah, kodeKomoditas) {
   const rekomendasiAda = penyebab && confidence >= 0.5;
 
   return {
-    persentase_perubahan: persen,
-    arah,
-    confidence,
-    tier_data: tier,
-    penyebab,
-    penyebab_detail: penyebab
-      ? "Sinyal dari pemberitaan mengindikasikan kategori penyebab ini sebagai faktor dominan pada periode berjalan."
-      : null,
-    rekomendasi: rekomendasiAda
-      ? {
-          target: rnd() > 0.5 ? "distributor" : "pedagang",
-          aksi: rnd() > 0.5
-            ? "Pantau perkembangan pasokan pada pekan berjalan dan siapkan alternatif sumber bila tren berlanjut."
-            : "Sesuaikan stok secara bertahap mengikuti tren harga pada pekan berjalan.",
-          urgensi: Math.abs(persen) > 10 ? "tinggi" : "sedang",
-        }
-      : null,
-    sumber_berita: adaSinyal
-      ? [{ judul: "Pemberitaan terkait pergerakan harga di wilayah ini", tanggal_terbit: "2026-07-0" + (1 + Math.floor(rnd() * 9)) }]
-      : [],
+    persentase_perubahan: persen, arah, confidence, tier_data: tier, penyebab,
+    penyebab_detail: penyebab ? "Sinyal dari pemberitaan mengindikasikan kategori penyebab ini sebagai faktor dominan pada periode berjalan." : null,
+    rekomendasi: rekomendasiAda ? {
+      target: rnd() > 0.5 ? "distributor" : "pedagang",
+      aksi: rnd() > 0.5 ? "Pantau perkembangan pasokan pada pekan berjalan dan siapkan alternatif sumber bila tren berlanjut." : "Sesuaikan stok secara bertahap mengikuti tren harga pada pekan berjalan.",
+      urgensi: Math.abs(persen) > 10 ? "tinggi" : "sedang",
+    } : null,
+    sumber_berita: adaSinyal ? [{ judul: "Pemberitaan terkait pergerakan harga di wilayah ini", tanggal_terbit: "2026-07-0" + (1 + Math.floor(rnd() * 9)) }] : [],
   };
 }
 
-/* ------------------------------------------------------------------ */
-/* Util tampilan                                                       */
-/* ------------------------------------------------------------------ */
-
-function colorForPersen(p) {
-  if (p >= 10) return { fill: "#B84B28", ring: "rgba(184,75,40,0.28)" };      // naik tinggi — rust
-  if (p >= 3) return { fill: "#C99A3A", ring: "rgba(201,154,58,0.28)" };      // naik ringan — amber
-  if (p <= -3) return { fill: "#4B6B4F", ring: "rgba(75,107,79,0.28)" };      // turun — moss
-  return { fill: "#8C7F63", ring: "rgba(140,127,99,0.28)" };                  // stabil — rope
+function colorInfo(p) {
+  if (p >= 10) return { bg: "bg-red-600", text: "text-red-600", ring: "ring-red-200", light: "bg-red-50", icon: TrendingUp };
+  if (p >= 3) return { bg: "bg-orange-500", text: "text-orange-600", ring: "ring-orange-200", light: "bg-orange-50", icon: TrendingUp };
+  if (p <= -3) return { bg: "bg-emerald-600", text: "text-emerald-600", ring: "ring-emerald-200", light: "bg-emerald-50", icon: TrendingDown };
+  return { bg: "bg-slate-500", text: "text-slate-600", ring: "ring-slate-200", light: "bg-slate-100", icon: Minus };
 }
 
 function fmtPersen(p) {
-  const s = p > 0 ? "+" : "";
-  return `${s}${p.toFixed(1)}%`;
+  return `${p > 0 ? "+" : ""}${p.toFixed(1)}%`;
 }
 
-const ARROW = { naik: TrendingUp, turun: TrendingDown, stabil: Minus };
+// Komponen pembuat custom HTML icon untuk Leaflet
+function createCustomMarker(rec, isSelected) {
+  const info = colorInfo(rec.persentase_perubahan);
+  const val = fmtPersen(rec.persentase_perubahan).replace("%", "");
+  
+  // Karena Leaflet merender diluar React DOM Tree standar, kita sisipkan string HTML yang akan distyling oleh Tailwind
+  const html = `
+    <div class="flex items-center justify-center font-bold text-xs rounded-full text-white shadow-lg transition-transform duration-200 
+      ${info.bg} ${isSelected ? `ring-4 ${info.ring} scale-125 z-50` : 'hover:scale-110 ring-2 ring-white'}" 
+      style="width: 44px; height: 44px; font-family: 'Inter', sans-serif;">
+      ${val}
+    </div>
+  `;
+
+  return L.divIcon({
+    html: html,
+    className: "", // Kosongkan agar Leaflet tidak memberi latar transparan defaultnya
+    iconSize: [44, 44],
+    iconAnchor: [22, 22],
+  });
+}
 
 /* ------------------------------------------------------------------ */
-/* Komponen utama                                                       */
+/* Komponen Utama                                                     */
 /* ------------------------------------------------------------------ */
 
 export default function PetaHargaPangan() {
   const [komoditas, setKomoditas] = useState(KOMODITAS[1].kode);
   const [selectedKota, setSelectedKota] = useState(null);
+  const [geoData, setGeoData] = useState(null);
+
+  useEffect(() => {
+    fetch("/batas_wilayah.geojson")
+      .then((res) => res.json())
+      .then((data) => setGeoData(data))
+      .catch((err) => console.error("Gagal memuat GeoJSON batas wilayah:", err));
+  }, []);
 
   const data = useMemo(() => {
     const map = {};
@@ -194,67 +173,53 @@ export default function PetaHargaPangan() {
     return map;
   }, [komoditas]);
 
-  const selected = selectedKota
-    ? { ...CITIES.find((c) => c.kode === selectedKota), ...data[selectedKota] }
-    : null;
-
+  const selected = selectedKota ? { ...CITIES.find((c) => c.kode === selectedKota), ...data[selectedKota] } : null;
   const komoditasLabel = KOMODITAS.find((k) => k.kode === komoditas)?.label ?? "";
 
-  return (
-    <div className="min-h-screen w-full font-body" style={{ background: "#EFE7D3", color: "#241B12" }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
-        .font-display { font-family: 'Roboto Slab', serif; }
-        .font-body { font-family: 'Inter', sans-serif; }
-        .font-mono { font-family: 'IBM Plex Mono', monospace; }
-        .paper-texture {
-          background-image: radial-gradient(circle at 1px 1px, rgba(36,27,18,0.06) 1px, transparent 0);
-          background-size: 18px 18px;
-        }
-        .stamp-marker { transition: transform 160ms ease, box-shadow 160ms ease; }
-        .stamp-marker:hover, .stamp-marker:focus-visible { transform: scale(1.14); }
-        .card-perforated {
-          border-top: 2px dashed #A9977A;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .stamp-marker { transition: none; }
-        }
-      `}</style>
+  // Koordinat pusat peta (Tengah-tengah Pulau Jawa)
+  const mapCenter = [-7.4, 110.5];
 
-      {/* Header */}
-      <header className="border-b" style={{ borderColor: "#C9BE9E", background: "#1E3140" }}>
-        <div className="max-w-6xl mx-auto px-5 py-5 flex flex-col gap-1">
-          <div className="flex items-center gap-2">
-            <MapPin size={20} color="#E8DEC1" strokeWidth={2.2} />
-            <h1 className="font-display text-xl md:text-2xl tracking-tight" style={{ color: "#F3ECDA" }}>
-              Pos Pantau Pangan
-            </h1>
+  return (
+    <div className="min-h-screen w-full font-sans bg-slate-50 text-slate-900">
+      {/* HEADER MODERN */}
+      <header className="bg-gradient-to-r from-slate-900 to-indigo-950 shadow-lg text-white">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-white/10 rounded-lg backdrop-blur-sm">
+              <Activity size={28} className="text-blue-400" />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold tracking-tight">Sistem Peringatan Dini Pangan</h1>
+              <p className="text-sm text-slate-300 mt-1 flex items-center gap-1">
+                <MapPin size={14} /> Wilayah Pantauan: Jawa Barat, Jawa Tengah, Jawa Timur
+              </p>
+            </div>
           </div>
-          <p className="text-sm md:text-[15px]" style={{ color: "#C7BFA4" }}>
-            Prediksi dini &amp; rekomendasi aksi harga pangan — Jawa Barat, Jawa Tengah, Jawa Timur
-          </p>
+          <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm backdrop-blur-sm">
+             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+             Model AI Aktif
+          </div>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-5 py-6 md:py-8">
-        {/* Filter komoditas */}
-        <div className="mb-5">
-          <p className="text-xs uppercase tracking-wider mb-2 font-mono" style={{ color: "#7A6E52" }}>
-            Pilih komoditas
+      <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* FILTER KOMODITAS */}
+        <div className="mb-6">
+          <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Package size={16} /> Pilih Komoditas
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3">
             {KOMODITAS.map((k) => {
               const active = k.kode === komoditas;
               return (
                 <button
                   key={k.kode}
                   onClick={() => { setKomoditas(k.kode); setSelectedKota(null); }}
-                  className="px-3.5 py-1.5 rounded-full text-sm font-medium border transition-colors"
-                  style={
+                  className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border ${
                     active
-                      ? { background: "#1E3140", color: "#F3ECDA", borderColor: "#1E3140" }
-                      : { background: "transparent", color: "#3A2F1E", borderColor: "#B9AD8B" }
-                  }
+                      ? "bg-indigo-600 text-white border-indigo-600 shadow-md transform scale-105"
+                      : "bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 shadow-sm"
+                  }`}
                 >
                   {k.label}
                 </button>
@@ -263,188 +228,194 @@ export default function PetaHargaPangan() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-5">
-          {/* Peta */}
-          <section
-            className="rounded-lg border relative overflow-hidden paper-texture"
-            style={{ borderColor: "#C9BE9E", background: "#F4EEDD", minHeight: "480px" }}
-          >
-            {/* Pita provinsi */}
-            <div className="absolute inset-0 flex text-center pointer-events-none">
-              {[
-                ["JAWA BARAT", "rgba(30,49,64,0.05)"],
-                ["JAWA TENGAH", "rgba(30,49,64,0.09)"],
-                ["JAWA TIMUR", "rgba(30,49,64,0.05)"],
-              ].map(([label, bg], i) => (
-                <div key={label} className="flex-1 h-full relative" style={{ background: bg }}>
-                  <span
-                    className="absolute top-3 left-1/2 -translate-x-1/2 text-[11px] font-mono tracking-widest"
-                    style={{ color: "#8C7F63" }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-6">
+          {/* PETA ASLI LEAFLET */}
+          <section className="bg-white rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col h-[600px] lg:h-auto min-h-[600px] z-0">
+            {/* Header Judul Peta - Z-index tinggi agar di atas peta */}
+            <div className="absolute top-0 left-0 right-0 z-[400] p-4 border-b border-slate-100 bg-white/90 backdrop-blur-md">
+              <h2 className="text-sm font-semibold text-slate-700">Peta Prediksi Perubahan Harga (Live)</h2>
             </div>
+            
+            {/* WRAPPER KETAT UNTUK PETA (Memberikan ruang untuk header) */}
+            <div className="w-full h-full relative pt-[53px]">
+              <MapContainer 
+                center={mapCenter} 
+                zoom={7} 
+                zoomControl={false}
+                // Hapus style di sini karena sudah ditangani oleh .leaflet-container di CSS
+              >
+                <TileLayer
+                  url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />
+                
+                <ZoomControl position="bottomright" />
 
-            {/* Markers */}
-            <div className="absolute inset-0">
-              {CITIES.map((c) => {
-                const rec = data[c.kode];
-                const color = colorForPersen(rec.persentase_perubahan);
-                const isSelected = selectedKota === c.kode;
-                return (
-                  <button
-                    key={c.kode}
-                    onClick={() => setSelectedKota(c.kode)}
-                    className="stamp-marker absolute rounded-full flex items-center justify-center font-mono text-[11px] font-medium focus:outline-none"
+                {geoData && (
+                  <GeoJSON 
+                    data={geoData} 
                     style={{
-                      left: `${c.x}%`,
-                      top: `${c.y}%`,
-                      transform: "translate(-50%, -50%)",
-                      width: 46,
-                      height: 46,
-                      background: color.fill,
-                      color: "#FBF6E9",
-                      boxShadow: isSelected
-                        ? `0 0 0 5px ${color.ring}, 0 0 0 2px #241B12`
-                        : `0 0 0 5px ${color.ring}`,
-                    }}
-                    aria-label={`${c.nama}: ${fmtPersen(rec.persentase_perubahan)}`}
-                    title={c.nama}
-                  >
-                    {fmtPersen(rec.persentase_perubahan).replace("%", "")}
-                  </button>
-                );
-              })}
+                      color: "#6366f1",
+                      weight: 2,
+                      opacity: 0.4,
+                      fillColor: "#e0e7ff",
+                      fillOpacity: 0.1,
+                      dashArray: "6, 6"
+                    }} 
+                  />
+                )}
+
+                {/* Render Markers */}
+                {CITIES.map((c) => {
+                  const rec = data[c.kode];
+                  const isSelected = selectedKota === c.kode;
+                  return (
+                    <Marker 
+                      key={c.kode} 
+                      position={[c.lat, c.lng]} 
+                      icon={createCustomMarker(rec, isSelected)}
+                      eventHandlers={{
+                        click: () => setSelectedKota(c.kode)
+                      }}
+                    />
+                  );
+                })}
+              </MapContainer>
             </div>
 
-            {/* Legenda */}
-            <div
-              className="absolute bottom-3 left-3 right-3 md:right-auto rounded-md border px-3 py-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] font-mono"
-              style={{ background: "rgba(244,238,221,0.92)", borderColor: "#C9BE9E", color: "#3A2F1E" }}
-            >
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full inline-block" style={{ background: "#B84B28" }} /> Naik tinggi (≥10%)</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full inline-block" style={{ background: "#C99A3A" }} /> Naik ringan</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full inline-block" style={{ background: "#8C7F63" }} /> Stabil</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full inline-block" style={{ background: "#4B6B4F" }} /> Turun</span>
+            {/* Legenda Mengapung - Z-index tinggi agar di atas peta */}
+            <div className="absolute bottom-4 left-4 z-[400] bg-white/90 backdrop-blur-md rounded-xl border border-slate-200 shadow-sm p-3 flex flex-col md:flex-row flex-wrap gap-4 text-xs font-medium text-slate-600">
+              <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-red-600" /> Naik Tinggi (≥10%)</span>
+              <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-orange-500" /> Naik Ringan</span>
+              <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-slate-500" /> Stabil</span>
+              <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-600" /> Turun</span>
             </div>
           </section>
 
-          {/* Panel detail */}
-          <section
-            className="rounded-lg border p-5 h-fit lg:sticky lg:top-6"
-            style={{ borderColor: "#C9BE9E", background: "#FBF6E9" }}
-          >
+          {/* PANEL DETAIL (UX Baru) */}
+          <section className="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col lg:sticky lg:top-6 h-[500px] lg:h-[700px] overflow-hidden">
             {!selected ? (
-              <div className="flex flex-col items-center text-center gap-2 py-10">
-                <Info size={22} color="#9A8C6B" />
-                <p className="text-sm" style={{ color: "#7A6E52" }}>
-                  Pilih satu titik pada peta untuk melihat detail prediksi {komoditasLabel.toLowerCase()}.
+              <div className="flex flex-col items-center justify-center text-center p-12 h-full">
+                <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mb-4">
+                  <MapPin size={32} className="text-slate-400" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-700">Pilih Titik Lokasi</h3>
+                <p className="text-slate-500 text-sm mt-2 max-w-[250px]">
+                  Klik salah satu titik kota pada peta untuk melihat prediksi dan rekomendasi aksi AI.
                 </p>
               </div>
             ) : (
-              <div className="flex flex-col gap-4">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <p className="text-[11px] font-mono" style={{ color: "#9A8C6B" }}>{selected.kode} · {selected.provinsi}</p>
-                    <h2 className="font-display text-lg leading-snug">{selected.nama}</h2>
-                    <p className="text-sm" style={{ color: "#7A6E52" }}>{komoditasLabel}</p>
+              <div className="flex flex-col h-full divide-y divide-slate-100 overflow-y-auto custom-scrollbar">
+                
+                {/* Header Kartu */}
+                <div className="p-6 pb-5 shrink-0">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-indigo-600 mb-1.5 uppercase tracking-wide">
+                        {selected.provinsi} <ChevronRight size={14} />
+                      </div>
+                      <h2 className="text-2xl font-bold text-slate-900">{selected.nama}</h2>
+                      <p className="text-slate-500 font-medium mt-1">{komoditasLabel}</p>
+                    </div>
+                    <button onClick={() => setSelectedKota(null)} className="p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-500 transition-colors">
+                      <X size={18} />
+                    </button>
                   </div>
-                  <button
-                    onClick={() => setSelectedKota(null)}
-                    className="p-1 rounded-full hover:bg-black/5 focus:outline-none"
-                    aria-label="Tutup detail"
-                  >
-                    <X size={16} color="#7A6E52" />
-                  </button>
+
+                  {/* Highlight Harga */}
+                  <div className={`p-4 rounded-xl flex items-center justify-between ${colorInfo(selected.persentase_perubahan).light} border border-white`}>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase">Prediksi Perubahan</p>
+                      <div className={`flex items-center gap-2 mt-1 ${colorInfo(selected.persentase_perubahan).text}`}>
+                        {React.createElement(colorInfo(selected.persentase_perubahan).icon, { size: 28, strokeWidth: 2.5 })}
+                        <span className="text-3xl font-black">{fmtPersen(selected.persentase_perubahan)}</span>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      {selected.tier_data === "solid" ? (
+                        <div className="flex flex-col items-end">
+                          <span className="flex items-center gap-1 px-2.5 py-1 bg-indigo-100 text-indigo-700 text-[11px] font-bold rounded-md">
+                            <CheckCircle2 size={12} /> DATA SOLID
+                          </span>
+                          <span className="text-xs text-slate-500 mt-1 font-medium">Conf: {Math.round(selected.confidence * 100)}%</span>
+                        </div>
+                      ) : (
+                        <div className="flex flex-col items-end">
+                          <span className="flex items-center gap-1 px-2.5 py-1 bg-amber-100 text-amber-700 text-[11px] font-bold rounded-md border border-amber-200">
+                            <AlertTriangle size={12} /> ESTIMASI
+                          </span>
+                          <span className="text-xs text-slate-500 mt-1 font-medium">Conf: {Math.round(selected.confidence * 100)}%</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
-                {/* Angka utama */}
-                <div className="flex items-end gap-2">
-                  {(() => {
-                    const Arrow = ARROW[selected.arah];
-                    const color = colorForPersen(selected.persentase_perubahan).fill;
-                    return <Arrow size={26} color={color} strokeWidth={2.4} />;
-                  })()}
-                  <span className="font-mono text-3xl font-medium" style={{ color: colorForPersen(selected.persentase_perubahan).fill }}>
-                    {fmtPersen(selected.persentase_perubahan)}
-                  </span>
-                </div>
-
-                {/* Badge confidence */}
-                <div>
-                  {selected.tier_data === "solid" ? (
-                    <span className="inline-block text-[11px] font-mono px-2 py-0.5 rounded-full" style={{ background: "#1E3140", color: "#F3ECDA" }}>
-                      DATA SOLID · confidence {Math.round(selected.confidence * 100)}%
-                    </span>
-                  ) : (
-                    <span className="inline-block text-[11px] font-mono px-2 py-0.5 rounded-full border border-dashed" style={{ borderColor: "#C99A3A", color: "#8C6E1F" }}>
-                      ESTIMASI · confidence {Math.round(selected.confidence * 100)}%
-                    </span>
-                  )}
-                </div>
-
-                <div className="card-perforated pt-4 flex flex-col gap-3">
+                {/* Konten Scrollable Bawah */}
+                <div className="p-6 flex flex-col gap-6 bg-slate-50/50 flex-1">
+                  
                   {/* Penyebab */}
                   <div>
-                    <p className="text-[11px] uppercase tracking-wider font-mono mb-1" style={{ color: "#9A8C6B" }}>Penyebab</p>
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <Activity size={14} /> Analisis Penyebab
+                    </h4>
                     {selected.penyebab ? (
-                      <>
-                        <p className="text-sm font-medium">{PENYEBAB_LABEL[selected.penyebab]}</p>
-                        <p className="text-sm mt-0.5" style={{ color: "#5B5140" }}>{selected.penyebab_detail}</p>
-                      </>
+                      <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <p className="font-semibold text-slate-800">{PENYEBAB_LABEL[selected.penyebab]}</p>
+                        <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">{selected.penyebab_detail}</p>
+                      </div>
                     ) : (
-                      <p className="text-sm" style={{ color: "#9A8C6B" }}>Belum ada sinyal pemberitaan signifikan pada periode berjalan; prediksi murni dari tren historis.</p>
+                      <p className="text-sm text-slate-500 italic bg-slate-100 p-3 rounded-lg">Prediksi murni dari tren historis. Belum ada sinyal pemberitaan signifikan.</p>
                     )}
                   </div>
 
                   {/* Rekomendasi */}
                   <div>
-                    <p className="text-[11px] uppercase tracking-wider font-mono mb-1" style={{ color: "#9A8C6B" }}>Rekomendasi Aksi</p>
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <Lightbulb size={14} /> Rekomendasi Aksi
+                    </h4>
                     {selected.rekomendasi ? (
-                      <div className="rounded-md p-3" style={{ background: "#EFE7D3" }}>
-                        <span
-                          className="inline-block text-[11px] font-mono px-2 py-0.5 rounded-full mb-1.5"
-                          style={{ background: selected.rekomendasi.urgensi === "tinggi" ? "#B84B28" : "#C99A3A", color: "#FBF6E9" }}
-                        >
-                          Untuk {selected.rekomendasi.target} · urgensi {selected.rekomendasi.urgensi}
-                        </span>
-                        <p className="text-sm">{selected.rekomendasi.aksi}</p>
+                      <div className={`p-4 rounded-xl border-l-4 shadow-sm bg-white ${selected.rekomendasi.urgensi === 'tinggi' ? 'border-red-500' : 'border-orange-400'}`}>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${selected.rekomendasi.urgensi === 'tinggi' ? 'bg-red-100 text-red-700' : 'bg-orange-100 text-orange-700'}`}>
+                            Urgensi {selected.rekomendasi.urgensi}
+                          </span>
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded uppercase bg-indigo-100 text-indigo-700">
+                            Untuk {selected.rekomendasi.target}
+                          </span>
+                        </div>
+                        <p className="text-sm text-slate-700 font-medium leading-relaxed">{selected.rekomendasi.aksi}</p>
                       </div>
                     ) : (
-                      <p className="text-sm" style={{ color: "#9A8C6B" }}>
-                        Belum cukup data untuk memberikan rekomendasi yang dapat diandalkan pada titik ini.
-                      </p>
+                      <p className="text-sm text-slate-500 italic bg-slate-100 p-3 rounded-lg">Belum cukup data untuk menyusun rekomendasi aksi.</p>
                     )}
                   </div>
 
-                  {/* Sumber berita */}
+                  {/* Sumber Berita */}
                   {selected.sumber_berita.length > 0 && (
                     <div>
-                      <p className="text-[11px] uppercase tracking-wider font-mono mb-1.5" style={{ color: "#9A8C6B" }}>Sumber Pemberitaan</p>
-                      <ul className="flex flex-col gap-1.5">
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <Newspaper size={14} /> Referensi Berita
+                      </h4>
+                      <div className="flex flex-col gap-2 pb-4">
                         {selected.sumber_berita.map((s, i) => (
-                          <li key={i} className="flex items-start gap-1.5 text-sm">
-                            <Newspaper size={14} className="mt-0.5 shrink-0" color="#7A6E52" />
-                            <span style={{ color: "#3A2F1E" }}>{s.judul}
-                              <span className="font-mono text-xs ml-1.5" style={{ color: "#9A8C6B" }}>· {s.tanggal_terbit}</span>
-                            </span>
-                          </li>
+                          <div key={i} className="flex items-start gap-2 bg-white p-3 rounded-lg border border-slate-100 hover:border-slate-300 transition-colors">
+                            <ArrowUpRight size={14} className="mt-0.5 shrink-0 text-indigo-400" />
+                            <div>
+                              <p className="text-sm text-slate-700 font-medium line-clamp-2 leading-tight">{s.judul}</p>
+                              <p className="text-[11px] text-slate-400 mt-1">{s.tanggal_terbit}</p>
+                            </div>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
+
                 </div>
               </div>
             )}
           </section>
         </div>
-
-        <p className="text-xs mt-5 flex items-center gap-1.5" style={{ color: "#9A8C6B" }}>
-          <ArrowUpRight size={13} />
-          Peta skematik, tidak menggambarkan skala geografis sesungguhnya · Cakupan MVP: 3 provinsi, 13 kota/kabupaten, 5 komoditas prioritas
-        </p>
       </main>
     </div>
   );
