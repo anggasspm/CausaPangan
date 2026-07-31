@@ -1,0 +1,54 @@
+name: Time Series Forecasting
+
+on:
+  workflow_run:
+    workflows: ["Event Classifier (NLP)"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: time-series-forecasting
+  cancel-in-progress: false
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: time_series_forecasting/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r time_series_forecasting/requirements.txt
+
+      - name: Jalankan forecasting
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          python -m time_series_forecasting.run_forecast \
+            --output data/hasil_forecasting/latest.json
+
+      - name: Commit hasil forecasting ke repo
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Forecasting"
+          git add data/hasil_forecasting/
+          git diff --staged --quiet || git commit -m "chore: update hasil forecasting [skip ci]"
+          git push
