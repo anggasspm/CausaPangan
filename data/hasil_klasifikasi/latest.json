@@ -30,31 +30,16 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/699364/kuningan-tambah-luasan-tanam-padi-5671-hektare-di-juli-2026",
-    "judul": "Kuningan tambah luasan tanam padi 5.671 hektare di Juli 2026",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-16T06:17:42+00:00",
+    "url": "https://ekonomi.republika.co.id/berita/tiiief370/kemarau-ancam-produksi-padi-indramayu-petani-minta-air-segera-digelontorkan",
+    "judul": "Kemarau Ancam Produksi Padi Indramayu, Petani Minta Air Segera Digelontorkan",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-20T23:37:27+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
     "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/nusantara/913150/warga-petung-ppu-geger-temukan-pria-asal-sukabumi-meninggal-di-kamar-kontrakan",
-    "judul": "Warga Petung PPU Geger Temukan Pria Asal Sukabumi Meninggal di Kamar Kontrakan",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-21T04:10:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Musim kemarau menyebabkan kekeringan dan mengancam belasan ribu hektare tanaman padi di Indramayu mengalami gagal panen.",
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
