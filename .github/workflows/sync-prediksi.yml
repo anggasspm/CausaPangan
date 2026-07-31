@@ -1,15 +1,18 @@
 name: Sync Prediksi ke Database
 
 on:
-  # Jalan otomatis setiap kali workflow classifier selesai -- sync_prediksi.py
-  # butuh data/hasil_klasifikasi/latest.json yang sudah ter-update duluan.
+  # Dipicu setelah forecasting.yml selesai (bukan classifier.yml lagi) --
+  # sync_prediksi.py sekarang butuh data/hasil_forecasting/latest.json juga,
+  # dan forecasting.yml sendiri sudah dipicu setelah classifier.yml selesai,
+  # jadi menunggu forecasting selesai otomatis menjamin data classifier
+  # juga sudah siap.
   workflow_run:
-    workflows: ["Event Classifier (NLP)"]
+    workflows: ["Time Series Forecasting"]
     types: [completed]
-  workflow_dispatch: {}   # buat testing manual, tidak perlu nunggu classifier jalan
+  workflow_dispatch: {}   # buat testing manual, tidak perlu nunggu forecasting jalan
 
 permissions:
-  contents: read   # cuma baca data/hasil_klasifikasi/, tidak commit apa pun balik ke repo
+  contents: read   # cuma baca data/hasil_klasifikasi/ dan data/hasil_forecasting/, tidak commit apa pun balik ke repo
 
 concurrency:
   group: sync-prediksi
@@ -20,9 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    # Sama seperti classifier.yml -- kalau dipicu workflow_run, cuma lanjut
-    # kalau classifier-nya sendiri sukses. Data klasifikasi bisa jadi belum
-    # ter-update kalau classifier gagal.
     if: >
       github.event_name == 'workflow_dispatch' ||
       github.event.workflow_run.conclusion == 'success'
@@ -31,8 +31,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          # Ambil commit terbaru dari branch yang sama, bukan ref lama --
-          # penting karena classifier baru saja commit hasil_klasifikasi/latest.json.
           ref: ${{ github.event.workflow_run.head_branch || github.ref }}
 
       - name: Setup Python
@@ -47,9 +45,5 @@ jobs:
 
       - name: Jalankan sync_prediksi.py
         env:
-          # WAJIB pakai connection string Session Pooler (bukan direct
-          # connection) -- GitHub Actions runner cuma IPv4, direct connection
-          # Supabase IPv6-only bakal gagal resolve DNS (sama kayak masalah
-          # yang kita alami waktu setup lokal kemarin).
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python backend/scripts/sync_prediksi.py
