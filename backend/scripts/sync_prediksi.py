@@ -2,26 +2,21 @@
 sync_prediksi.py -- Bagian "simpan" dari orkestrasi pipeline
 scrape -> NLP -> model -> simpan -> serve (PRD §7.1, tanggung jawab Role 1).
 
-Menggabungkan:
-1. Hasil event classifier Role 2 (data/hasil_klasifikasi/latest.json)
-   -> mengisi penyebab, penyebab_detail, sumber_berita
-2. Baseline harga dari riwayat_harga yang sudah kita import
-   -> mengisi harga_terakhir, persentase_perubahan, arah
-   (BUKAN hasil forecasting model asli -- placeholder sampai
-   Role 2 selesai modul forecasting/time series)
+v2: Menggabungkan DUA sumber hasil Role 2 (sebelumnya cuma classifier +
+baseline naif buatan sendiri):
+1. data/hasil_forecasting/latest.json  -> harga_terakhir, satuan,
+   persentase_perubahan, arah, confidence (SEKARANG BENERAN dari model
+   Holt-Winters, bukan placeholder lagi)
+2. data/hasil_klasifikasi/latest.json  -> penyebab, penyebab_detail,
+   sumber_berita
 
-confidence sengaja di-set 0.4 (di bawah 0.5) untuk SEMUA baris yang
-ditulis script ini, supaya aturan null API_CONTRACT §4 otomatis
-menyembunyikan `rekomendasi` -- frontend akan menampilkan state
-"belum cukup data untuk rekomendasi", bukan rekomendasi karangan.
-Begitu Role 2 selesai model forecasting asli, confidence & rekomendasi
-akan ditulis ulang oleh pipeline yang sebenarnya (ganti script ini).
+`rekomendasi` masih sengaja dibiarkan NULL di script ini -- itu ranah
+recommendation engine Role 2 yang belum ada writer-nya. Begitu itu
+selesai, perlu ditambahkan langkah serupa (baca file/tabel hasil
+recommendation engine, isi rekomendasi_target/aksi/urgensi).
 
-Jalankan manual dulu:
-    python sync_prediksi.py
-
-Nanti masuk ke GitHub Actions (Tahap 5) supaya jalan otomatis setelah
-scraper + classifier selesai tiap run terjadwal.
+Jalankan dari root repo:
+    python backend/scripts/sync_prediksi.py
 """
 import json
 import os
@@ -39,24 +34,31 @@ if DATABASE_URL and DATABASE_URL.startswith("postgresql://"):
 
 engine = create_engine(DATABASE_URL)
 
-# Path relatif terhadap root repo -- sesuaikan kalau struktur folder beda
+# Path relatif terhadap root repo -- jalankan script ini dari root, bukan dari backend/
+HASIL_FORECASTING_PATH = Path("data/hasil_forecasting/latest.json")
 HASIL_KLASIFIKASI_PATH = Path("data/hasil_klasifikasi/latest.json")
 
-PLACEHOLDER_CONFIDENCE = 0.4   # sengaja < 0.5, lihat penjelasan di docstring atas
-KOMODITAS_LIST = ["beras", "cabai_rawit_merah", "cabai_merah_keriting", "bawang_merah", "minyak_goreng"]
 
-
-def load_classified_articles():
-    if not HASIL_KLASIFIKASI_PATH.exists():
-        print(f"WARNING: {HASIL_KLASIFIKASI_PATH} tidak ditemukan, lanjut tanpa data classifier.")
+def load_json(path: Path, label: str):
+    if not path.exists():
+        print(f"WARNING: {path} tidak ditemukan ({label}), lanjut tanpa data ini.")
         return []
-    with open(HASIL_KLASIFIKASI_PATH) as f:
+    with open(path) as f:
         return json.load(f)
+
+
+def build_forecasting_index(forecasts):
+    """(kode_wilayah, kode_komoditas) -> 1 baris hasil forecasting."""
+    index = {}
+    for row in forecasts:
+        key = (row["kode_wilayah"], row["kode_komoditas"])
+        index[key] = row
+    return index
 
 
 def build_article_index(articles):
     """
-    Map (kode_wilayah, kode_komoditas) -> list artikel yang relevan.
+    (kode_wilayah, kode_komoditas) -> list artikel yang relevan.
     Artikel tanpa wilayah_terdeteksi di-skip (belum bisa dipetakan ke 1 kota).
     """
     index = {}
@@ -69,114 +71,96 @@ def build_article_index(articles):
     return index
 
 
-def compute_baseline(conn, kode_wilayah, kode_komoditas):
-    """
-    Ambil 2 bulan terakhir yang punya harga (bukan NULL) dari riwayat_harga,
-    hitung persentase_perubahan & arah secara naif (BUKAN forecasting).
-    Return None kalau datanya kurang dari 2 titik.
-    """
-    rows = conn.execute(text("""
-        SELECT bulan, harga FROM riwayat_harga
-        WHERE kode_wilayah = :kw AND kode_komoditas = :kk AND harga IS NOT NULL
-        ORDER BY bulan DESC LIMIT 2
-    """), {"kw": kode_wilayah, "kk": kode_komoditas}).fetchall()
-
-    if len(rows) < 2:
-        return None
-
-    terakhir, sebelumnya = rows[0].harga, rows[1].harga
-    if sebelumnya == 0:
-        return None
-
-    pct = round((float(terakhir) - float(sebelumnya)) / float(sebelumnya) * 100, 2)
-    arah = "stabil" if abs(pct) <= 2 else ("naik" if pct > 0 else "turun")
-    return {"harga_terakhir": float(terakhir), "persentase_perubahan": pct, "arah": arah}
-
-
 def main():
-    articles = load_classified_articles()
+    forecasts = load_json(HASIL_FORECASTING_PATH, "hasil forecasting")
+    articles = load_json(HASIL_KLASIFIKASI_PATH, "hasil klasifikasi")
+
+    forecasting_index = build_forecasting_index(forecasts)
     article_index = build_article_index(articles)
-    print(f"Loaded {len(articles)} artikel, {len(article_index)} kombinasi kota x komoditas punya sinyal berita.")
+    print(f"Loaded {len(forecasts)} baris forecasting, {len(articles)} artikel "
+          f"({len(article_index)} kombinasi kota x komoditas punya sinyal berita).")
 
     now = datetime.now(timezone.utc)
-    written, skipped_no_baseline = 0, 0
+    written, skipped_no_forecast = 0, 0
 
     with engine.begin() as conn:
-        kota_rows = conn.execute(text("SELECT kode_wilayah, tier_data FROM wilayah")).fetchall()
+        kota_rows = conn.execute(text("SELECT kode_wilayah FROM wilayah")).fetchall()
+        kota_codes = {k.kode_wilayah for k in kota_rows}
 
-        for kota in kota_rows:
-            for kode_komoditas in KOMODITAS_LIST:
-                baseline = compute_baseline(conn, kota.kode_wilayah, kode_komoditas)
-                if baseline is None:
-                    skipped_no_baseline += 1
-                    continue
+        for (kode_wilayah, kode_komoditas), forecast in forecasting_index.items():
+            if kode_wilayah not in kota_codes:
+                # forecasting kadang cakup kota di luar 13 kota MVP -- skip,
+                # bukan bug, cuma di luar cakupan sistem sekarang.
+                continue
 
-                matched_articles = article_index.get((kota.kode_wilayah, kode_komoditas), [])
-                # Hanya artikel yang punya penyebab non-null yang dianggap "sinyal valid" --
-                # supaya sumber_berita tetap konsisten dengan penyebab sesuai API_CONTRACT §4
-                # (sumber_berita WAJIB [] kalau penyebab null, tidak boleh sebagian sinyal
-                # tanpa penyebab ikut nyasar ke sumber_berita).
-                valid_signal_articles = [a for a in matched_articles if a.get("penyebab")]
+            valid_signal_articles = [
+                a for a in article_index.get((kode_wilayah, kode_komoditas), [])
+                if a.get("penyebab")
+            ]
 
-                if valid_signal_articles:
-                    best = max(valid_signal_articles, key=lambda a: a.get("llm_certainty", 0))
-                    penyebab = best.get("penyebab")
-                    penyebab_detail = best.get("penyebab_detail")
-                else:
-                    penyebab = None
-                    penyebab_detail = None
+            if valid_signal_articles:
+                best = max(valid_signal_articles, key=lambda a: a.get("llm_certainty", 0))
+                penyebab = best.get("penyebab")
+                penyebab_detail = best.get("penyebab_detail")
+            else:
+                penyebab = None
+                penyebab_detail = None
 
-                nama_komoditas = kode_komoditas.replace("_", " ").title()
+            nama_komoditas = kode_komoditas.replace("_", " ").title()
 
+            conn.execute(text("""
+                INSERT INTO prediksi (
+                    kode_wilayah, kode_komoditas, nama_komoditas, harga_terakhir, satuan,
+                    persentase_perubahan, arah, confidence, tier_data,
+                    penyebab, penyebab_detail,
+                    rekomendasi_target, rekomendasi_aksi, rekomendasi_urgensi,
+                    terakhir_diperbarui
+                ) VALUES (
+                    :kw, :kk, :nama, :harga, :satuan,
+                    :pct, :arah, :conf, :tier,
+                    :penyebab, :penyebab_detail,
+                    NULL, NULL, NULL,
+                    :updated
+                )
+                ON CONFLICT (kode_wilayah, kode_komoditas) DO UPDATE SET
+                    harga_terakhir = EXCLUDED.harga_terakhir,
+                    satuan = EXCLUDED.satuan,
+                    persentase_perubahan = EXCLUDED.persentase_perubahan,
+                    arah = EXCLUDED.arah,
+                    confidence = EXCLUDED.confidence,
+                    tier_data = EXCLUDED.tier_data,
+                    penyebab = EXCLUDED.penyebab,
+                    penyebab_detail = EXCLUDED.penyebab_detail,
+                    terakhir_diperbarui = EXCLUDED.terakhir_diperbarui
+            """), {
+                "kw": kode_wilayah, "kk": kode_komoditas, "nama": nama_komoditas,
+                "harga": forecast["harga_terakhir"], "satuan": forecast.get("satuan", "Rp/kg"),
+                "pct": forecast["persentase_perubahan"], "arah": forecast["arah"],
+                "conf": forecast["confidence"], "tier": forecast.get("tier_data", "solid"),
+                "penyebab": penyebab, "penyebab_detail": penyebab_detail,
+                "updated": now,
+            })
+
+            conn.execute(text("""
+                DELETE FROM sumber_berita WHERE kode_wilayah = :kw AND kode_komoditas = :kk
+            """), {"kw": kode_wilayah, "kk": kode_komoditas})
+
+            for art in valid_signal_articles:
                 conn.execute(text("""
-                    INSERT INTO prediksi (
-                        kode_wilayah, kode_komoditas, nama_komoditas, harga_terakhir, satuan,
-                        persentase_perubahan, arah, confidence, tier_data,
-                        penyebab, penyebab_detail,
-                        rekomendasi_target, rekomendasi_aksi, rekomendasi_urgensi,
-                        terakhir_diperbarui
-                    ) VALUES (
-                        :kw, :kk, :nama, :harga, :satuan,
-                        :pct, :arah, :conf, :tier,
-                        :penyebab, :penyebab_detail,
-                        NULL, NULL, NULL,
-                        :updated
-                    )
-                    ON CONFLICT (kode_wilayah, kode_komoditas) DO UPDATE SET
-                        harga_terakhir = EXCLUDED.harga_terakhir,
-                        persentase_perubahan = EXCLUDED.persentase_perubahan,
-                        arah = EXCLUDED.arah,
-                        confidence = EXCLUDED.confidence,
-                        penyebab = EXCLUDED.penyebab,
-                        penyebab_detail = EXCLUDED.penyebab_detail,
-                        terakhir_diperbarui = EXCLUDED.terakhir_diperbarui
+                    INSERT INTO sumber_berita (kode_wilayah, kode_komoditas, judul, url, sumber_media, tanggal_terbit)
+                    VALUES (:kw, :kk, :judul, :url, :sumber, :tanggal)
                 """), {
-                    "kw": kota.kode_wilayah, "kk": kode_komoditas, "nama": nama_komoditas,
-                    "harga": baseline["harga_terakhir"], "satuan": "Rp/kg",
-                    "pct": baseline["persentase_perubahan"], "arah": baseline["arah"],
-                    "conf": PLACEHOLDER_CONFIDENCE, "tier": kota.tier_data,
-                    "penyebab": penyebab, "penyebab_detail": penyebab_detail,
-                    "updated": now,
+                    "kw": kode_wilayah, "kk": kode_komoditas,
+                    "judul": art.get("judul", ""), "url": art.get("url", ""),
+                    "sumber": art.get("sumber_media", ""), "tanggal": art.get("tanggal_terbit"),
                 })
 
-                # sumber_berita: hapus yang lama untuk kombinasi ini, tulis ulang dari artikel yang match
-                conn.execute(text("""
-                    DELETE FROM sumber_berita WHERE kode_wilayah = :kw AND kode_komoditas = :kk
-                """), {"kw": kota.kode_wilayah, "kk": kode_komoditas})
+            written += 1
 
-                for art in valid_signal_articles:
-                    conn.execute(text("""
-                        INSERT INTO sumber_berita (kode_wilayah, kode_komoditas, judul, url, sumber_media, tanggal_terbit)
-                        VALUES (:kw, :kk, :judul, :url, :sumber, :tanggal)
-                    """), {
-                        "kw": kota.kode_wilayah, "kk": kode_komoditas,
-                        "judul": art.get("judul", ""), "url": art.get("url", ""),
-                        "sumber": art.get("sumber_media", ""), "tanggal": art.get("tanggal_terbit"),
-                    })
+        skipped_no_forecast = len(kota_codes) * 5 - written  # 5 = jumlah komoditas tetap
 
-                written += 1
-
-    print(f"Selesai: {written} baris prediksi ditulis/diupdate, {skipped_no_baseline} dilewati (kurang dari 2 titik data historis).")
+    print(f"Selesai: {written} baris prediksi ditulis/diupdate dari hasil forecasting asli, "
+          f"{skipped_no_forecast} kombinasi belum punya hasil forecasting.")
 
 
 if __name__ == "__main__":
