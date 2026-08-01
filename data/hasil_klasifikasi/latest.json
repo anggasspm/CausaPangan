@@ -15,6 +15,36 @@
     "model_used": "gemini-flash-latest"
   },
   {
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp58.400/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-14T17:22:34+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
     "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
     "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
     "sumber_media": "Antara Jateng - Ekonomi",
@@ -27,16 +57,243 @@
       "3302"
     ],
     "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Kenaikan harga cabai dipicu oleh peningkatan permintaan seiring berulainya aktivitas sekolah dan usaha kuliner setelah libur sekolah.",
+    "penyebab_detail": "Kenaikan harga cabai dipicu oleh meningkatnya permintaan seiring berulainya aktivitas sekolah dan usaha kuliner setelah libur sekolah.",
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/nusantara/915528/calon-paskibraka-sultra-jalani-diklat-24-hari-jelang-hut-ke-81-ri",
-    "judul": "Calon Paskibraka Sultra Jalani Diklat 24 Hari Jelang HUT Ke-81 RI",
+    "url": "https://www.liputan6.com/news/read/8247169/kopdes-disiapkan-jadi-penyalur-bantuan-dan-pembeli-gabah",
+    "judul": "Kopdes Disiapkan Jadi Penyalur Bantuan dan Pembeli Gabah",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-15T08:41:38+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai offtaker gabah dan jagung bila harga pasar berada di bawah harga ketetapan pemerintah.",
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8248719/prabowo-sindir-pihak-mengeluh-beras-mahal-suruh-tanam-padi-sendiri",
+    "judul": "Prabowo Sindir Pihak Mengeluh Beras Mahal: Suruh Tanam Padi Sendiri",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T06:41:27+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
+    "judul": "Nobar Final Piala Dunia, Sekolah di Singapura Izinkan Siswa Masuk Lebih Siang",
     "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-28T00:40:00+00:00",
+    "tanggal_terbit": "2026-07-17T09:49:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/hiburan/912046/nama-buah-iblis-inazuma-anggota-pasukan-revolusioner-yang-selamatkan-luffy-di-one-piece",
+    "judul": "Nama Buah Iblis Inazuma, Anggota Pasukan Revolusioner yang Selamatkan Luffy di One Piece",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T09:40:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082871/harga-pangan-sabtu-ini-cabai-rawit-rp57250-kg-dan-telur-ayam-rp20550-kg",
+    "judul": "Harga pangan Sabtu ini, cabai rawit Rp57.250/kg dan telur ayam Rp20.550/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-17T19:28:22+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/photo/read/8248937/lahan-bekas-lumpur-banjir-bandang-disulap-menjadi-areal-pertanian-di-pidie-jaya",
+    "judul": "Lahan Bekas Lumpur Banjir Bandang Disulap Menjadi Areal Pertanian di Pidie Jaya",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T21:05:49+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/912142/1000-hektare-lebih-pesawahan-di-subang-terancam-gagal-panen-akibat-kekeringan",
+    "judul": "1.000 Hektare Lebih Pesawahan di Subang Terancam Gagal Panen akibat Kekeringan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T23:08:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Kekeringan di Kabupaten Subang menyebabkan 1.348 hektare persawahan terancam gagal panen.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/politik-dan-hukum/912746/prabowo-soroti-kebocoran-ekonomi-dan-kelangkaan-minyak-goreng",
+    "judul": "Prabowo Soroti Kebocoran Ekonomi dan Kelangkaan Minyak Goreng",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T05:59:00+00:00",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/912737/harga-pangan-di-sumut-naik-cabai-merah-tembus-rp44500-per-kg-di-medan",
+    "judul": "Harga Pangan di Sumut Naik, Cabai Merah Tembus Rp44.500 per Kg di Medan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T05:50:00+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/polisi-ledakan-di-grand-polonia-medan-berasal-dari-rumah-nomor-3b-27pGNy9TtzK",
+    "judul": "Polisi: Ledakan di Grand Polonia Medan Berasal dari Rumah Nomor 3B",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-20T05:47:46+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5657765/bulog-kanwil-yogyakarta-serap-gabah-berbagai-kualitas-dari-petani",
+    "judul": "Bulog Kanwil Yogyakarta serap gabah berbagai kualitas dari petani",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-20T07:14:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/opini/912860/anomali-ekonomi-beras-perubahan-kebijakan-mendesak",
+    "judul": "Anomali Ekonomi Beras: Perubahan Kebijakan Mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T15:15:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/video/5658548/serapan-gabah-bulog-lebihi-target-di-yogyakarta-amankan-stok-pangan",
+    "judul": "Serapan gabah Bulog lebihi target, D.I. Yogyakarta amankan stok pangan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-21T00:49:28+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8251656/4-perwira-terbaik-tni-polri-raih-adhi-makayasa-dari-prabowo",
+    "judul": "4 Perwira Terbaik TNI-Polri Raih Adhi Makayasa dari Prabowo",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-21T19:03:56+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8251595/kebakaran-di-djakarta-theater-ternyata-berasal-dari-dapur-xxi",
+    "judul": "Kebakaran di Djakarta Theater Ternyata Berasal dari Dapur XXI",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-21T16:34:26+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -44,6 +301,51 @@
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/megapolitan/913375/djakarta-theater-kebakaran-diduga-karena-korsleting-listrik",
+    "judul": "Djakarta Theater Kebakaran, Diduga karena Korsleting Listrik",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T17:35:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1086796/bapanas-pastikan-cabut-izin-edar-beras-fortifikasi-tak-penuhi-syarat",
+    "judul": "Bapanas pastikan cabut izin edar beras fortifikasi tak penuhi syarat",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-01T01:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/917128/bapanas-cabut-izin-edar-beras-fortifikasi-tak-layak-kerugian-konsumen-capai-rp71-triliun",
+    "judul": "Bapanas Cabut Izin Edar Beras Fortifikasi Tak Layak, Kerugian Konsumen Capai Rp71 Triliun",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-01T00:18:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
