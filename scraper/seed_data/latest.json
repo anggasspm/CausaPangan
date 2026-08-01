@@ -2138,5 +2138,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga Bawang Merah Turun, Petani di Pidie Aceh Pilih Tunda Panen",
+    "url": "https://mediaindonesia.com/nusantara/917154/harga-bawang-merah-turun-petani-di-pidie-aceh-pilih-tunda-panen",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-01T08:30:00Z",
+    "isi_teks": "Aparat cenderung menyelesaikan perkara sebatas pelanggaran administratif pekerja.\nPARApetani bawangmerah di KabupatenPidie, ProvinsiAceh, terpaksa mengambil langkah untuk menunda masa panen mereka. Keputusan ini diambil menyusul merosotnya harga jualbawang merahkering panen di tingkat petani dalam beberapa waktu terakhir.\nBerdasarkan pantauan di lapangan selama tiga hari terakhir, khususnya di kawasan Kecamatan Simpang Tiga, belasan hektare lahan bawang merah belum disentuh pemiliknya meski sudah memasuki masa panen. Secara teknis, tanaman tersebut telah berusia antara 52 hingga 60 hari, yang merupakan usia ideal untuk dipanen.\n\"Seharusnya sudah bisa dipanen. Biasanya pada usia 60 hari langsung kita panen. Tapi untuk kali ini saya tidak memanen dulu karena harga sedang turun,\" ujar Muhammad Abubakar, Imum Mukim (tokoh adat) Gigieng, Kamis (30/7).",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
