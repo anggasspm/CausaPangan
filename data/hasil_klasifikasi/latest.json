@@ -15,28 +15,12 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://www.antaranews.com/berita/5652721/pemkab-kuningan-tambah-luas-tanam-padi-5671-hektare-pada-juli-2026",
-    "judul": "Pemkab Kuningan tambah luas tanam padi 5.671 hektare pada Juli 2026",
-    "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-16T05:50:51+00:00",
+    "url": "https://jatim.antaranews.com/berita/1084715/bulog-serap-35-juta-ton-setara-beras-petani-demi-perkuat-pangan-ri",
+    "judul": "Bulog serap 3,5 juta ton setara beras petani demi perkuat pangan RI",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-24T20:14:58+00:00",
     "komoditas_terdeteksi": [
       "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/nusantara/912737/harga-pangan-di-sumut-naik-cabai-merah-tembus-rp44500-per-kg-di-medan",
-    "judul": "Harga Pangan di Sumut Naik, Cabai Merah Tembus Rp44.500 per Kg di Medan",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-20T05:50:00+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah",
-      "cabai_merah_keriting"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
