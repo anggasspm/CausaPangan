@@ -2587,5 +2587,48 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "PIHPS: Harga cabai rawit Rp61.450/kg, telur ayam Rp31.800/kg",
+    "url": "https://www.antaranews.com/berita/5678693/pihps-harga-cabai-rawit-rp61450-kg-telur-ayam-rp31800-kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-03T19:18:01Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp61.450 per kilogram (kg), sedangkan telur ayam ras Rp31.800 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Selasa pukul 09.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp47.500 per kg, bawang putih Rp47.700 per kg.\nSelain itu, beras kualitas bawah I di harga Rp15.750 per kg, beras kualitas bawah II Rp15.450 per kg. Sedangkan beras kualitas medium I Rp16.800 per kg, dan beras kualitas medium II di harga Rp16.700 per kg\nLalu, beras kualitas super I di harga Rp18.050 per kg, dan beras kualitas super II Rp17.850 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp85.900 per kg, cabai merah keriting Rp46.350 per kg, dan cabai rawit hijau Rp51.500 per kg.\nKemudian, daging ayam ras segar Rp40.250 per kg, daging sapi kualitas I Rp152.600 per kg, daging sapi kualitas II di harga Rp147.950 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp23.250 per kg, gula pasir lokal Rp20.000 per kg.\nSementara itu, minyak goreng curah di harga Rp21.850 per liter, minyak goreng kemasan bermerek I di harga Rp28.000 per liter, serta minyak goreng kemasan bermerek II di harga Rp26.650 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Dinas Pangan Cianjur salurkan 34 ton beras SPHP lewat GPM",
+    "url": "https://jabar.antaranews.com/berita/701024/dinas-pangan-cianjur-salurkan-34-ton-beras-sphp-lewat-gpm",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-08-02T07:10:52Z",
+    "isi_teks": "Cianjur (ANTARA) - Dinas Pangan Kabupaten Cianjur, Jawa Barat (Jabar), mencatat sebanyak 34 ton beras Stabilisasi Pasokan dan Harga Pangan (SPHP) telah disalurkan kepada masyarakat melalui 17 kali pelaksanaan Gerakan Pangan Murah (GPM) sepanjang Januari hingga Juli 2026.\nKepala Bidang Ketersediaan dan Stabilitas Dinas Pangan Cianjur Nurman Maksum Ishak di Cianjur, Minggu, mengatakan setiap pelaksanaan GPM pihaknya mengajukan permintaan beras SPHP sebanyak 2 ton pada ke Perum Bulog Cianjur.\nSelain beras dengan total 34 ton yang telah disalurkan, di setiap pelaksanaan GPM disediakan berbagai komoditas pangan lain dengan total pasokan sekitar 4 ton terdiri dari gula pasir, minyak goreng, telur, cabai, bawang, hingga sayuran.\n\"Harga komoditas yang dijual dalam GPM disesuaikan dengan kondisi pasar dan tetap mengacu pada Harga Eceran Tertinggi (HET) atau Harga Acuan Pemerintah (HAP) yang telah ditetapkan,\" katanya.\nHarga komoditas yang dijual tidak melebihi HET atau HAP yang berlaku ketika ada perubahan harga di pasar akan disesuaikan, di mana penyaluran beras SPHP diawasi secara ketat agar tepat sasaran dan tidak disalahgunakan.\nTermasuk, menurut dia, untuk kebutuhan di luar peruntukannya, sehingga pihaknya berkoordinasi dengan Satgas Pangan terdiri dari Bulog, TNI/Polri, dan instansi terkait agar barang subsidi langsung tepat sasaran ke masyarakat .\nPelaksanaan GPM dilakukan melalui dua skema secara mandiri dan berbasis Anggaran Pendapatan dan Belanja Daerah (APBD), dimana secara mandiri pihak dinas hanya sebagai fasilitator.\n\"Sedangkan skema berbasis APBD, anggaran digunakan untuk mendukung biaya distribusi, seperti jasa angkut, pengemasan, dan kebutuhan operasional lainnya agar komoditas bisa sampai ke lokasi pelaksanaan,” katanya.\nAnggaran distribusi yang dialokasikan pemerintah daerah sebesar Rp7 juta di setiap titik pelaksanaan GPM, di mana dana tersebut bukan diberikan kepada pelaku usaha, melainkan digunakan untuk menanggung biaya distribusi logistik selama distribusi.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "32"
+    ],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "BPS catat NTP Jateng di Juli 2026 sebesar 118,03",
+    "url": "https://jateng.antaranews.com/berita/640647/bps-catat-ntp-jateng-di-juli-2026-sebesar-11803",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-08-03T18:04:01Z",
+    "isi_teks": "Semarang (ANTARA) - Badan Pusat Statistik (BPS) mencatat nilai tukar petani (NTP) Jawa Tengah pada Juli 2026 sebesar 118,03.\"NTP Juli 2026 turun 0,20.persen dibanding bulan sebelumnya yang mencapai 118,27,\" kata Kepala BPS Jawa Tengah Ali Said di Semarang, Senin.Ia menjelaskan penurunan tersebut diakibatkan oleh penurunan Indeks harga yang diterima petani sebesar 0,60 persen lebih cepat dibanding penurunan indeks harga yang dibayar petaniSementara subsektor yang mengalami penurunan NTP, kata dia, yakni  hortikultura sebesar 6,35 persen dan peternakan sebesar 0,80 persen.Adapun subsektor yang mengalami kenaikan NTP meliputi tanaman pangan sebesar 1,52 persen; perikanan sebesar 1,11 persen; dan tanaman perkebunan rakyat sebesar 0,58 persen.BPS juga mencatat, kata dia, pada Juli 2026 terdapat komoditas pertanian yang mengalami penurunan harga, antara lain bawang merah, cabai rawit, cabai merah, telur ayam ras, sawi putih, labu siam, petai, kol/kubis, tomat, tebu, semangka, ayam kampung, ayam pedaging, dan sawi hijau.Sedangkan komoditas yang mengalami kenaikan harga, lanjut dia, antara lain gabah, wortel, kentang, jagung, kopi, bawang daun, kacang panjang, ketimun, kacang tanah, sapi perah, dan bandeng payau.Ia menuturkan pada Juli 2026 tercatat Indeks Konsumsi Rumah Tangga Jawa Tengah mengalami deflasi sebesar 0,69 persen.Ia menjelaskan hal tersebut diakibatkan oleh penurunan pada indeks kelompok pengeluaran makanan, minuman dan tembakau sebesar 1,32 persen serta perawatan pribadi dan jasa lainnya sebesar 0,10 persen.Adapun pada kelompok pengeluaran, menurut dia, inflasi terjadi antara lain pada kelompok rekreasi, olahraga, dan budaya sebesar 1,01 persen serta kelompok pendidikan sebesar 0,69 persen.Ia mengatakan Nilai Tukar Usaha Pertanian (NTUP) Jawa Tengah pada Juli 2026 tercatat sebesar 122,09, turun sebesar 0,75 persen dibanding bulan sebelumnya yang mencapai 123,01.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3374"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
