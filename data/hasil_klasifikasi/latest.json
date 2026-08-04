@@ -15,10 +15,10 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/699364/kuningan-tambah-luasan-tanam-padi-5671-hektare-di-juli-2026",
-    "judul": "Kuningan tambah luasan tanam padi 5.671 hektare di Juli 2026",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
     "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-16T06:17:42+00:00",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -30,12 +30,12 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/699357/bulog-serap-158-ribu-ton-beras-hasil-panen-dari-petani-indramayu",
-    "judul": "Bulog serap 158 ribu ton beras hasil panen dari petani Indramayu",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-16T06:15:17+00:00",
+    "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp58.400/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-14T17:22:34+00:00",
     "komoditas_terdeteksi": [
-      "beras"
+      "cabai_rawit_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
