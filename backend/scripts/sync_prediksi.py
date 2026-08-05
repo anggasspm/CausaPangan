@@ -2,24 +2,21 @@
 sync_prediksi.py -- Bagian "simpan" dari orkestrasi pipeline
 scrape -> NLP -> model -> simpan -> serve (PRD §7.1, tanggung jawab Role 1).
 
-v2: Menggabungkan DUA sumber hasil Role 2 (sebelumnya cuma classifier +
-baseline naif buatan sendiri):
+v3: Menggabungkan TIGA sumber hasil Role 2:
 1. data/hasil_forecasting/latest.json  -> harga_terakhir, satuan,
-   persentase_perubahan, arah, confidence (SEKARANG BENERAN dari model
-   Holt-Winters, bukan placeholder lagi)
+   persentase_perubahan, arah, confidence (dari model Holt-Winters)
 2. data/hasil_klasifikasi/latest.json  -> penyebab, penyebab_detail,
    sumber_berita
-
-`rekomendasi` masih sengaja dibiarkan NULL di script ini -- itu ranah
-recommendation engine Role 2 yang belum ada writer-nya. Begitu itu
-selesai, perlu ditambahkan langkah serupa (baca file/tabel hasil
-recommendation engine, isi rekomendasi_target/aksi/urgensi).
+3. recommendation_engine (pure function, bukan file JSON) -> rekomendasi_target,
+   rekomendasi_aksi, rekomendasi_urgensi
 
 Jalankan dari root repo:
     python backend/scripts/sync_prediksi.py
 """
 import json
 import os
+import sys
+from pathlib import Path as _Path
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -27,6 +24,13 @@ from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# recommendation_engine ada di root repo, bukan di backend/scripts/ -- karena
+# script ini dijalankan langsung (bukan lewat `python -m`), Python cuma
+# nambahin folder script ini sendiri ke sys.path, bukan root repo. Baris di
+# bawah ini nambahin root repo secara eksplisit supaya import-nya ketemu.
+sys.path.insert(0, str(_Path(__file__).resolve().parents[2]))  # <-- BARU
+from recommendation_engine import generate_recommendation  # <-- BARU
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL and DATABASE_URL.startswith("postgresql://"):
@@ -106,6 +110,14 @@ def main():
                 penyebab = None
                 penyebab_detail = None
 
+            # <-- BARU: panggil recommendation engine
+            rekomendasi = generate_recommendation(
+                penyebab=penyebab,
+                arah=forecast["arah"],
+                persentase_perubahan=forecast["persentase_perubahan"],
+                confidence=forecast["confidence"],
+            )
+
             nama_komoditas = kode_komoditas.replace("_", " ").title()
 
             conn.execute(text("""
@@ -119,7 +131,7 @@ def main():
                     :kw, :kk, :nama, :harga, :satuan,
                     :pct, :arah, :conf, :tier,
                     :penyebab, :penyebab_detail,
-                    NULL, NULL, NULL,
+                    :rek_target, :rek_aksi, :rek_urgensi,
                     :updated
                 )
                 ON CONFLICT (kode_wilayah, kode_komoditas) DO UPDATE SET
@@ -131,6 +143,9 @@ def main():
                     tier_data = EXCLUDED.tier_data,
                     penyebab = EXCLUDED.penyebab,
                     penyebab_detail = EXCLUDED.penyebab_detail,
+                    rekomendasi_target = EXCLUDED.rekomendasi_target,
+                    rekomendasi_aksi = EXCLUDED.rekomendasi_aksi,
+                    rekomendasi_urgensi = EXCLUDED.rekomendasi_urgensi,
                     terakhir_diperbarui = EXCLUDED.terakhir_diperbarui
             """), {
                 "kw": kode_wilayah, "kk": kode_komoditas, "nama": nama_komoditas,
@@ -138,6 +153,10 @@ def main():
                 "pct": forecast["persentase_perubahan"], "arah": forecast["arah"],
                 "conf": forecast["confidence"], "tier": forecast.get("tier_data", "solid"),
                 "penyebab": penyebab, "penyebab_detail": penyebab_detail,
+                # <-- BARU: 3 baris ini gantiin NULL, NULL, NULL yang lama
+                "rek_target": rekomendasi.target if rekomendasi else None,
+                "rek_aksi": rekomendasi.aksi if rekomendasi else None,
+                "rek_urgensi": rekomendasi.urgensi if rekomendasi else None,
                 "updated": now,
             })
 
