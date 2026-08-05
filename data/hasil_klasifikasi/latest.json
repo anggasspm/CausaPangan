@@ -13,5 +13,65 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083559/harga-pangan-selasa-ini-cabai-rawit-rp47300-kg-dan-telur-ayam-rp30350-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp47.300/kg dan telur ayam Rp30.350/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-20T20:35:39+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/916677/hadapi-el-nino-bulog-sigli-aceh-siapkan-stok-17000-ton-beras",
+    "judul": "Hadapi El Nino, Bulog Sigli Aceh Siapkan Stok 17.000 Ton Beras",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T08:27:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Bulog menyiapakan stok beras untuk mengantisipasi dampak fenomena El Nino dan cuaca ekstrem.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1086545/mentan-amran-80-persen-temuan-beras-fortifikasi-tak-sesuai-standar",
+    "judul": "Mentan Amran: 80 persen temuan beras fortifikasi tak sesuai standar",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-31T01:25:28+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
