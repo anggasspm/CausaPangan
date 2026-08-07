@@ -13,37 +13,5 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jabar.antaranews.com/berita/700741/penanaman-padi-gunakan-sistem-pm-aas",
-    "judul": "Penanaman padi gunakan sistem PM AAS",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-30T00:27:19+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [
-      "3209"
-    ],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/nusantara/916661/harga-beras-melonjak-sumut-bakal-cetak-inflasi-di-juli-2026",
-    "judul": "Harga Beras Melonjak, Sumut Bakal Cetak Inflasi di Juli 2026",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-30T07:45:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
   }
 ]
