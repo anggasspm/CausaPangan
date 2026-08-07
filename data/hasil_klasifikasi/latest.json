@@ -15,12 +15,12 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
-    "judul": "Harga pangan Rabu ini, cabai rawit Rp58.400/kg dan telur ayam Rp29.000/kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-07-14T17:22:34+00:00",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
+      "beras"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
@@ -30,10 +30,10 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
-    "judul": "Nobar Final Piala Dunia, Sekolah di Singapura Izinkan Siswa Masuk Lebih Siang",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-17T09:49:00+00:00",
+    "url": "https://www.antaranews.com/berita/5652668/pemkab-ciamis-dorong-pengembangan-padi-organik",
+    "judul": "Pemkab Ciamis dorong pengembangan padi organik",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-16T05:30:21+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
