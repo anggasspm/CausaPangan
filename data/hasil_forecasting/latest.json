@@ -762,9 +762,9 @@
     "satuan": "Rp/liter",
     "persentase_perubahan": 4.32,
     "arah": "naik",
-    "confidence": 0.8867041580412444,
+    "confidence": 0.95,
     "tier_data": "solid",
     "metode": "holt_winters",
-    "catatan": "Backtest MAPE 3.0% atas 6 bulan terakhir."
+    "catatan": "Backtest MAPE 3.0% atas 6 bulan terakhir. (confidence di-boost, ada sinyal berita valid)"
   }
 ]
