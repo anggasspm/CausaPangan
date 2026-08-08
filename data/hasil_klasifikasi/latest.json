@@ -13,20 +13,5 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
-    "judul": "Cadangan beras pemerintah semester I 2026",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
   }
 ]
