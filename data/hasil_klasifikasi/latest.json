@@ -15,25 +15,25 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jatim.antaranews.com/berita/1082589/harga-pangan-jumat-ini-cabai-rawit-rp45000-kg-dan-telur-ayam-rp26000-kg",
-    "judul": "Harga pangan Jumat ini, cabai rawit Rp45.000/kg dan telur ayam Rp26.000/kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-07-16T19:16:34+00:00",
+    "url": "https://jabar.antaranews.com/berita/700505/dtph-jabar-sebut-penyesuaian-hpp-gabah-dinikmati-petani-dengan-sukacita",
+    "judul": "DTPH Jabar sebut penyesuaian HPP gabah dinikmati petani dengan sukacita",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:10:19+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
+      "beras"
     ],
     "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Kebijakan penyesuaian Harga Pembelian Pemerintah (HPP) mendorong kenaikan harga gabah di tingkat petani.",
+    "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://www.liputan6.com/news/read/8251656/4-perwira-terbaik-tni-polri-raih-adhi-makayasa-dari-prabowo",
-    "judul": "4 Perwira Terbaik TNI-Polri Raih Adhi Makayasa dari Prabowo",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-07-21T19:03:56+00:00",
+    "url": "https://jabar.antaranews.com/berita/700503/bulog-cianjur-pastikan-penyerapan-gkg-tetap-dilakukan",
+    "judul": "Bulog Cianjur pastikan penyerapan GKG tetap dilakukan",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:08:53+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -45,12 +45,286 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jatim.antaranews.com/berita/1083851/harga-pangan-rabu-ini-cabai-rawit-rp55150-per-kg-dan-telur-ayam-rp29600-per-kg",
-    "judul": "Harga pangan Rabu ini, cabai rawit Rp55.150 per kg dan telur ayam Rp29.600 per kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-07-21T19:57:11+00:00",
+    "url": "https://jabar.antaranews.com/berita/700492/realisasi-distribusi-pupuk-subsidi",
+    "judul": "Realisasi distribusi pupuk subsidi",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T21:10:48+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/915528/calon-paskibraka-sultra-jalani-diklat-24-hari-jelang-hut-ke-81-ri",
+    "judul": "Calon Paskibraka Sultra Jalani Diklat 24 Hari Jelang HUT Ke-81 RI",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-28T00:40:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparanhits/gelar-konser-di-surabaya-28-november-dewa-19-dan-padi-reborn-bakal-tukar-lagu-27sJsfUYbXy",
+    "judul": "Gelar Konser di Surabaya 28 November, Dewa 19 dan Padi Reborn Bakal Tukar Lagu",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-28T01:07:53+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3578"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700544/petani-di-cirebon-sebut-harga-gabah-masih-menguntungkan-usai-panen",
+    "judul": "Petani di Cirebon sebut harga gabah masih menguntungkan usai panen",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T03:48:06+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3209"
+    ],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Kebijakan pemerintah dalam menjaga harga gabah di tingkat petani membuat harga tetap menguntungkan meskipun mengalami penurunan dari puncaknya.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5670349/pihps-harga-cabai-rawit-rp54350-kg-telur-ayam-rp29600-kg",
+    "judul": "PIHPS: Harga cabai rawit Rp54.350/kg, telur ayam Rp29.600/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-28T19:00:19+00:00",
     "komoditas_terdeteksi": [
       "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700601/stok-beserta-harga-beras-di-pasar-induk-garut-tercatat-stabil-pada-kemarau-ini",
+    "judul": "Stok beserta harga beras di Pasar Induk Garut tercatat stabil pada kemarau ini",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T18:21:42+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700599/petani-garut-tetap-tanam-padi-manfaatkan-irigasi-di-tengah-kemarau",
+    "judul": "Petani Garut tetap tanam padi manfaatkan irigasi di tengah kemarau",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T18:16:34+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1085777/harga-pangan-rabu-ini-cabai-rawit-rp54350-kg-dan-telur-ayam-rp29600-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp54.350/kg dan telur ayam Rp29.600/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-28T19:05:12+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5670788/strategi-logistik-hijau-pengendalian-inflasi",
+    "judul": "Strategi logistik hijau pengendalian inflasi",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-28T23:54:54+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1085831/bulog-prioritaskan-penggilingan-rakyat-guna-perkuat-ekonomi-daerah",
+    "judul": "Bulog prioritaskan penggilingan rakyat guna perkuat ekonomi daerah",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-28T22:33:46+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5673024/bulog-bali-catat-stok-beras-tembus-12-ribu-ton-cukup-hingga-2027",
+    "judul": "Bulog Bali catat stok beras tembus 12 ribu ton cukup hingga 2027",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-30T05:33:16+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700773/stok-beras-bulog-di-jawa-barat",
+    "judul": "Stok beras Bulog di Jawa Barat",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-30T04:04:22+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tizhd0368/mentan-soroti-penggilingan-beras-tipu-masyarakat-36-tersangka-dijerat",
+    "judul": "Mentan Soroti Penggilingan Beras Tipu Masyarakat, 36 Tersangka Dijerat",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-30T03:34:12+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "penimbunan_spekulasi",
+    "penyebab_detail": "Praktik culas dan spekulasi oleh mafia/penggilingan beras besar yang mengambil keuntungan berlebih dengan menjual di atas HET.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/916629/kenali-keberagaman-budaya-dan-bangun-empati-melalui-konferensi-internasional-",
+    "judul": "Kenali Keberagaman Budaya dan Bangun Empati melalui Konferensi Internasional",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T06:46:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/916588/bank-indonesia-jawa-barat-dorong-pengembangan-padi-organik",
+    "judul": "Bank Indonesia Jawa Barat Dorong Pengembangan Padi Organik",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T05:30:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/916532/el-nino-petani-di-pidie-aceh-makin-tertarik-menanam-bawang-merah",
+    "judul": "El Nino, Petani di Pidie Aceh makin Tertarik Menanam Bawang Merah",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T04:26:00+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5675225/padi-organik-ps-08-dukung-banten-jadi-lumbung-pangan-nasional",
+    "judul": "Padi organik PS-08 dukung Banten jadi lumbung pangan nasional",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-31T09:18:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tj33jm490/amran-bongkar-dugaan-mafia-beras-fortifikasi-kementan-perluas-pengawasan",
+    "judul": "Amran Bongkar Dugaan Mafia Beras Fortifikasi, Kementan Perluas Pengawasan",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-08-01T02:26:10+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "penimbunan_spekulasi",
+    "penyebab_detail": "Dugaan praktik mafia beras dan spekulasi harga dengan memanfaatkan label beras fortifikasi untuk meraup keuntungan tinggi.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/917154/harga-bawang-merah-turun-petani-di-pidie-aceh-pilih-tunda-panen",
+    "judul": "Harga Bawang Merah Turun, Petani di Pidie Aceh Pilih Tunda Panen",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-01T08:30:00+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
