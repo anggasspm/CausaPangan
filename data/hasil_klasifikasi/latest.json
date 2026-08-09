@@ -13,5 +13,50 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082589/harga-pangan-jumat-ini-cabai-rawit-rp45000-kg-dan-telur-ayam-rp26000-kg",
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp45.000/kg dan telur ayam Rp26.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-16T19:16:34+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8251656/4-perwira-terbaik-tni-polri-raih-adhi-makayasa-dari-prabowo",
+    "judul": "4 Perwira Terbaik TNI-Polri Raih Adhi Makayasa dari Prabowo",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-21T19:03:56+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083851/harga-pangan-rabu-ini-cabai-rawit-rp55150-per-kg-dan-telur-ayam-rp29600-per-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp55.150 per kg dan telur ayam Rp29.600 per kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-21T19:57:11+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
