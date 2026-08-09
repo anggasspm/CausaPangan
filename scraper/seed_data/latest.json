@@ -3161,5 +3161,31 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Luas panen padi Indonesia 2026 capai 9,46 juta hektare, naik dari tahun lalu",
+    "url": "https://www.antaranews.com/foto/5686672/luas-panen-padi-indonesia-2026-capai-946-juta-hektare-naik-dari-tahun-lalu",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-09T03:55:51Z",
+    "isi_teks": "Foto udara pekerja memanen padi menggunakan mesin pertanian modern (Combine Harvester) di area persawahan kawasan Jabon, Sidoarjo, Jawa Timur, Minggu (9/8/2026). Badan Pusat Statistik (BPS) memperkirakan total luas panen padi di Indonesia pada Januari hingga September 2026 mencapai 9,46 juta hektare naik sekitar 0,11 persen dibanding periode yang sama tahun 2025 yang sebesar 9,45 juta hektare. ANTARA FOTO/Umarul Faruq/agr\nFoto udara pekerja memanen padi menggunakan mesin pertanian modern (Combine Harvester) di area persawahan kawasan Jabon, Sidoarjo, Jawa Timur, Minggu (9/8/2026). Badan Pusat Statistik (BPS) memperkirakan total luas panen padi di Indonesia pada Januari hingga September 2026 mencapai 9,46 juta hektare naik sekitar 0,11 persen dibanding periode yang sama tahun 2025 yang sebesar 9,45 juta hektare. ANTARA FOTO/Umarul Faruq/agr",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Rudy Tanoesoedibjoe Minta Penjadwalan Ulang Pemeriksaan KPK Kasus Bansos Beras",
+    "url": "https://mediaindonesia.com/politik-dan-hukum/919907/rudy-tanoesoedibjoe-minta-penjadwalan-ulang-pemeriksaan-kpk-kasus-bansos-beras",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-09T03:12:00Z",
+    "isi_teks": "Pekerja sektor informal yang rentan masih mendominasi dengan 59,30%.\nKUASA hukumRudijanto Tanoesoedibjoalias Rudy Tanoe, Ricky HP Sitohang, mengonfirmasi bahwa kliennya telah mengajukan permohonan penjadwalan ulang pemeriksaan kepada Komisi Pemberantasan Korupsi (KPK). Rudy Tanoe meminta agar pemeriksaan sebagai saksi digeser menjadi 11 Agustus 2026.\n\"Pada prinsipnya, kami akan selalu kooperatif dan tetap menghormati serta mematuhi prosedur hukum yang berlaku,\" ujar Ricky dalam keterangan tertulisnya di Jakarta, Minggu (9/8).\nRicky menjelaskan kronologi pemanggilan tersebut. Rudy Tanoe menerima surat panggilan dari penyidik KPK pada 4 Agustus 2026 untuk menjalani pemeriksaan pada 6 Agustus 2026. Namun, Rudy tidak dapat memenuhi panggilan tersebut karena sudah memiliki jadwal pemeriksaan kesehatan yang telah direncanakan sebelumnya.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
