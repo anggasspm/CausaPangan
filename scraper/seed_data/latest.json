@@ -3202,5 +3202,18 @@
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga pangan Senin ini, cabai rawit Rp72.400/kg dan telur ayam Rp31.650/kg",
+    "url": "https://jatim.antaranews.com/berita/1088944/harga-pangan-senin-ini-cabai-rawit-rp72400-kg-dan-telur-ayam-rp31650-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-09T20:26:28Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp72.400 per kilogram (kg), sedangkan telur ayam ras Rp31.650 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Senin pukul 10.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp48.000 per kg, bawang putih Rp42.750 per kg.\nSelain itu, beras kualitas bawah I di harga Rp16.100 per kg, beras kualitas bawah II Rp15.600 per kg. Sedangkan, beras kualitas medium I Rp17.500 per kg, dan beras kualitas medium II di harga Rp16.750 per kg.Lalu, beras kualitas super I di harga Rp18.800 per kg, dan beras kualitas super II Rp18.100 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp56.100 per kg, cabai merah keriting Rp65.300 per kg, dan cabai rawit hijau Rp44.400 per kg.\nKemudian, daging ayam ras segar Rp45.600 per kg, daging sapi kualitas I Rp149.400 per kg, daging sapi kualitas II di harga Rp142.850 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp23.000 per kg, gula pasir lokal Rp19.700 per kg.\nSementara itu, minyak goreng curah di harga Rp21.300 per liter, minyak goreng kemasan bermerek I di harga Rp25.950 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.650 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
