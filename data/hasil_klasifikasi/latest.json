@@ -15,10 +15,10 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
-    "judul": "Cadangan beras pemerintah semester I 2026",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "url": "https://mediaindonesia.com/nusantara/913150/warga-petung-ppu-geger-temukan-pria-asal-sukabumi-meninggal-di-kamar-kontrakan",
+    "judul": "Warga Petung PPU Geger Temukan Pria Asal Sukabumi Meninggal di Kamar Kontrakan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T04:10:00+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -30,19 +30,31 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
-    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
-    "sumber_media": "Antara Jateng - Ekonomi",
-    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
+    "url": "https://mediaindonesia.com/ekonomi/913311/panglima-tni-pastikan-tni-siap-mendukung-target-presiden-untuk-swasembada-beras",
+    "judul": "Panglima TNI Pastikan TNI Siap Mendukung Target Presiden untuk Swasembada Beras",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T09:06:00+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah",
-      "cabai_merah_keriting"
+      "beras"
     ],
-    "wilayah_terdeteksi": [
-      "3302"
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1088944/harga-pangan-senin-ini-cabai-rawit-rp72400-kg-dan-telur-ayam-rp31650-kg",
+    "judul": "Harga pangan Senin ini, cabai rawit Rp72.400/kg dan telur ayam Rp31.650/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-09T20:26:28+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
     ],
-    "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Kenaikan harga cabai dipicu oleh meningkatnya permintaan seiring berulangnya aktivitas sekolah dan warung makan setelah masa libur usai.",
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
