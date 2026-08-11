@@ -15,10 +15,10 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/nusantara/913150/warga-petung-ppu-geger-temukan-pria-asal-sukabumi-meninggal-di-kamar-kontrakan",
-    "judul": "Warga Petung PPU Geger Temukan Pria Asal Sukabumi Meninggal di Kamar Kontrakan",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-21T04:10:00+00:00",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -30,27 +30,301 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/ekonomi/913311/panglima-tni-pastikan-tni-siap-mendukung-target-presiden-untuk-swasembada-beras",
-    "judul": "Panglima TNI Pastikan TNI Siap Mendukung Target Presiden untuk Swasembada Beras",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-21T09:06:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jatim.antaranews.com/berita/1088944/harga-pangan-senin-ini-cabai-rawit-rp72400-kg-dan-telur-ayam-rp31650-kg",
-    "judul": "Harga pangan Senin ini, cabai rawit Rp72.400/kg dan telur ayam Rp31.650/kg",
+    "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp58.400/kg dan telur ayam Rp29.000/kg",
     "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-08-09T20:26:28+00:00",
+    "tanggal_terbit": "2026-07-14T17:22:34+00:00",
     "komoditas_terdeteksi": [
       "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
+    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
+    ],
+    "wilayah_terdeteksi": [
+      "3302"
+    ],
+    "penyebab": "lonjakan_permintaan_musiman",
+    "penyebab_detail": "Kenaikan harga cabai dipicu oleh meningkatnya permintaan seiring berakhirnya libur sekolah dan dimulainya kembali aktivitas belajar mengajar.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8247169/kopdes-disiapkan-jadi-penyalur-bantuan-dan-pembeli-gabah",
+    "judul": "Kopdes Disiapkan Jadi Penyalur Bantuan dan Pembeli Gabah",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-15T08:41:38+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa sebagai penyalur subsidi dan offtaker hasil panen jika harga pasaran di bawah ketetapan pemerintah.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5652721/pemkab-kuningan-tambah-luas-tanam-padi-5671-hektare-pada-juli-2026",
+    "judul": "Pemkab Kuningan tambah luas tanam padi 5.671 hektare pada Juli 2026",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-16T05:50:51+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
+    "judul": "Nobar Final Piala Dunia, Sekolah di Singapura Izinkan Siswa Masuk Lebih Siang",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T09:49:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/hiburan/912046/nama-buah-iblis-inazuma-anggota-pasukan-revolusioner-yang-selamatkan-luffy-di-one-piece",
+    "judul": "Nama Buah Iblis Inazuma, Anggota Pasukan Revolusioner yang Selamatkan Luffy di One Piece",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T09:40:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082871/harga-pangan-sabtu-ini-cabai-rawit-rp57250-kg-dan-telur-ayam-rp20550-kg",
+    "judul": "Harga pangan Sabtu ini, cabai rawit Rp57.250/kg dan telur ayam Rp20.550/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-17T19:28:22+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/photo/read/8248937/lahan-bekas-lumpur-banjir-bandang-disulap-menjadi-areal-pertanian-di-pidie-jaya",
+    "judul": "Lahan Bekas Lumpur Banjir Bandang Disulap Menjadi Areal Pertanian di Pidie Jaya",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T21:05:49+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/912142/1000-hektare-lebih-pesawahan-di-subang-terancam-gagal-panen-akibat-kekeringan",
+    "judul": "1.000 Hektare Lebih Pesawahan di Subang Terancam Gagal Panen akibat Kekeringan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T23:08:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Kekeringan di Kabupaten Subang menyebabkan 1.348 hektare persawahan padi terancam gagal panen.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5655475/khofifah-kolaborasi-jadikan-jatim-produsen-gula-lumbung-padi-nasional",
+    "judul": "Khofifah: Kolaborasi jadikan Jatim produsen gula-lumbung padi nasional",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-18T05:27:38+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912181/didier-deschamps-akhiri-keberasamaan-dengan-timnas-prancis",
+    "judul": "Didier Deschamps Akhiri Keberasamaan dengan Timnas Prancis",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-18T02:33:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5657765/bulog-kanwil-yogyakarta-serap-gabah-berbagai-kualitas-dari-petani",
+    "judul": "Bulog Kanwil Yogyakarta serap gabah berbagai kualitas dari petani",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-20T07:14:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/opini/912860/anomali-ekonomi-beras-perubahan-kebijakan-mendesak",
+    "judul": "Anomali Ekonomi Beras: Perubahan Kebijakan Mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T15:15:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/video/5658548/serapan-gabah-bulog-lebihi-target-di-yogyakarta-amankan-stok-pangan",
+    "judul": "Serapan gabah Bulog lebihi target, D.I. Yogyakarta amankan stok pangan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-21T00:49:28+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083559/harga-pangan-selasa-ini-cabai-rawit-rp47300-kg-dan-telur-ayam-rp30350-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp47.300/kg dan telur ayam Rp30.350/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-20T20:35:39+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tiiief370/kemarau-ancam-produksi-padi-indramayu-petani-minta-air-segera-digelontorkan",
+    "judul": "Kemarau Ancam Produksi Padi Indramayu, Petani Minta Air Segera Digelontorkan",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-20T23:37:27+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Musim kemarau menyebabkan kekeringan dan mengancam gagal panen padi di ribuan hektare lahan di Indramayu.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/913007/bapanas-dorong-penyaluran-beras-sphp-lewat-koperasi-desa-merah-putih",
+    "judul": "Bapanas Dorong Penyaluran Beras SPHP Lewat Koperasi Desa Merah Putih",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T23:53:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
+    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T06:59:00+00:00",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah Kota Padang menggelar Operasi Pasar Murah untuk menjaga stabilitas harga bahan pokok.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/914480/zulkifli-hasan-pastikan-stok-pangan-nasional-aman",
+    "judul": "Zulkifli Hasan Pastikan Stok Pangan Nasional Aman",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-24T05:58:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
