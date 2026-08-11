@@ -15,32 +15,17 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
-    "judul": "Cadangan beras pemerintah semester I 2026",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
+    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T06:59:00+00:00",
     "komoditas_terdeteksi": [
-      "beras"
+      "minyak_goreng"
     ],
     "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
-    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah Kota Padang menggelar Operasi Pasar Murah untuk menjaga stabilitas harga bahan pokok.",
+    "llm_certainty": 0.85,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
