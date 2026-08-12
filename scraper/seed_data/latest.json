@@ -3360,5 +3360,31 @@
       "33"
     ],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "PIHPS: Harga cabai rawit Rp61.350/kg, telur ayam Rp29.450/kg",
+    "url": "https://www.antaranews.com/berita/5690229/pihps-harga-cabai-rawit-rp61350-kg-telur-ayam-rp29450-kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-11T18:28:23Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp61.350 per kilogram (kg), sedangkan telur ayam ras Rp29.450 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 08.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp39.400 per kg, bawang putih Rp40.650 per kg.\nSelain itu, beras kualitas bawah I di harga Rp14.850 per kg, beras kualitas bawah II Rp14.650 per kg. Sedangkan beras kualitas medium I Rp16.450 per kg, dan beras kualitas medium II di harga Rp16.250 per kg.\nLalu, beras kualitas super I di harga Rp17.750 per kg, dan beras kualitas super II Rp17.200 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.200 per kg, cabai merah keriting Rp51.200 per kg, dan cabai rawit hijau Rp54.050 per kg.\nKemudian, daging ayam ras segar Rp40.600 per kg, daging sapi kualitas I Rp151.000 per kg, daging sapi kualitas II di harga Rp142.050 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, gula pasir lokal Rp19.100 per kg.\nSementara itu, minyak goreng curah di harga Rp20.500 per liter, minyak goreng kemasan bermerek I di harga Rp24.250 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.500 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Rudi Tanoe Diperiksa KPK, Kerugian Negara Kasus Bansos Beras Dihitung",
+    "url": "https://www.liputan6.com/news/read/8267660/rudi-tanoe-diperiksa-kpk-kerugian-negara-kasus-bansos-beras-dihitung",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-08-11T18:37:51Z",
+    "isi_teks": "Liputan6.com, Jakarta -Komisi Pemberantasan Korupsi (KPK) bersama auditor Badan Pengawasan Keuangan dan Pembangunan (BPKP) memeriksa Komisaris Utama PT Dosni Roha Logistik, Bambang Rudijanto Tanoesoedibjo (BRT) aliasRudi Tanoe.\nPemeriksaan dilakukan untuk mendalami dugaan korupsi penyaluran bantuan sosial (bansos) beras Program Keluarga Harapan (PKH) sekaligus menghitung potensi kerugian keuangan negara.\nRudi Tanoe diperiksa sebagai saksi di Gedung Merah Putih KPK, Selasa (11/8/2026). Pemeriksaan tersebut dilakukan penyidik bersama auditor BPKP untuk mendalami proses pengadaan dan penyaluran bansos beras yang diduga tidak sesuai dengan ketentuan dalam kontrak.\nJuru Bicara KPK Budi Prasetyo mengatakan pemeriksaan Rudi Tanoe salah satunya berkaitan dengan penghitungan kerugian keuangan negara yang diduga timbul akibat perbuatan melawan hukum dalam proses pengadaan dan penyaluran bansos.\n\"Di mana dalam pemeriksaan kali ini dilakukan oleh penyidik bersama auditor BPKP untuk keperluan penghitungan kerugian keuangan negara yang diakibatkan dalam dugaan perbuatan melawan hukum para pihak dalam proses pengadaan penyaluran bansos beras,\" kata Budi.\nSalah satu hal yang didalami adalah mekanisme distribusi beras kepada keluarga penerima manfaat (KPM).\nKPK menemukan adanya dugaan pelaksanaan distribusi yang tidak sesuai dengan perjanjian awal antara penyedia jasa dan Kementerian Sosial. Dalam kontrak, penyaluran bansos beras seharusnya dilakukan hingga ke rumah penerima atau secara door to door.\nNamun, distribusi yang dilakukan sejumlah vendor diduga hanya berhenti di kantor kelurahan.\n\"Sehingga dalam pemeriksaan tersebut tentunya didalami bagaimana proses dan mekanisme pengadaan penyaluran bansos beras tersebut, di mana dalam kontraknya seharusnya bansos itu sampai dengan rumah ke rumah para penerima bantuan sosial. Yang artinya kontrak itu harusnya sampai ke door to door,\" ujar Budi.\n\"Namun demikian penyaluran yang dilakukan oleh para distributor ini, para vendor yang mengerjakan pengadaan penyaluran bansos beras ini tidak sampai ke titik penerima tapi hanya sampai di kelurahan-kelurahan. Yang artinya ini juga bergeser dari kontrak yang disepakati oleh pihak Kemensos dengan para penyedia jasa,\" sambungnya.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "ok"
   }
 ]
