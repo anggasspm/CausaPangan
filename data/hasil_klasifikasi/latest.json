@@ -15,17 +15,32 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
-    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "url": "https://mediaindonesia.com/nusantara/912305/harga-cabai-di-bangka-masih-tinggi-cabai-rawit-tembus-rp75-ribu-per-kg",
+    "judul": "Harga Cabai di Bangka Masih Tinggi, Cabai Rawit Tembus Rp75 Ribu per Kg",
     "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-23T06:59:00+00:00",
+    "tanggal_terbit": "2026-07-18T22:10:00+00:00",
     "komoditas_terdeteksi": [
-      "minyak_goreng"
+      "cabai_rawit_merah"
     ],
     "wilayah_terdeteksi": [],
-    "penyebab": "kebijakan_pemerintah",
-    "penyebab_detail": "Pemerintah Kota Padang menggelar Operasi Pasar Murah untuk menjaga stabilitas harga bahan pokok.",
-    "llm_certainty": 0.85,
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/912469/perokok-dewasa-mulai-beralih-ke-produk-tembakau-alternatif",
+    "judul": "Perokok Dewasa Mulai Beralih ke Produk Tembakau Alternatif",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-19T10:03:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
