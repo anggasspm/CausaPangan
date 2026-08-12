@@ -15,16 +15,34 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://www.liputan6.com/news/read/8267481/gus-alex-didakwa-perkaya-diri-rp-936-m-dari-kasus-kuota-haji",
-    "judul": "Gus Alex Didakwa Perkaya Diri Rp 93,6 M dari Kasus Kuota Haji",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-08-11T06:46:01+00:00",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
+    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
+    ],
+    "wilayah_terdeteksi": [
+      "3302"
+    ],
+    "penyebab": "lonjakan_permintaan_musiman",
+    "penyebab_detail": "Kenaikan harga cabai dipemicu oleh meningkatnya kembali permintaan dari kantin sekolah dan warung makan setelah masa libur sekolah berakhir.",
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
