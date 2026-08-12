@@ -3386,5 +3386,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp61.350/kg dan telur ayam Rp29.450/kg",
+    "url": "https://jatim.antaranews.com/berita/1089517/harga-pangan-rabu-ini-cabai-rawit-rp61350-kg-dan-telur-ayam-rp29450-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-11T19:45:59Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp61.350 per kilogram (kg), sedangkan telur ayam ras Rp29.450 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 08.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp39.400 per kg, bawang putih Rp40.650 per kg.Selain itu, beras kualitas bawah I di harga Rp14.850 per kg, beras kualitas bawah II Rp14.650 per kg. Sedangkan beras kualitas medium I Rp16.450 per kg, dan beras kualitas medium II di harga Rp16.250 per kg.\nLalu, beras kualitas super I di harga Rp17.750 per kg, dan beras kualitas super II Rp17.200 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.200 per kg, cabai merah keriting Rp51.200 per kg, dan cabai rawit hijau Rp54.050 per kg.\nKemudian, daging ayam ras segar Rp40.600 per kg, daging sapi kualitas I Rp151.000 per kg, daging sapi kualitas II di harga Rp142.050 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, gula pasir lokal Rp19.100 per kg.\nSementara itu, minyak goreng curah di harga Rp20.500 per liter, minyak goreng kemasan bermerek I di harga Rp24.250 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.500 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
