@@ -15,10 +15,27 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
-    "judul": "Cadangan beras pemerintah semester I 2026",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "url": "https://www.liputan6.com/news/read/8248398/prabowo-pimpin-panen-raya-serentak-dari-malang",
+    "judul": "Prabowo Pimpin Panen Raya Serentak dari Malang",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T00:52:21+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3573"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5654123/dkpp-indramayu-targetkan-produksi-padi-tembus-16-juta-ton-pada-2026",
+    "judul": "DKPP Indramayu targetkan produksi padi tembus 1,6 juta ton pada 2026",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-17T03:17:30+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -30,19 +47,16 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
-    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
-    "sumber_media": "Antara Jateng - Ekonomi",
-    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
+    "url": "https://jatim.antaranews.com/berita/1084461/harga-pangan-jumat-ini-cabai-rawit-rp46200-kg-dan-telur-ayam-rp28200-kg",
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp46.200/kg dan telur ayam Rp28.200/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-23T20:44:12+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah",
-      "cabai_merah_keriting"
+      "cabai_rawit_merah"
     ],
-    "wilayah_terdeteksi": [
-      "3302"
-    ],
-    "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Kenaikan harga cabai dipemicu oleh meningkatnya kembali permintaan dari kantin sekolah dan warung makan setelah masa libur sekolah berakhir.",
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
