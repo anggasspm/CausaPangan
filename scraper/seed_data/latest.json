@@ -3686,5 +3686,31 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bantuan Pangan Tiga Bulan Mulai Disalurkan",
+    "url": "https://mediaindonesia.com/nusantara/921163/bantuan-pangan-tiga-bulan-mulai-disalurkan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-13T15:21:00Z",
+    "isi_teks": "Perbedaan jumlah penumpang dengan manifes temuan serius.\nPERUM Bulogmulai menyalurkanbantuan pangan berasuntuk alokasi Juli-September 2026 di sejumlah daerah. Penyaluran dilakukan untuk menjaga daya beli masyarakat sekaligus memastikan kebutuhan pangan keluarga penerima manfaat tetap terpenuhi.\nDi Kota Yogyakarta, penyaluran bantuan pangan dimulai Selasa (11/8). Setiap Penerima Bantuan Pangan (PBP) menerima 30 kilogram beras sekaligus untuk alokasi tiga bulan, masing-masing 10 kilogram per bulan.\nPimpinan Wilayah Perum Bulog Kanwil Yogyakarta Dedi Aprilyadi mengatakan penyaluran bantuan pangan akan berlangsung hingga 30 September 2026. Program tersebut merupakan bagian dari jaring pengaman sosial pemerintah.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Swasembada Pangan Bukti Nyata Kemerdekaan",
+    "url": "https://mediaindonesia.com/ekonomi/921264/swasembada-pangan-bukti-nyata-kemerdekaan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-13T14:54:00Z",
+    "isi_teks": "Perbedaan jumlah penumpang dengan manifes temuan serius.\nDELAPAN puluh satu tahun setelah Proklamasi Kemerdekaan, Indonesia mencatat sebuah lompatan bersejarah. Berawal dari negara yang dua tahun lalu harus mengimpor tujuh juta ton beras akibat tekanan El Niño, Indonesia kini berhasil meningkatkan produksi dan menghentikan impor beras medium. Tak berhenti di situ, cadangan beras pemerintah (CBP) pun tercatat tertinggi sepanjang sejarah, nilai tukar petani (NTP) tertinggi setelah 34 tahun sekaligus kembali meneguhkanswasembada pangansebagai simbol baru kemerdekaan bangsa.\nDi tengah dunia yang masih dibayangi krisis pangan, perubahan iklim, dan konflik geopolitik, kemampuan sebuah negara memenuhi kebutuhan pangannya sendiri menjadi ukuran nyata kedaulatan.\nBagi Indonesia, swasembada pangan bukan sekadar target produksi atau keberhasilan sektor pertanian. Ia telah menjadi simbol baru kemerdekaan, yakni kemampuan bangsa berdiri di atas kekuatan sendiri tanpa bergantung pada negara lain untuk memenuhi kebutuhan paling mendasar yaitu pangan.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
