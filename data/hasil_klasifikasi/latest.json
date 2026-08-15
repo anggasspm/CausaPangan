@@ -10,7 +10,7 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
+    "llm_certainty": 0.98,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
