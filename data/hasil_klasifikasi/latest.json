@@ -10,6 +10,36 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
+    "judul": "Nobar Final Piala Dunia, Sekolah di Singapura Izinkan Siswa Masuk Lebih Siang",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T09:49:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/912305/harga-cabai-di-bangka-masih-tinggi-cabai-rawit-tembus-rp75-ribu-per-kg",
+    "judul": "Harga Cabai di Bangka Masih Tinggi, Cabai Rawit Tembus Rp75 Ribu per Kg",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-18T22:10:00+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
