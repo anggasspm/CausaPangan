@@ -4019,5 +4019,20 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Hari Jadi Ke-81 Jateng: Dari Sawah Jawa Tengah untuk Meja Makan Indonesia",
+    "url": "https://mediaindonesia.com/nusantara/922400/hari-jadi-ke-81-jateng-dari-sawah-jawa-tengah-untuk-meja-makan-indonesia",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-16T03:00:00Z",
+    "isi_teks": "Perbedaan jumlah penumpang dengan manifes temuan serius.\nMESIN panen bergerak menyusuri hamparan sawah di Desa Gentan, Kecamatan Bendosari, Kabupaten Sukoharjo. Di lahan seluas sekitar 264 hektare itu, lebih dari 100 petani yang tergabung dalam Gapoktan Sari Tani menggantungkan penghidupannya. Pada musim tanam kedua 2026, mereka mampu memanen lebih dari enam ton padi per hektare\nBagi Ketua Gapoktan Desa Gentan, Joko Mursito, panen raya tersebut bukan hanya tentang bulir padi yang menguning. Momentum itu juga memberi kesempatan kepada para petani untuk menyampaikan langsung kebutuhan mereka kepada pemerintah, mulai dari ketersediaan air untuk musim tanam ketiga, jaringan listrik bagi sumur pertanian, tambahan mesin panen, hingga perbaikan jalan usaha tani.\n\"Alhamdulillah petani Desa Gentan senang, karena aspirasi kami langsung ditangkap Pak Gubernur. Kami merasa diperhatikan dan nyaman,\" ujar Joko Mursito pada 24 Juni 2026.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "33"
+    ],
+    "isi_teks_status": "fallback"
   }
 ]
