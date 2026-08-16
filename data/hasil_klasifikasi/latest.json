@@ -1,16 +1,46 @@
 [
   {
-    "url": "https://www.liputan6.com/news/read/8247040/viral-kepergok-curi-minyak-goreng-perempuan-nyebur-ke-kali",
-    "judul": "Viral Kepergok Curi Minyak Goreng, Perempuan Nyebur ke Kali",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-07-15T04:49:24+00:00",
+    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
     "komoditas_terdeteksi": [
-      "minyak_goreng"
+      "cabai_rawit_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.98,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/911949/kualitas-sumber-air-menurun-sistem-pengolahan-berbasis-uji-lokasi-jadi-kebutuhan-mendesak",
+    "judul": "Kualitas Sumber Air Menurun, Sistem Pengolahan Berbasis Uji Lokasi Jadi Kebutuhan Mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T05:28:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8248719/prabowo-sindir-pihak-mengeluh-beras-mahal-suruh-tanam-padi-sendiri",
+    "judul": "Prabowo Sindir Pihak Mengeluh Beras Mahal: Suruh Tanam Padi Sendiri",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T06:41:27+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   },
@@ -30,17 +60,17 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/nusantara/912305/harga-cabai-di-bangka-masih-tinggi-cabai-rawit-tembus-rp75-ribu-per-kg",
-    "judul": "Harga Cabai di Bangka Masih Tinggi, Cabai Rawit Tembus Rp75 Ribu per Kg",
+    "url": "https://mediaindonesia.com/megapolitan/912760/restoran-di-menteng-kebakaran-dipicu-bara-alat-pemanggang",
+    "judul": "Restoran di Menteng Kebakaran, Dipicu Bara Alat Pemanggang",
     "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-18T22:10:00+00:00",
+    "tanggal_terbit": "2026-07-20T06:23:00+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
+      "beras"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.95,
+    "llm_certainty": 0.98,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
