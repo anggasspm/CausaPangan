@@ -1,26 +1,11 @@
 [
   {
-    "url": "https://www.antaranews.com/berita/5674253/mentan-amran-80-persen-temuan-beras-fortifikasi-tak-sesuai-standar",
-    "judul": "Mentan Amran: 80 persen temuan beras fortifikasi tak sesuai standar",
-    "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-31T01:21:49+00:00",
+    "url": "https://www.liputan6.com/news/read/8247040/viral-kepergok-curi-minyak-goreng-perempuan-nyebur-ke-kali",
+    "judul": "Viral Kepergok Curi Minyak Goreng, Perempuan Nyebur ke Kali",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-15T04:49:24+00:00",
     "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.9,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://ekonomi.republika.co.id/berita/tj0xim416/kemarau-panjang-ancam-panen-asuransi-usaha-tani-harus-diperkuat",
-    "judul": "Kemarau Panjang Ancam Panen, Asuransi Usaha Tani Harus Diperkuat",
-    "sumber_media": "Republika - Ekonomi",
-    "tanggal_terbit": "2026-07-31T00:00:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
+      "minyak_goreng"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
@@ -30,132 +15,12 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://mediaindonesia.com/humaniora/916743/senyawa-dedak-padi-berpotensi-atasi-masalah-usus-hiperaktif",
-    "judul": "Senyawa Dedak Padi Berpotensi Atasi Masalah Usus Hiperaktif",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-30T22:00:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.99,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.antaranews.com/berita/5675149/dirut-bulog-ajak-masyarakat-kenali-mutu-beras-sesuai-standar",
-    "judul": "Dirut Bulog ajak masyarakat kenali mutu beras sesuai standar",
-    "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-31T08:35:29+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.antaranews.com/berita/5675579/festival-bunga-dan-buah-etalase-potensi-karo",
-    "judul": "Festival bunga dan buah, etalase potensi Karo",
-    "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-31T22:31:50+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.antaranews.com/berita/5675527/akademisi-evaluasi-beras-fortifikasi-jaga-integritas-sistem-pangan",
-    "judul": "Akademisi: Evaluasi beras fortifikasi jaga integritas sistem pangan",
-    "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-31T21:37:43+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jatim.antaranews.com/berita/1086796/bapanas-pastikan-cabut-izin-edar-beras-fortifikasi-tak-penuhi-syarat",
-    "judul": "Bapanas pastikan cabut izin edar beras fortifikasi tak penuhi syarat",
+    "url": "https://jatim.antaranews.com/berita/1083076/harga-telur-ayam-rp29300-kg-bawang-merah-rp43800-kg",
+    "judul": "Harga telur ayam Rp29.300/kg, bawang merah Rp43.800/kg",
     "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-08-01T01:00:00+00:00",
+    "tanggal_terbit": "2026-07-18T19:23:11+00:00",
     "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/ekonomi/917128/bapanas-cabut-izin-edar-beras-fortifikasi-tak-layak-kerugian-konsumen-capai-rp71-triliun",
-    "judul": "Bapanas Cabut Izin Edar Beras Fortifikasi Tak Layak, Kerugian Konsumen Capai Rp71 Triliun",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-08-01T00:18:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/humaniora/917302/rahasia-pasir-putih-pantai-peran-vital-ikan-kakatua-bagi-ekosistem-terumbu-karang",
-    "judul": "Rahasia Pasir Putih Pantai: Peran Vital Ikan Kakatua bagi Ekosistem Terumbu Karang",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-08-01T14:25:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.98,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://kumparan.com/kumparannews/ledakan-di-restoran-di-moskow-berasal-dari-bom-rusia-perketat-keamanan-27uAD9KGLKY",
-    "judul": "Ledakan di Restoran di Moskow Berasal dari Bom, Rusia Perketat Keamanan",
-    "sumber_media": "Kumparan",
-    "tanggal_terbit": "2026-08-01T15:30:05+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.99,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://kumparan.com/asep-yusuf/pembuatan-silase-jerami-padi-inovasi-pemanfaatan-limbah-dan-dukung-peternak-27t4HRdOyjv",
-    "judul": "Pembuatan Silase Jerami Padi, Inovasi Pemanfaatan Limbah dan Dukung Peternak",
-    "sumber_media": "Kumparan",
-    "tanggal_terbit": "2026-08-01T15:00:05+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
+      "bawang_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
