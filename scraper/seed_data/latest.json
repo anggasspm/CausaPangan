@@ -4301,5 +4301,33 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Pemkab Majalengka mencatat surplus beras 122.421 ton sampai Juli 2026",
+    "url": "https://jabar.antaranews.com/berita/703052/pemkab-majalengka-mencatat-surplus-beras-122421-ton-sampai-juli-2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-08-18T06:17:31Z",
+    "isi_teks": "Majalengka, Jawa Barat (ANTARA) - Pemerintah Kabupaten Majalengka, Jawa Barat, mencatat surplus beras sebesar 122.421 ton hingga Juli 2026, dengan posisi ketersediaan mencapai 294.086 ton dan kebutuhan 171.666 ton.\nBupati Majalengka Eman Suherman di Majalengka, Selasa, mengatakan surplus tersebut menjadi salah satu capaian pemerintah daerah dalam menjaga ketahanan pangan sekaligus mendukung produktivitas petani.\n\"Pada sektor ketahanan pangan, Majalengka juga mencatat capaian positif,\" katanya.\nMenurut dia, pemerintah daerah terus meningkatkan dukungan terhadap sektor pertanian, terutama melalui pembangunan dan penguatan infrastruktur pengairan untuk memenuhi kebutuhan air lahan pertanian.\nPihaknya pun telah menyalurkan 119 unit irigasi pompa dan 37 unit irigasi pipa untuk mendukung pengairan lahan pertanian di sejumlah wilayah.\n\"Penguatan infrastruktur pertanian terus kami lakukan, termasuk melalui pembangunan dan dukungan jaringan irigasi untuk membantu petani meningkatkan produktivitas,\" ujarnya.\nDukungan infrastruktur juga, kata dia, dilakukan melalui Instruksi Presiden Nomor 6 Tahun 2025 bersama Balai Besar Wilayah Sungai (BBWS) Cimanuk-Cisanggarung.\nIa menyebutkan pada 2026, rehabilitasi jaringan irigasi dilakukan pada 12 daerah irigasi dengan cakupan mencapai 556 hektare dan nilai pekerjaan sebesar Rp2,6 miliar.\nSelain rehabilitasi, pemerintah daerah membangun 27 titik Jaringan Irigasi Air Tanah (JIAT) dengan nilai mencapai Rp48,6 miliar guna mendukung ketersediaan air untuk lahan pertanian.\n\"Pada komoditas jagung, Majalengka juga mencatat surplus 13.755 ton hingga Juli 2026, dengan ketersediaan 33.920 ton dan kebutuhan sebanyak 29.157 ton,\" katanya.\nLebih lanjut, ia menuturkan dari sisi sarana produksi, penyerapan pupuk subsidi urea di Majalengka mencapai 20.153 ton atau 55,36 persen dari alokasi 36.400 ton.\nSementara pupuk NPK, kata dia, terserap 17.110 ton atau 60,01 persen dari alokasi 28.514 ton dan pihaknya memastikan stok pupuk subsidi masih aman hingga Desember 2026.\n\"Berbagai capaian tersebut merupakan hasil kerja bersama pemerintah, petani, dan seluruh pihak yang berkontribusi dalam menjaga produktivitas serta ketahanan pangan di Kabupaten Majalengka,\" ucap dia.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "32"
+    ],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "12 Bahaya Sering Konsumsi Makanan Pedas",
+    "url": "https://mediaindonesia.com/humaniora/923244/12-bahaya-sering-konsumsi-makanan-pedas",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-18T06:25:00Z",
+    "isi_teks": "Kehadiran pejabat negara bukan hanya untuk ikut upacara.\nMAKANAN pedasadalah makanan atau hidangan yang memiliki sensasi panas atau menyengat pada mulut, umumnya karena mengandung capsaicin dari cabai.\nMakanan pedas dapat berupa sambal, masakan berbumbu cabai, mi pedas, serta berbagai hidangan yang menggunakan cabai sebagai bahan utama atau tambahan.\nKandungan capsaicin pada cabai dapat menyebabkan rasa tidak nyaman atau nyeri pada perut pada sebagian orang.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
