@@ -4181,5 +4181,32 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bulog: Ada Stok Beras 37 Ribu Ton di NTT untuk Korban Gempa",
+    "url": "https://mediaindonesia.com/ekonomi/922917/bulog-ada-stok-beras-37-ribu-ton-di-ntt-untuk-korban-gempa",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T17:39:00Z",
+    "isi_teks": "Kehadiran pejabat negara bukan hanya untuk ikut upacara.\nDirektur UtamaPerum Bulog, Ahmad Rizal Ramdhani, memastikan stok pangan di Nusa Tenggara Timur (NTT) dalam kondisi aman untuk mendukung kebutuhan masyarakat terdampak selama masa tanggap darurat dan pemulihan pascagempa. Persediaan beras di wilayah tersebut saat ini tercatat berkisar antara 35 ribu hingga 37 ribu ton.\nRizal menjelaskan bahwa jumlah tersebut sangat mencukupi untuk memenuhi kebutuhan penanganan bencana dalam waktu dekat. \"Sekarang stok aman. NTT itu stoknya antara 35 sampai 37 ribu ton. Jadi kalau nanti masih kurang, kita akan dorong untuk bantu penambahan atau penebalan istilahnya,\" ujar Rizal saat ditemui usai Final Mini Soccer Bulog Cup 2026 di Jakarta, Senin (17/8).\nGuna memastikan distribusi yang merata, Bulog telah menginstruksikan kantor cabang di setiap kabupaten/kota yang terdampak untuk menyiagakan stok logistik secara mandiri. Langkah ini diambil agar kebutuhan pangan masyarakat dapat dipenuhi tanpa mengganggu ketersediaan logistik di wilayah lain.",
+    "komoditas_terdeteksi": [
+      "beras",
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Pemkab Manggarai Barat Distribusikan 36 Ton Beras Pascagempa NTT",
+    "url": "https://mediaindonesia.com/nusantara/922885/pemkab-manggarai-barat-distribusikan-36-ton-beras-pascagempa-ntt",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T15:31:00Z",
+    "isi_teks": "Kehadiran pejabat negara bukan hanya untuk ikut upacara.\nPEMERINTAHKabupatenManggarai Barat, Nusa Tenggara Timur (NTT), bergerak cepat dalam menangani dampakgempabumi yang mengguncang wilayah Flores pada Senin (17/8). Pada hari ketiga pascabencana, pemerintah daerah mulai mendistribusikan 36 ton beras ke 12 kecamatan terdampak sebagai bagian dari pemenuhan kebutuhan dasar masyarakat.\nPenyaluranbantuanlogistik tahap awal ini dilakukan secara serempak dengan mengerahkan sedikitnya 40 kendaraan dinas milik Pemkab Manggarai Barat serta lembaga vertikal lainnya. Langkah ini diambil untuk memastikan bantuan pangan menjangkau warga di wilayah-wilayah yang sulit diakses dalam waktu singkat.\nBupati Manggarai Barat, Edistasius Endi, menegaskan bahwa seluruh unsur pemerintah daerah dan Forkopimda berkomitmen untuk memastikan bantuan diterima langsung oleh masyarakat yang membutuhkan. Distribusi ini dipimpin langsung oleh masing-masing unsur pimpinan daerah yang dibagi tugas untuk mengawal penyaluran di 12 kecamatan.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
