@@ -4329,5 +4329,33 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "PIHPS: Harga cabai rawit Rp67.350/kg, telur ayam Rp29.350/kg",
+    "url": "https://www.antaranews.com/berita/5700760/pihps-harga-cabai-rawit-rp67350-kg-telur-ayam-rp29350-kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-18T17:51:09Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp67.350 per kilogram (kg), sedangkan telur ayam ras Rp29.350 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 07.24 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp39.000 per kg, bawang putih Rp40.200 per kg.\nSelain itu, beras kualitas bawah I di harga Rp14.800 per kg, beras kualitas bawah II Rp14.650 per kg. Sedangkan beras kualitas medium I Rp16.500 per kg, dan beras kualitas medium II di harga Rp16.300 per kg.\nLalu, beras kualitas super I di harga Rp17.750 per kg, dan beras kualitas super II Rp17.250 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.250 per kg, cabai merah keriting Rp51.300 per kg, dan cabai rawit hijau Rp56.200 per kg.\nKemudian, daging ayam ras segar Rp41.750 per kg, daging sapi kualitas I Rp151.400 per kg, daging sapi kualitas II di harga Rp142.450 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, gula pasir lokal Rp19.050 per kg.\nSementara itu, minyak goreng curah di harga Rp20.450 per liter, minyak goreng kemasan bermerek I di harga Rp24.300 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.500 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Petani Sumedang sebut harga pupuk turun bantu kurangi beban produksi",
+    "url": "https://jabar.antaranews.com/berita/703093/petani-sumedang-sebut-harga-pupuk-turun-bantu-kurangi-beban-produksi",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-08-18T16:59:14Z",
+    "isi_teks": "Sumedang (ANTARA) - Petani padi di Desa Ujungjaya, Kecamatan Ujungjaya, Kabupaten Sumedang, Jawa Barat, merasakan penurunan harga pupuk sekitar 20 persen dibandingkan musim tanam sebelumnya sehingga membantu menekan beban biaya produksi.\nPetani setempat Solihin di Sumedang, Jawa Barat, Selasa, mengatakan ketersediaan pupuk, termasuk pupuk bersubsidi, saat ini relatif mudah diperoleh untuk memenuhi kebutuhan sarana produksi selama kegiatan budidaya padi.\n“Harga pupuk turun sekitar 20 persen dibandingkan tahun sebelumnya. Untuk ketersediaannya juga relatif mudah didapatkan,” kata Solihin.\nMenurut dia, harga pupuk NPK Phonska dan Urea pada musim tanam sebelumnya Rp230.000 kini berada sekitar Rp189.000 per kuintal sehingga dinilai membantu petani karena kebutuhan pupuk menjadi salah satu komponen biaya dalam produksi padi.\nPemerintah menetapkan HET pupuk bersubsidi terbaru, yakni Urea Rp1.800 per kilogram dari sebelumnya Rp2.250, NPK Phonska Rp1.840 dari Rp2.300, NPK Kakao Rp2.640 dari Rp3.300, dan pupuk organik Rp640 dari Rp800 per kilogram.\nSolihin mengatakan biaya produksi padi saat ini masih berada pada kisaran Rp12 juta hingga Rp15 juta per hektare dengan biaya tenaga kerja untuk kegiatan tanam meningkat dari sekitar Rp60.000-Rp70.000 menjadi sekitar Rp100.000.\nMeski sejumlah biaya usaha tani meningkat, kondisi tersebut masih dapat diimbangi kenaikan harga gabah yang diterima petani dengan harga gabah basah saat ini mencapai sekitar Rp7.600 per kilogram sehingga pendapatan dari hasil panen menjadi lebih tinggi.\n“Dengan harga pupuk yang lebih terjangkau dan ketersediaannya cukup, tentu membantu petani dalam memenuhi kebutuhan produksi,” kata Solihin.\nSelain pupuk, penggunaan alat dan mesin pertanian pada sejumlah tahapan budidaya hingga panen turut membantu mengurangi kebutuhan tenaga kerja manual sehingga dapat menekan dampak kenaikan biaya tenaga kerja dan meningkatkan efisiensi usaha tani.\nSebelumnya, Dinas Ketahanan Pangan dan Pertanian (DKPP) Sumedang menyebut efisiensi penggunaan pupuk diperkuat melalui pemetaan kondisi lahan dan pemupukan berimbang sesuai kebutuhan masing-masing wilayah pertanian.\nDKPP Sumedang juga memperkuat ketepatan sasaran pupuk bersubsidi melalui pemutakhiran data kebutuhan petani dalam RDKK dan e-RDKK serta pengawasan distribusi.\nHal tersebut dinilai dapat membantu menurunkan harga pupuk yang lebih rendah sehingga petani masih memiliki ruang untuk menjaga pendapatan meskipun biaya produksi padi tetap mengalami kenaikan.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [
+      "32"
+    ],
+    "isi_teks_status": "fallback"
   }
 ]
