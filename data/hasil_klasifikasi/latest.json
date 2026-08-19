@@ -1,42 +1,9 @@
 [
   {
-    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
-    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
-    "sumber_media": "Antara Jateng - Ekonomi",
-    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah",
-      "cabai_merah_keriting"
-    ],
-    "wilayah_terdeteksi": [
-      "3302"
-    ],
-    "penyebab": "lonjakan_permintaan_musiman",
-    "penyebab_detail": "Kenaikan harga cabai dipicu oleh peningkatan permintaan seiring berakhirnya libur sekolah dan dimulainya tahun ajaran baru.",
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
-    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jabar.antaranews.com/berita/699364/kuningan-tambah-luasan-tanam-padi-5671-hektare-di-juli-2026",
-    "judul": "Kuningan tambah luasan tanam padi 5.671 hektare di Juli 2026",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
     "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-16T06:17:42+00:00",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -48,17 +15,32 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://www.antaranews.com/berita/5653317/harga-cabai-rawit-rp45000-kg-telur-ayam-rp26000-kg-per-jumat-pagi",
-    "judul": "Harga cabai rawit Rp45.000/kg, telur ayam Rp26.000/kg per Jumat pagi",
+    "url": "https://www.antaranews.com/berita/5673024/bulog-bali-catat-stok-beras-tembus-12-ribu-ton-cukup-hingga-2027",
+    "judul": "Bulog Bali catat stok beras tembus 12 ribu ton cukup hingga 2027",
     "sumber_media": "Antara - Bisnis",
-    "tanggal_terbit": "2026-07-16T19:15:09+00:00",
+    "tanggal_terbit": "2026-07-30T05:33:16+00:00",
     "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
+      "beras"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
     "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tizhd0368/mentan-soroti-penggilingan-beras-tipu-masyarakat-36-tersangka-dijerat",
+    "judul": "Mentan Soroti Penggilingan Beras Tipu Masyarakat, 36 Tersangka Dijerat",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-30T03:34:12+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "penimbunan_spekulasi",
+    "penyebab_detail": "Praktik manipulasi pasar dan spekulasi keuntungan di atas HET oleh mafia beras dan konglomerat penggilingan.",
+    "llm_certainty": 0.85,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   }
