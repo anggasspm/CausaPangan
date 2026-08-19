@@ -4357,5 +4357,59 @@
       "32"
     ],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga pangan Rabu ini,  cabai rawit Rp67.350/kg dan telur ayam Rp29.350/kg",
+    "url": "https://jatim.antaranews.com/berita/1091439/harga-pangan-rabu-ini-cabai-rawit-rp67350-kg-dan-telur-ayam-rp29350-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-18T18:31:17Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp67.350 per kilogram (kg), sedangkan telur ayam ras Rp29.350 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Rabu pukul 07.24 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp39.000 per kg, bawang putih Rp40.200 per kg.Selain itu, beras kualitas bawah I di harga Rp14.800 per kg, beras kualitas bawah II Rp14.650 per kg. Sedangkan beras kualitas medium I Rp16.500 per kg, dan beras kualitas medium II di harga Rp16.300 per kg.\nLalu, beras kualitas super I di harga Rp17.750 per kg, dan beras kualitas super II Rp17.250 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp49.250 per kg, cabai merah keriting Rp51.300 per kg, dan cabai rawit hijau Rp56.200 per kg.\nKemudian, daging ayam ras segar Rp41.750 per kg, daging sapi kualitas I Rp151.400 per kg, daging sapi kualitas II di harga Rp142.450 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.300 per kg, gula pasir lokal Rp19.050 per kg.\nSementara itu, minyak goreng curah di harga Rp20.450 per liter, minyak goreng kemasan bermerek I di harga Rp24.300 per liter, serta minyak goreng kemasan bermerek II di harga Rp23.500 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Jerit Warga Manggarai Timur 5 Hari Belum Dapat Bantuan: Kami Sudah Tak Berdaya",
+    "url": "https://www.liputan6.com/news/read/8272821/jerit-warga-manggarai-timur-5-hari-belum-dapat-bantuan-kami-sudah-tak-berdaya",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-08-18T22:15:55Z",
+    "isi_teks": "Liputan6.com, Jakarta -Sudah lima hari korbangempabumi di Posko Binaan Satar Kampas, Kecamatan Lamba Leda Utara, KabupatenManggarai Timur, Nusa Tenggara Timur (NTT), belum mendapatkan bantuan. Padahal, mereka sangat membutuhkan beras dan air minum untuk menyambung hidup.\n\"Kami di sini sudah tidak berdaya,\" kata salah satu korban yang mengungsi di posko tersebut, Zaitun (36) kepadaLiputan6.com, Rabu (19/8/2026).\nZaitun mengatakan, warga kini tidak tahu lagi harus meminta bantuan kepada siapa. Persediaan kebutuhan pokok di sejumlah kios sekitar lokasi pengungsian telah habis.\nSelama lima hari terakhir, para korban bertahan hidup dengan beras yang dipungut dari reruntuhan bangunan rumah warga. Namun, persediaan tersebut kini semakin menipis.\nKondisi semakin memprihatinkan karena jumlah pengungsi di Posko Binaan Satar Kampas terus bertambah. Sejumlah balita bahkan mulai ikut mengungsi di posko tersebut.\n\"Per hari ini ada lagi warga dari kampung binaan yang sebelumnya mengungsi di tenda lain, sekarang gabung ke posko kami,\" ujarnya.\nZaitun bercerita, warga sempat diminta mengambil bantuan di Posko Ronting yang berjarak sekitar lima kilometer dari Posko Binaan Satar Kampas. Namun, bantuan yang tersedia ternyata mulai menipis.\nKondisi itu memicu ketegangan antarpengungsi. Keributan pun tak terhindarkan karena mereka berebut mendapatkan bantuan.\nSaat ini, Posko Binaan Satar Kampas diisi lebih dari ratusan orang. Mereka sangat membutuhkan sembako, air minum, selimut, sabun cuci, sabun mandi, pasta gigi, hingga sikat gigi.\n\"Kami sangat butuh itu,\" pinta Zaitun.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Petrokimia Gresik Dorong Produktivitas Cabai Rawit, Panen Naik 15 Persen",
+    "url": "https://ekonomi.republika.co.id/berita/tk028a370/petrokimia-gresik-dorong-produktivitas-cabai-rawit-panen-naik-15-persen",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-08-18T21:38:34Z",
+    "isi_teks": "Peningkatan produktivitas cabai rawit dinilai penting untuk menjaga pasokan.\nREPUBLIKA.CO.ID, JAKARTA — PT Petrokimia Gresik (Persero) melalui “Pestani Rawit Groo Festival” memberikan kesempatan kepada petanicabai rawitdi Jawa Timur untuk membuktikan langsung penerapan praktik budidaya yang lebih terarah. Sebanyak 270 petani dari Malang, Kediri, Mojokerto, Blitar, dan Probolinggo mengikuti program ini dengan menerapkan pemupukan dan budidaya berbasis teknologi di lahan masing-masing.\nDirektur Keuangan dan Umum Petrokimia Gresik, Adityo Wibowo, dalam acara awardingPestani Rawit Groo Festivaldi Desa Belung, Kecamatan Poncokusumo, Kabupaten Malang, menjelaskan bahwa penerapan praktik budidaya tersebut menunjukkan hasil positif. Melaluidemonstration plot(demplot), hasil panen mencapai 11,5 ton per hektare, atau meningkat sekitar 13 hingga 15 persen dibandingkan hasil panen sebelumnya yang mencapai 10 ton per hektare.\n“Kami ingin mendorong petani cabai rawit di Jawa Timur untuk terus meningkatkan hasil panen melalui pemupukan berimbang, pemanfaatan teknologi, dan praktik budidaya yang tepat, sehingga hasil panen semakin baik dan usaha tani semakin menguntungkan. Komitmen ini kami wujudkan melalui Pestani Rawit Groo Festival,” ujar Adit, sapaan akrab Adityo Wibowo dalam keterangan, Rabu (19/8/2026).\nJawa Timur memiliki peran penting dalam produksi cabai rawit nasional. Tercatat sekitar 35 persen produksi cabai rawit nasional berasal dari Jawa Timur, dengan total produksi mencapai lebih dari 600 ribu ton. Untuk itu, peningkatan produktivitas menjadi penting guna menjaga pasokan cabai sekaligus mendukung ketahanan pangan.\nMelalui Pestani Rawit Groo Festival, proses budidaya dan hasilnya juga dilombakan. Dalam kategori Groo Field Creation, peserta menerapkan paket budidaya yang telah disiapkanPetrokimia Gresiksejak tanam hingga panen. Penilaian lomba dilakukan berdasarkan berat total 54 buah cabai rawit dengan bobot penilaian sebesar 80 persen, sedangkan dokumentasi budidaya memiliki bobot 20 persen.\nAngka 54 dalam lomba tersebut memiliki makna khusus karena tahun ini Petrokimia Gresik memperingati HUT ke-54. Semangat ulang tahun perusahaan diwujudkan melalui kegiatan yang dekat dengan petani, sekaligus menjadi ruang untuk menunjukkan bahwa peningkatan produktivitas dapat dimulai dari praktik budidaya yang sederhana, tepat, dan konsisten.\nSelain kompetisi di lahan, Pestani Rawit Groo Festival juga menghadirkan Groo Plant Creator yang melibatkan 270 pegiat urban farming dari 27 provinsi di Indonesia. Melalui program ini, peserta membagikan pengalaman budidaya cabai, mulai dari penanaman hingga panen, melalui media sosial. Program tersebut turut diperkuat melalui Groo Plant Partner yang melibatkan 54influencer, Penyuluh Pertanian Lapangan (PPL), dan stakeholder untuk memperluas edukasi pertanian serta mendekatkan dunia pertanian kepada masyarakat, khususnya generasi muda. Secara keseluruhan, Groo Festival melibatkan 540 peserta yang terdiri atas petani dan pegiat urban farming dari berbagai daerah di Indonesia.\n“Kompetisi ini tidak hanya mencari petani dengan hasil panen terbaik, tetapi juga mendorong peserta untuk belajar dan membuktikan langsung penerapan budidaya yang lebih terarah di lahan masing-masing. Kami berharap praktik budidaya yang mampu memberikan hasil optimal ini dapat diduplikasi oleh petani lain di Jawa Timur, sehingga manfaat program semakin luas,” katanya.\nJl. KH Abdullah Syafei No.30, RT.4/RW.6, Bukit Duri, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12840\nBukit Duri, Kec. Tebet\nJakarta Selatan, Jakarta 12840\nEmail:sekretariat@republika.co.id (Redaksi)marketing@republika.co.id ( Marketing )event_management@republika.co.id ( Kerjasama )cc@republika.co.id ( Customer Care )",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3525"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Dataran Tinggi Krayan, Beras Organik, dan Peran Penting Taman Nasional",
+    "url": "https://mediaindonesia.com/nusantara/923466/dataran-tinggi-krayan-beras-organik-dan-peran-penting-taman-nasional",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-18T22:45:00Z",
+    "isi_teks": "Tidak ada lagi laporan warga yang masih dinyatakan hilang.\nADA tempat unik di Pulau Kalimantan. Jika biasanya pulau terbesar ketiga di dunia ini terkenal dengan dataran rendah dan sungai-sungai besar, Krayan menjadi anomali itu. Krayan terletak di Kabupaten Nunukan, Kalimantan Utara. Kawasan ini merupakan area pegunungan dengan ketinggian rata-rata untuk areal permukiman 1.000 meter di atas permukaan laut.\nRumah-rumah warga, rerata dikelilingi sawah, berada di bawah pegunungan. Beberapa bahkan diapit dua pegunungan atau berada di antara lekukannya. Pemandangan yang sangat cantik dan indah. Pegunungan itu memiliki ketinggian antara 1.400 hingga 1.800 mdpl. Bahkan beberapa puncaknya mencapai 2.000 mdpl.\n\"Krayan saat ini terbagi menjadi lima kecamatan. Semua memiliki topografi yang sama,\" kata Kepala Seksi Pengelolaan Taman Nasional Wilayah 1,Taman Nasional Kayan Mentarang, Hery Gunawan, memulai percakapan dengan Media Indonesia, pertengahan Juli silam.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
