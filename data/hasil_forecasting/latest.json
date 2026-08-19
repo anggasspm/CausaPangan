@@ -306,10 +306,10 @@
     "satuan": "Rp/kg",
     "persentase_perubahan": 0.69,
     "arah": "stabil",
-    "confidence": 0.8762501885194869,
+    "confidence": 0.95,
     "tier_data": "solid",
     "metode": "holt_winters",
-    "catatan": "Backtest MAPE 3.5% atas 6 bulan terakhir."
+    "catatan": "Backtest MAPE 3.5% atas 6 bulan terakhir. (confidence di-boost, ada sinyal berita valid)"
   },
   {
     "kode_wilayah": "3302",
