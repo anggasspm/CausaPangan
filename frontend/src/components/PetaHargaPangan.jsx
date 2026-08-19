@@ -1,11 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import {
   MapPin,
   TrendingUp,
   TrendingDown,
   Minus,
-  Newspaper,
-  Info,
   AlertCircle,
   CheckCircle,
   Filter,
@@ -28,9 +26,13 @@ L.Icon.Default.mergeOptions({
 });
 
 /* ------------------------------------------------------------------ */
-/* Data Acuan                                                         */
+/* Konfigurasi API                                                    */
 /* ------------------------------------------------------------------ */
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
+/* ------------------------------------------------------------------ */
+/* Data Acuan Lokasi & Kategori                                       */
+/* ------------------------------------------------------------------ */
 const KOMODITAS = [
   { kode: "beras", label: "Beras" },
   { kode: "cabai_rawit_merah", label: "Cabai Rawit Merah" },
@@ -65,67 +67,9 @@ const CITIES = [
   { kode: "3573", nama: "Kota Malang", provinsi: "Jawa Timur", lat: -7.9797, lng: 112.6304 },
 ];
 
-const KURASI = {
-  "3301|cabai_rawit_merah": {
-    persentase_perubahan: 15.4, arah: "naik", confidence: 0.82, tier_data: "solid",
-    penyebab: "cuaca_gagal_panen", penyebab_detail: "Curah hujan tinggi di sentra produksi menyebabkan gagal panen parsial pada tanaman cabai.",
-    rekomendasi: { target: "distributor", aksi: "Cari alternatif pasokan dari sentra produksi di luar wilayah terdampak sebelum harga naik lebih lanjut.", urgensi: "tinggi" },
-    sumber_berita: [{ judul: "Hujan penyebab utama gagal panen cabai di sentra produksi", tanggal_terbit: "2026-07-10" }],
-  },
-  "3573|bawang_merah": {
-    persentase_perubahan: -6.2, arah: "turun", confidence: 0.35, tier_data: "estimasi",
-    penyebab: "lonjakan_permintaan_musiman", penyebab_detail: "Indikasi awal penurunan permintaan pasca periode konsumsi tinggi, namun sinyal masih lemah.",
-    rekomendasi: null,
-    sumber_berita: [{ judul: "Harga bawang merah mulai melandai di sejumlah pasar", tanggal_terbit: "2026-07-08" }],
-  },
-  "3209|beras": {
-    persentase_perubahan: 0.6, arah: "stabil", confidence: 0.7, tier_data: "solid",
-    penyebab: null, penyebab_detail: null, rekomendasi: null, sumber_berita: [],
-  }
-};
-
-function seededRandom(seed) {
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (Math.imul(31, h) + seed.charCodeAt(i)) | 0;
-  return function () {
-    h = Math.imul(h ^ (h >>> 15), h | 1);
-    h ^= h + Math.imul(h ^ (h >>> 7), h | 61);
-    return ((h ^ (h >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-const PENYEBAB_KEYS = Object.keys(PENYEBAB_LABEL);
-
-function generateRecord(kodeWilayah, kodeKomoditas) {
-  const key = `${kodeWilayah}|${kodeKomoditas}`;
-  if (KURASI[key]) return KURASI[key];
-
-  const rnd = seededRandom(key);
-  const roll = rnd();
-  const persen = Math.round((rnd() * 22 - 8) * 10) / 10;
-  const arah = persen > 2 ? "naik" : persen < -2 ? "turun" : "stabil";
-  const confidence = Math.round((0.4 + rnd() * 0.55) * 100) / 100;
-  const tier = confidence >= 0.55 ? "solid" : "estimasi";
-  const adaSinyal = roll > 0.3;
-  const penyebab = adaSinyal ? PENYEBAB_KEYS[Math.floor(rnd() * PENYEBAB_KEYS.length)] : null;
-  const rekomendasiAda = penyebab && confidence >= 0.5;
-
-  return {
-    persentase_perubahan: persen, arah, confidence, tier_data: tier, penyebab,
-    penyebab_detail: penyebab ? "Sinyal dari pemberitaan mengindikasikan kategori penyebab ini sebagai faktor dominan pada periode berjalan." : null,
-    rekomendasi: rekomendasiAda ? {
-      target: rnd() > 0.5 ? "distributor" : "pedagang",
-      aksi: rnd() > 0.5 ? "Pantau perkembangan pasokan pada pekan berjalan dan siapkan alternatif sumber bila tren berlanjut." : "Sesuaikan stok secara bertahap mengikuti tren harga pada pekan berjalan.",
-      urgensi: Math.abs(persen) > 10 ? "tinggi" : "sedang",
-    } : null,
-    sumber_berita: adaSinyal ? [{ judul: "Pemberitaan terkait pergerakan harga di wilayah ini", tanggal_terbit: "2026-07-0" + (1 + Math.floor(rnd() * 9)) }] : [],
-  };
-}
-
 /* ------------------------------------------------------------------ */
-/* Visual Config - Tampilan Resmi/Formal                               */
+/* Visual Config - Tampilan Resmi/Formal                              */
 /* ------------------------------------------------------------------ */
-
 function colorInfo(p) {
   if (p >= 10) return { bg: "bg-red-600", border: "border-red-600", text: "text-red-700", icon: TrendingUp };
   if (p >= 3) return { bg: "bg-amber-500", border: "border-amber-500", text: "text-amber-700", icon: TrendingUp };
@@ -137,7 +81,7 @@ function fmtPersen(p) {
   return `${p > 0 ? "+" : ""}${p.toFixed(1)}%`;
 }
 
-// Marker Peta
+// Marker Peta Bulat Dinamis
 function createCustomMarker(rec, isSelected) {
   const info = colorInfo(rec.persentase_perubahan);
   const val = fmtPersen(rec.persentase_perubahan).replace("%", "");
@@ -161,26 +105,94 @@ function createCustomMarker(rec, isSelected) {
 /* ------------------------------------------------------------------ */
 /* Main Component                                                     */
 /* ------------------------------------------------------------------ */
-
 export default function PetaHargaPangan() {
   const [komoditas, setKomoditas] = useState(KOMODITAS[1].kode);
   const [selectedKota, setSelectedKota] = useState(null);
 
-  const data = useMemo(() => {
+  // State API
+  const [ringkasan, setRingkasan] = useState([]);
+  const [loadingRingkasan, setLoadingRingkasan] = useState(true);
+  const [errorRingkasan, setErrorRingkasan] = useState(null);
+
+  const [detail, setDetail] = useState(null);
+  const [loadingDetail, setLoadingDetail] = useState(false);
+  const [errorDetail, setErrorDetail] = useState(null);
+
+  // Fetch API (Ringkasan Peta)
+  useEffect(() => {
+    let cancelled = false;
+    setLoadingRingkasan(true);
+    setErrorRingkasan(null);
+
+    fetch(`${API_BASE_URL}/api/v1/prediksi/ringkasan`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Gagal memuat data peta (${res.status})`);
+        return res.json();
+      })
+      .then((json) => {
+        if (!cancelled) setRingkasan(json);
+      })
+      .catch((err) => {
+        if (!cancelled) setErrorRingkasan(err.message);
+      })
+      .finally(() => {
+        if (!cancelled) setLoadingRingkasan(false);
+      });
+
+    return () => { cancelled = true; };
+  }, []);
+
+  // Filter Ringkasan berdasarkan Komoditas
+  const dataPeta = useMemo(() => {
     const map = {};
-    for (const c of CITIES) map[c.kode] = generateRecord(c.kode, komoditas);
+    for (const item of ringkasan) {
+      if (item.kode_komoditas === komoditas) {
+        map[item.kode_wilayah] = item;
+      }
+    }
     return map;
-  }, [komoditas]);
+  }, [ringkasan, komoditas]);
 
-  const selected = selectedKota ? { ...CITIES.find((c) => c.kode === selectedKota), ...data[selectedKota] } : null;
+  // Fetch API (Detail Kota)
+  useEffect(() => {
+    if (!selectedKota) {
+      setDetail(null);
+      return;
+    }
+    let cancelled = false;
+    setLoadingDetail(true);
+    setErrorDetail(null);
+
+    fetch(`${API_BASE_URL}/api/v1/prediksi?kota=${selectedKota}&komoditas=${komoditas}`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Gagal memuat detail (${res.status})`);
+        return res.json();
+      })
+      .then((json) => {
+        const record = Array.isArray(json) ? json[0] : json;
+        if (!cancelled) setDetail(record ?? null);
+      })
+      .catch((err) => {
+        if (!cancelled) setErrorDetail(err.message);
+      })
+      .finally(() => {
+        if (!cancelled) setLoadingDetail(false);
+      });
+
+    return () => { cancelled = true; };
+  }, [selectedKota, komoditas]);
+
+  const selected = detail
+    ? { ...CITIES.find((c) => c.kode === detail.kode_wilayah), ...detail }
+    : null;
+    
   const komoditasLabel = KOMODITAS.find((k) => k.kode === komoditas)?.label ?? "";
-
   const mapCenter = [-7.4, 110.5];
 
   return (
     <div className="min-h-screen w-full font-sans bg-gray-50 text-gray-900">
       
-      {/* HEADER - Gaya Portal Resmi */}
+      {/* HEADER */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
@@ -230,6 +242,18 @@ export default function PetaHargaPangan() {
               <h2 className="text-sm font-semibold text-gray-800">Peta Distribusi & Prediksi</h2>
             </div>
             
+            {loadingRingkasan && (
+              <div className="absolute top-12 left-0 right-0 z-[1000] p-3 text-xs text-center text-blue-700 bg-blue-50/90 border-b border-blue-100 backdrop-blur-sm">
+                Mengambil data terbaru dari server...
+              </div>
+            )}
+            
+            {errorRingkasan && (
+              <div className="absolute top-12 left-0 right-0 z-[1000] p-3 text-xs text-center text-red-700 bg-red-50/90 border-b border-red-100 backdrop-blur-sm">
+                Gagal memuat data: {errorRingkasan}
+              </div>
+            )}
+            
             <div style={{ height: "600px", width: "100%" }}>
               <MapContainer 
                 center={mapCenter} 
@@ -244,7 +268,8 @@ export default function PetaHargaPangan() {
                 <ZoomControl position="bottomright" />
 
                 {CITIES.map((c) => {
-                  const rec = data[c.kode];
+                  const rec = dataPeta[c.kode];
+                  if (!rec) return null; // Sembunyikan marker jika API belum merender kota ini
                   const isSelected = selectedKota === c.kode;
                   return (
                     <Marker 
@@ -273,7 +298,16 @@ export default function PetaHargaPangan() {
               <h2 className="text-sm font-semibold text-gray-800">Detail Wilayah</h2>
             </div>
 
-            {!selected ? (
+            {loadingDetail ? (
+              <div className="flex flex-col items-center justify-center text-center p-8 h-full text-gray-500">
+                <p className="text-sm font-medium animate-pulse">Menganalisis data wilayah...</p>
+              </div>
+            ) : errorDetail ? (
+              <div className="flex flex-col items-center justify-center text-center p-8 h-full text-red-500">
+                <AlertCircle size={32} className="mb-3" />
+                <p className="text-sm font-medium">{errorDetail}</p>
+              </div>
+            ) : !selected ? (
               <div className="flex flex-col items-center justify-center text-center p-8 h-full text-gray-500">
                 <MapPin size={32} className="text-gray-300 mb-3" />
                 <p className="text-sm">Pilih wilayah pada peta untuk menampilkan analisis.</p>
@@ -349,9 +383,9 @@ export default function PetaHargaPangan() {
                   </div>
 
                   {/* Sumber Berita */}
-                  {selected.sumber_berita.length > 0 && (
+                  {selected.sumber_berita && selected.sumber_berita.length > 0 && (
                     <div>
-                      <h4 className="text-xs text-gray-500 uppercase font-semibold mb-2 border-b border-gray-100 pb-1">Referensi</h4>
+                      <h4 className="text-xs text-gray-500 uppercase font-semibold mb-2 border-b border-gray-100 pb-1">Referensi Berita</h4>
                       <div className="space-y-3">
                         {selected.sumber_berita.map((s, i) => (
                           <div key={i} className="flex gap-2 group">
@@ -360,7 +394,7 @@ export default function PetaHargaPangan() {
                               <a href={s.url || "#"} className="text-sm text-blue-600 group-hover:underline line-clamp-2 leading-snug">
                                 {s.judul} <ExternalLink size={10} className="inline opacity-0 group-hover:opacity-100" />
                               </a>
-                              <p className="text-[11px] text-gray-500 mt-0.5">{s.sumber_media} • {s.tanggal_terbit}</p>
+                              <p className="text-[11px] text-gray-500 mt-0.5">{s.sumber_media} • {new Date(s.tanggal_terbit).toLocaleDateString("id-ID")}</p>
                             </div>
                           </div>
                         ))}
