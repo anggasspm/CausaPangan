@@ -1,11 +1,58 @@
 [
   {
-    "url": "https://www.liputan6.com/news/read/8247040/viral-kepergok-curi-minyak-goreng-perempuan-nyebur-ke-kali",
-    "judul": "Viral Kepergok Curi Minyak Goreng, Perempuan Nyebur ke Kali",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-07-15T04:49:24+00:00",
+    "url": "https://kumparan.com/kumparannews/pria-di-depok-ditangkap-usai-challenge-2-bocah-makan-cabai-hingga-masuk-freezer-27osEkRXnuU",
+    "judul": "Pria di Depok Ditangkap usai Challenge 2 Bocah Makan Cabai hingga Masuk Freezer",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-19T09:00:04+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3276"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/politik-dan-hukum/912746/prabowo-soroti-kebocoran-ekonomi-dan-kelangkaan-minyak-goreng",
+    "judul": "Prabowo Soroti Kebocoran Ekonomi dan Kelangkaan Minyak Goreng",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T05:59:00+00:00",
     "komoditas_terdeteksi": [
       "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/917853/serapan-beras-bulog-sentuh-angka-87-persen-margin-keuntungan-ditingkatkan",
+    "judul": "Serapan Beras Bulog Sentuh Angka 87 Persen, Margin Keuntungan Ditingkatkan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-03T06:38:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1089221/harga-pangan-selasa-ini-cabai-rawit-rp120000kg-dan-telur-ayam-rp37500-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp120.000kg dan telur ayam Rp37.500/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-10T18:58:12+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
