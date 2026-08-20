@@ -4528,5 +4528,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "ok"
+  },
+  {
+    "judul": "Harga pangan Kamis ini, cabai rawit Rp52.750/kg dan telur ayam Rp22.650/kg",
+    "url": "https://jatim.antaranews.com/berita/1091711/harga-pangan-kamis-ini-cabai-rawit-rp52750-kg-dan-telur-ayam-rp22650-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-19T20:17:39Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp52.750 per kilogram (kg), sedangkan telur ayam ras Rp22.650 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Kamis pukul 08.30 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp32.250 per kg, bawang putih Rp31.000 per kg.\nSelain itu, beras kualitas bawah I di harga Rp14.550 per kg, beras kualitas bawah II Rp13.500 per kg. Sedangkan beras kualitas medium I Rp15.950 per kg, dan beras kualitas medium II di harga Rp15.250 per kg.\nLalu, beras kualitas super I di harga Rp16.550 per kg, dan beras kualitas super II Rp16.150 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp30.000 per kg, cabai merah keriting Rp37.500 per kg, dan cabai rawit hijau Rp36.500 per kg.\nKemudian, daging ayam ras segar Rp41.650 per kg, daging sapi kualitas I Rp138.750 per kg, daging sapi kualitas II di harga Rp130.000 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp18.500 per kg, gula pasir lokal Rp17.000 per kg.\nSementara itu, minyak goreng curah di harga Rp21.100 per liter, minyak goreng kemasan bermerek I di harga Rp22.250 per liter, serta minyak goreng kemasan bermerek II di harga Rp21.250 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
