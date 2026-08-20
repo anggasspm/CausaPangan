@@ -10,15 +10,15 @@
     "wilayah_terdeteksi": [],
     "penyebab": null,
     "penyebab_detail": null,
-    "llm_certainty": 0.98,
+    "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/699357/bulog-serap-158-ribu-ton-beras-hasil-panen-dari-petani-indramayu",
-    "judul": "Bulog serap 158 ribu ton beras hasil panen dari petani Indramayu",
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
     "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-07-16T06:15:17+00:00",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
     "komoditas_terdeteksi": [
       "beras"
     ],
@@ -30,108 +30,19 @@
     "model_used": "gemini-flash-latest"
   },
   {
-    "url": "https://jabar.antaranews.com/berita/703001/petani-ujungjaya-sumedang-menyambut-tingginya-harga-gabah-di-musim-panen",
-    "judul": "Petani Ujungjaya Sumedang menyambut tingginya harga gabah di musim panen",
-    "sumber_media": "Antara Jabar - Ekonomi",
-    "tanggal_terbit": "2026-08-18T00:17:03+00:00",
+    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
+    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
     "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.9,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.liputan6.com/news/read/8272429/kejagung-periksa-8-saksi-di-kasus-tppu-febrie-adriansyah",
-    "judul": "Kejagung Periksa 8 Saksi di Kasus TPPU Febrie Adriansyah",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-08-18T03:14:58+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://www.liputan6.com/news/read/8272353/harga-beras-naik-di-120-daerah-kemendagri-minta-pemda-segera-bergerak",
-    "judul": "Harga Beras Naik di 120 Daerah, Kemendagri Minta Pemda Segera Bergerak",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-08-18T02:15:53+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://jatim.antaranews.com/berita/1091439/harga-pangan-rabu-ini-cabai-rawit-rp67350-kg-dan-telur-ayam-rp29350-kg",
-    "judul": "Harga pangan Rabu ini,  cabai rawit Rp67.350/kg dan telur ayam Rp29.350/kg",
-    "sumber_media": "Antara Jatim - Ekonomi",
-    "tanggal_terbit": "2026-08-18T18:31:17+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://ekonomi.republika.co.id/berita/tk028a370/petrokimia-gresik-dorong-produktivitas-cabai-rawit-panen-naik-15-persen",
-    "judul": "Petrokimia Gresik Dorong Produktivitas Cabai Rawit, Panen Naik 15 Persen",
-    "sumber_media": "Republika - Ekonomi",
-    "tanggal_terbit": "2026-08-18T21:38:34+00:00",
-    "komoditas_terdeteksi": [
-      "cabai_rawit_merah"
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
     ],
     "wilayah_terdeteksi": [
-      "3525"
+      "3302"
     ],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/nusantara/923783/kementan-pastikan-stok-beras-untuk-korban-gempa-flores-aman-hingga-satu-tahun",
-    "judul": "Kementan Pastikan Stok Beras untuk Korban Gempa Flores Aman hingga Satu Tahun",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-08-19T08:20:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/ekonomi/923763/mentan-amran-lepas-truk-bantuan-pangan-di-ntt-stok-beras-dipastikan-mencukupi",
-    "judul": "Mentan Amran Lepas Truk Bantuan Pangan di NTT, Stok Beras Dipastikan Mencukupi",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-08-19T07:18:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
+    "penyebab": "lonjakan_permintaan_musiman",
+    "penyebab_detail": "Permintaan cabai dan sayuran meningkat seiring dimulainya tahun ajaran baru sekolah yang mengaktifkan kembali warung makan dan kantin.",
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
