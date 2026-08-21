@@ -1,11 +1,116 @@
 [
   {
-    "url": "https://www.liputan6.com/news/read/8247040/viral-kepergok-curi-minyak-goreng-perempuan-nyebur-ke-kali",
-    "judul": "Viral Kepergok Curi Minyak Goreng, Perempuan Nyebur ke Kali",
-    "sumber_media": "Liputan6 - News",
-    "tanggal_terbit": "2026-07-15T04:49:24+00:00",
+    "url": "https://mediaindonesia.com/politik-dan-hukum/922680/bgn-tutup-permanen-1300-dapur-sppg-bermasalah",
+    "judul": "BGN Tutup Permanen 1.300 Dapur SPPG Bermasalah",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T03:01:00+00:00",
     "komoditas_terdeteksi": [
-      "minyak_goreng"
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/922663/10-12-gudang-bulog-terdampak-gempa-bumi-di-ntt-distribusi-beras-tetap-aman",
+    "judul": "10-12 Gudang Bulog Terdampak Gempa Bumi di NTT, Distribusi Beras Tetap Aman",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T02:41:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8271668/3-hari-belum-tersentuh-bantuan-warga-manggarai-timur-andalkan-beras-dari-reruntuhan-bangunan",
+    "judul": "3 Hari Belum Tersentuh Bantuan, Warga Manggarai Timur Andalkan Beras dari Reruntuhan Bangunan",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-08-17T07:31:55+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/922885/pemkab-manggarai-barat-distribusikan-36-ton-beras-pascagempa-ntt",
+    "judul": "Pemkab Manggarai Barat Distribusikan 36 Ton Beras Pascagempa NTT",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T15:31:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5699477/bulog-sumut-terima-46000-ton-beras-penuhi-kebutuhan-masyarakat",
+    "judul": "Bulog Sumut terima 46.000 ton beras penuhi kebutuhan masyarakat",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-17T22:42:54+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Bulog mendistribusikan cadangan beras nasional dan menyalurkan beras SPHP untuk menjaga ketersediaan stok serta stabilisasi harga sesuai HET.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/internasional/923023/kantor-pm-kurdistan-irak-dihantam-dua-drone-iran-bantah-terlibat",
+    "judul": "Kantor PM Kurdistan Irak Dihantam Dua Drone, Iran Bantah Terlibat",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-17T23:32:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/923244/12-bahaya-sering-konsumsi-makanan-pedas",
+    "judul": "12 Bahaya Sering Konsumsi Makanan Pedas",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-18T06:25:00+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5700760/pihps-harga-cabai-rawit-rp67350-kg-telur-ayam-rp29350-kg",
+    "judul": "PIHPS: Harga cabai rawit Rp67.350/kg, telur ayam Rp29.350/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-18T17:51:09+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
     ],
     "wilayah_terdeteksi": [],
     "penyebab": null,
