@@ -4636,5 +4636,18 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga Beras Tembus Rp17.000 per Kilogram, Pemkot Palu Turun Tangan Cek Pasar",
+    "url": "https://mediaindonesia.com/nusantara/924610/harga-beras-tembus-rp17000-per-kilogram-pemkot-palu-turun-tangan-cek-pasar",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-21T08:43:00Z",
+    "isi_teks": "Dalam waktu 8 bulan, korban kecelakaan kapal yang meninggal dan hilang capai 442 orang.\nPEMERINTAH Kota Palubergerak cepat menindaklanjuti aduan masyarakat terkait penurunan daya beli beras dengan menggelar inspeksi mendadak (sidak) diPasar Inpres Manonda dan Pasar Masomba, Jumat (21/8).\nSidak dipimpin Wakil Wali Kota Palu, Imelda Liliana Muhidin. Ia didampingi oleh Asisten Bidang Perekonomian dan Pembangunan Setda Kota Palu, Rahmad Mustafa, serta jajaran dari Dinas Pertanian, Dinas Perdagangan dan Perindustrian, Perum Bulog, Satgas Pangan Polresta Palu, dan Dinas Perhubungan.\nLangkah ini dilakukan untuk memantau langsung stabilitas harga dan ketersediaan stok beras di tingkat pedagang.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
