@@ -217,5 +217,20 @@
     "llm_certainty": 0.99,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/913150/warga-petung-ppu-geger-temukan-pria-asal-sukabumi-meninggal-di-kamar-kontrakan",
+    "judul": "Warga Petung PPU Geger Temukan Pria Asal Sukabumi Meninggal di Kamar Kontrakan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T04:10:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
