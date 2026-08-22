@@ -41,7 +41,7 @@ class ClassifierConfig:
     # sebelum submit — default di bawah ini bisa berubah ketersediaannya.
     openrouter_model: str = field(
         default_factory=lambda: os.getenv(
-            "OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct"
+            "OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"
         )
     )
 
