@@ -13,35 +13,5 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/humaniora/913286/13-dampak-kurang-konsumsi-daging-bagi-kesehatan",
-    "judul": "13 Dampak Kurang Konsumsi Daging bagi Kesehatan",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-21T08:30:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": null,
-    "penyebab_detail": null,
-    "llm_certainty": 0.98,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
-  },
-  {
-    "url": "https://mediaindonesia.com/jabar/berita/913247/lebih-dari-10-ribu-hektare-sawah-di-indramayu-terancam-puso",
-    "judul": "Lebih dari 10 Ribu Hektare Sawah di Indramayu Terancam Puso",
-    "sumber_media": "Media Indonesia",
-    "tanggal_terbit": "2026-07-21T07:25:00+00:00",
-    "komoditas_terdeteksi": [
-      "beras"
-    ],
-    "wilayah_terdeteksi": [],
-    "penyebab": "cuaca_gagal_panen",
-    "penyebab_detail": "Kekeringan mengancam lebih dari 10 ribu hektare tanaman padi di Indramayu mengalami gagal panen.",
-    "llm_certainty": 0.95,
-    "provider_used": "gemini",
-    "model_used": "gemini-flash-latest"
   }
 ]
