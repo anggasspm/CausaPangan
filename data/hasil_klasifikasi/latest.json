@@ -13,5 +13,194 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/698795/cadangan-beras-pemerintah-semester-i-2026",
+    "judul": "Cadangan beras pemerintah semester I 2026",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-10T04:05:24+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1081939/harga-pangan-rabu-ini-cabai-rawit-rp58400-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp58.400/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-14T17:22:34+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/638427/harga-sejumlah-kebutuhan-pokok-di-purwokerto-merangkak-naik",
+    "judul": "Harga sejumlah kebutuhan pokok di Purwokerto merangkak naik",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-13T22:39:28+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
+    ],
+    "wilayah_terdeteksi": [
+      "3302"
+    ],
+    "penyebab": "lonjakan_permintaan_musiman",
+    "penyebab_detail": "Kenaikan harga didorong oleh meningkatnya permintaan konsumsi setelah masa libur sekolah berakhir dan tahun ajaran baru dimulai.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5653317/harga-cabai-rawit-rp45000-kg-telur-ayam-rp26000-kg-per-jumat-pagi",
+    "judul": "Harga cabai rawit Rp45.000/kg, telur ayam Rp26.000/kg per Jumat pagi",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-16T19:15:09+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082589/harga-pangan-jumat-ini-cabai-rawit-rp45000-kg-dan-telur-ayam-rp26000-kg",
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp45.000/kg dan telur ayam Rp26.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-16T19:16:34+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8248398/prabowo-pimpin-panen-raya-serentak-dari-malang",
+    "judul": "Prabowo Pimpin Panen Raya Serentak dari Malang",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T00:52:21+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3573"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5654123/dkpp-indramayu-targetkan-produksi-padi-tembus-16-juta-ton-pada-2026",
+    "judul": "DKPP Indramayu targetkan produksi padi tembus 1,6 juta ton pada 2026",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-17T03:17:30+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/638856/presiden-prabowo-tinjau-hilirisasi-tebu-menjadi-bioetanol-di-malang",
+    "judul": "Presiden Prabowo tinjau hilirisasi tebu menjadi bioetanol di Malang",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-17T02:22:45+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3573"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/638852/presiden-berangkat-ke-malang-pimpin-panen-lahan-binaan-tni",
+    "judul": "Presiden berangkat ke Malang pimpin panen lahan binaan TNI",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-17T02:20:26+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3573"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8248551/prabowo-pimpin-panen-raya-tni-serentak-di-43-lokasi",
+    "judul": "Prabowo Pimpin Panen Raya TNI Serentak di 43 Lokasi",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T02:47:59+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912006/nobar-final-piala-dunia-sekolah-di-singapura-izinkan-siswa-masuk-lebih-siang",
+    "judul": "Nobar Final Piala Dunia, Sekolah di Singapura Izinkan Siswa Masuk Lebih Siang",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T09:49:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/presiden-prabowo-rekrutmen-ipdn-cerminan-kesetaraan-bagi-putra-putri-bangsa-27sjo4IYVH8",
+    "judul": "Presiden Prabowo: Rekrutmen IPDN Cerminan Kesetaraan Bagi Putra-Putri Bangsa",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-29T00:33:20+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
