@@ -263,5 +263,35 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8247169/kopdes-disiapkan-jadi-penyalur-bantuan-dan-pembeli-gabah",
+    "judul": "Kopdes Disiapkan Jadi Penyalur Bantuan dan Pembeli Gabah",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-15T08:41:38+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah menyiapkan Koperasi Desa Merah Putih sebagai offtaker gabah dan jagung jika harga pasar turun di bawah ketentuan pemerintah.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/piala-dunia-2026/912181/didier-deschamps-akhiri-keberasamaan-dengan-timnas-prancis",
+    "judul": "Didier Deschamps Akhiri Keberasamaan dengan Timnas Prancis",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-18T02:33:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
