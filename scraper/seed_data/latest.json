@@ -4781,5 +4781,20 @@
     "wilayah_terdeteksi": [],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Nyapeda Nyakola Dorong Budaya Bersepeda Aman bagi Pelajar di Kota Bandung",
+    "url": "https://mediaindonesia.com/jabar/berita/924953/nyapeda-nyakola-dorong-budaya-bersepeda-aman-bagi-pelajar-di-kota-bandung",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-22T21:55:00Z",
+    "isi_teks": "Dalam waktu 8 bulan, korban kecelakaan kapal yang meninggal dan hilang capai 442 orang.\nPULUHAN siswa SMP yang berasal dari berbagai sekolah diKota Bandungbersama Komunitas Bike to Work (B2W) Bandung, mendeklarasikan \"NyapedaNyakola\", gerakan yang mendorong budaya bersepeda ke sekolah sekaligus meningkatkan keselamatan pelajar di jalan. Para siswa dan komunitas B2W, sebelumnya bersepeda dari Pendopo menuju Balai Kota Bandung pada Sabtu (22/8).\nKetua B2W Bandung Mochamad Andi Nurfauzi menerangkan, gerakan Nyapeda Nyakola tidak hanya ditujukan untuk mengajak siswa menjadikansepedasebagai moda transportasi ke sekolah. Gerakan itu juga membawa nilai-nilai kearifan lokal Sunda dalam edukasi bersepeda. Pihaknya ingin membawa nilai-nilai kearifan lokal Sunda, bahasa Sunda, terhadap program bersepeda anak-anak ke sekolah.\nSelain itu aspek keselamatan tentu menjadi perhatian utama karena pelajar merupakan kelompok pengguna jalan yang membutuhkan perlindungan lebih baik.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3273"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
