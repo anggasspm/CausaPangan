@@ -232,5 +232,36 @@
     "llm_certainty": 0.99,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/912737/harga-pangan-di-sumut-naik-cabai-merah-tembus-rp44500-per-kg-di-medan",
+    "judul": "Harga Pangan di Sumut Naik, Cabai Merah Tembus Rp44.500 per Kg di Medan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T05:50:00+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "cabai_merah_keriting"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5657765/bulog-kanwil-yogyakarta-serap-gabah-berbagai-kualitas-dari-petani",
+    "judul": "Bulog Kanwil Yogyakarta serap gabah berbagai kualitas dari petani",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-20T07:14:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
