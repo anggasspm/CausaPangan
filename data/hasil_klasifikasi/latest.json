@@ -503,5 +503,65 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1082260/harga-pangan-kamis-ini-cabai-rawit-rp58150-kg-dan-telur-ayam-rp29000-kg",
+    "judul": "Harga pangan Kamis ini, cabai rawit Rp58.150/kg dan telur ayam Rp29.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-15T18:30:06+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/megapolitan/913375/djakarta-theater-kebakaran-diduga-karena-korsleting-listrik",
+    "judul": "Djakarta Theater Kebakaran, Diduga karena Korsleting Listrik",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T17:35:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tizad3368/mentan-jelaskan-cara-mafia-pangan-merampok",
+    "judul": "Mentan Jelaskan Cara Mafia Pangan Merampok",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-30T01:03:03+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5673024/bulog-bali-catat-stok-beras-tembus-12-ribu-ton-cukup-hingga-2027",
+    "judul": "Bulog Bali catat stok beras tembus 12 ribu ton cukup hingga 2027",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-30T05:33:16+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
