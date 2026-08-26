@@ -638,5 +638,20 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8248719/prabowo-sindir-pihak-mengeluh-beras-mahal-suruh-tanam-padi-sendiri",
+    "judul": "Prabowo Sindir Pihak Mengeluh Beras Mahal: Suruh Tanam Padi Sendiri",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T06:41:27+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
