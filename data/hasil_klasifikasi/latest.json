@@ -653,5 +653,21 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/photo/read/8248937/lahan-bekas-lumpur-banjir-bandang-disulap-menjadi-areal-pertanian-di-pidie-jaya",
+    "judul": "Lahan Bekas Lumpur Banjir Bandang Disulap Menjadi Areal Pertanian di Pidie Jaya",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-17T21:05:49+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah",
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
