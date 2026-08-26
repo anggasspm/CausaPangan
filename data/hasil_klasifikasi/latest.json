@@ -669,5 +669,52 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/pria-di-depok-ditangkap-usai-challenge-2-bocah-makan-cabai-hingga-masuk-freezer-27osEkRXnuU",
+    "judul": "Pria di Depok Ditangkap usai Challenge 2 Bocah Makan Cabai hingga Masuk Freezer",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-19T09:00:04+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3276"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/megapolitan/912760/restoran-di-menteng-kebakaran-dipicu-bara-alat-pemanggang",
+    "judul": "Restoran di Menteng Kebakaran, Dipicu Bara Alat Pemanggang",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T06:23:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparannews/polisi-ledakan-di-grand-polonia-medan-berasal-dari-rumah-nomor-3b-27pGNy9TtzK",
+    "judul": "Polisi: Ledakan di Grand Polonia Medan Berasal dari Rumah Nomor 3B",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-20T05:47:46+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
