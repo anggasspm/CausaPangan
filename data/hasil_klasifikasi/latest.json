@@ -716,5 +716,65 @@
     "llm_certainty": 0.98,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5656797/dpp-kulon-progo-catat-luas-panen-padi-capai-3125-hektare-pada-juli",
+    "judul": "DPP Kulon Progo catat luas panen padi capai 3.125 hektare pada Juli",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-19T23:17:15+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/video/5658548/serapan-gabah-bulog-lebihi-target-di-yogyakarta-amankan-stok-pangan",
+    "judul": "Serapan gabah Bulog lebihi target, D.I. Yogyakarta amankan stok pangan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-21T00:49:28+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083559/harga-pangan-selasa-ini-cabai-rawit-rp47300-kg-dan-telur-ayam-rp30350-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp47.300/kg dan telur ayam Rp30.350/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-20T20:35:39+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/913286/13-dampak-kurang-konsumsi-daging-bagi-kesehatan",
+    "judul": "13 Dampak Kurang Konsumsi Daging bagi Kesehatan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-21T08:30:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
