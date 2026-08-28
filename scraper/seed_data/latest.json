@@ -5377,5 +5377,34 @@
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp73.700/kg dan telur ayam Rp28.350/kg",
+    "url": "https://jatim.antaranews.com/berita/1093845/harga-pangan-jumat-ini-cabai-rawit-rp73700-kg-dan-telur-ayam-rp28350-kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-08-27T20:51:54Z",
+    "isi_teks": "Jakarta (ANTARA) - Pusat Informasi Harga Pangan Strategis (PIHPS) Nasional, yang dikelola Bank Indonesia, mencatat harga komoditas cabai rawit merah mencapai Rp73.700 per kilogram (kg), sedangkan telur ayam ras Rp28.350 per kg.\nBerdasarkan data dari PIHPS yang dilansir di Jakarta, Jumat pukul 10.00 WIB, selain cabai rawit merah dan telur ayam tercatat harga pangan di tingkat pedagang eceran secara nasional lainnya, yakni bawang merah di harga Rp36.700 per kg, bawang putih Rp38.800 per kg.Selain itu, beras kualitas bawah I di harga Rp14.850 per kg, beras kualitas bawah II Rp14.950 per kg. Sedangkan beras kualitas medium I Rp16.350 per kg, dan beras kualitas medium II di harga Rp16.500 per kg\nLalu, beras kualitas super I di harga Rp17.150 per kg, dan beras kualitas super II Rp16.800 per kg.\nSelanjutnya, PIHPS mencatat harga cabai merah besar mencapai Rp45.500 per kg, cabai merah keriting Rp49.900 per kg, dan cabai rawit hijau Rp53.550 per kg.\nKemudian, daging ayam ras segar Rp41.000 per kg, daging sapi kualitas I Rp146.500 per kg, daging sapi kualitas II di harga Rp140.100 per kg.\nHarga komoditas berikutnya yakni gula pasir kualitas premium tercatat Rp20.250 per kg, gula pasir lokal Rp19.050 per kg.\nSementara itu, minyak goreng curah di harga Rp20.600 per liter, minyak goreng kemasan bermerek I di harga Rp24.650 per liter, serta minyak goreng kemasan bermerek II di harga Rp24.050 per liter.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Kebakaran Lahan 1,7 Hektare di Kedawung Cirebon Diduga akibat Puntung Rokok",
+    "url": "https://mediaindonesia.com/nusantara/927066/kebakaran-lahan-17-hektare-di-kedawung-cirebon-diduga-akibat-puntung-rokok",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-28T02:21:00Z",
+    "isi_teks": "Presiden sebut NU selalu hadir dalam setiap peristiwa dan krisis yang dihadapi bangsa.\nKEBAKARANlahan melanda area yang dipenuhi ilalang dan material kering di pinggir Jalan Sultan Ageng, tepatnya depanPerum Griya Caraka, Desa Kedungdawa, KecamatanKedawung, KabupatenCirebon, Jawa Barat, Kamis (27/8) malam. Insiden yang menghanguskan lahan seluas sekitar 1,7 hektare tersebut diduga dipicu oleh puntung rokok yang dibuang sembarangan.\nPeristiwa kebakaran dilaporkan terjadi sekitar pukul 20.45 WIB. Kondisi cuaca yang kering serta hembusan angin kencang di lokasi kejadian membuat kobaran api dengan cepat merambat dan membesar, mengancam area di sekitarnya.\nKapolsek Kedawung, Komisaris Ahmad Nasori, menjelaskan bahwa pihaknya langsung bergerak setelah menerima laporan warga melalui layanan polisi 110. Personel kepolisian segera berkoordinasi dengan petugas pemadam kebakaran untuk menjinakkan si jago merah.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3274",
+      "3209"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
