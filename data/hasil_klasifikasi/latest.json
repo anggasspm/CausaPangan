@@ -776,5 +776,20 @@
     "llm_certainty": 0.99,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/912142/1000-hektare-lebih-pesawahan-di-subang-terancam-gagal-panen-akibat-kekeringan",
+    "judul": "1.000 Hektare Lebih Pesawahan di Subang Terancam Gagal Panen akibat Kekeringan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-17T23:08:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "cuaca_gagal_panen",
+    "penyebab_detail": "Kekeringan di Subang menyebabkan ribuan hektare persawahan padi mengalami gagal panen.",
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
