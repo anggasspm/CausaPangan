@@ -5432,10 +5432,10 @@
       "beras"
     ],
     "wilayah_terdeteksi": [
-      "3328",
       "3371",
-      "3517",
-      "3376"
+      "3328",
+      "3376",
+      "3517"
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
@@ -5472,6 +5472,34 @@
     "sumber_media": "Media Indonesia",
     "tanggal_terbit": "2026-08-28T06:36:00Z",
     "isi_teks": "Presiden sebut NU selalu hadir dalam setiap peristiwa dan krisis yang dihadapi bangsa.\nLPJ Pengurus Besar Nahdlatul Ulama masa khidmah 2021–2026 disampaikan Ketua Umum PBNU KH Yahya Cholil Staquf.  Penyampaian LPJ tersebut berlangsung di Gedung Serbaguna (GSG) KH Hasbullah Ahmad Tambakberas, Jombang, Jawa Timur, Jumat (28/8) pagi.\n“Para masyayikh, para kiai, para muktamirin yang kami hormati, lima tahun yang lalu kami menerima amanah ini. Sekarang, kami izin untuk menyampaikan penjelasan atas segala ikhtiar yang telah kami kerjakan,” kata Gus Yahya.\nGus Yahya mengaku kepengurusan PBNU masa khidmah 2021–2026 menjalankan amanah dengan berbagai keterbatasan, kelebihan, dan ketidaksempurnaan. Menurutnya, PBNU berupaya membaca perubahan zaman, mengambil sejumlah pilihan, serta menjalankan berbagai hal yang mampu dilakukan selama lima tahun kepengurusan.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3517"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Menahan pedasnya harga cabai rawit",
+    "url": "https://www.antaranews.com/infografik/5716548/menahan-pedasnya-harga-cabai-rawit",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-28T22:00:00Z",
+    "isi_teks": "Pemerintah memperkuat langkah pengendalian harga cabai rawit yang terus naik di puncak musim kemarau pada Agustus 2026, guna menjaga daya beli masyarakat dan tingkat inflasi.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Muktamar NU ke-35: Mampukah Menjadikan Pesantren sebagai Kompas Abad Kedua?",
+    "url": "https://mediaindonesia.com/opini/927166/muktamar-nu-ke-35-mampukah-menjadikan-pesantren-sebagai-kompas-abad-kedua",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-08-28T17:13:00Z",
+    "isi_teks": "Presiden sebut NU selalu hadir dalam setiap peristiwa dan krisis yang dihadapi bangsa.\nADA pesan simbolik menjelangMuktamar ke-35 Nahdlatul Ulama(NU). Muktamar digelar di PondokPesantrenBahrul Ulum Tambakberas, Jombang, Jawa Timur, 27–31 Agustus 2026. Namun, sehari sebelum pembukaan, perhatian publik tertuju pada PondokPesantren Lirboyo, Kediri.\nDi sana para kiai sepuh berkumpul untuk menyampaikan pesan moral agar muktamar berlangsung bermartabat, demokratis, jujur, serta terbebas dari tekanan, provokasi, dan pertikaian.\nPesannya sederhana: jaga muruah NU, gunakan hak secara bertanggung jawab, dan jangan biarkankontestasimerusak persaudaraan.",
     "komoditas_terdeteksi": [
       "beras"
     ],
