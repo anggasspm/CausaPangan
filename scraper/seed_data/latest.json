@@ -5432,10 +5432,10 @@
       "beras"
     ],
     "wilayah_terdeteksi": [
-      "3371",
-      "3517",
       "3376",
-      "3328"
+      "3328",
+      "3517",
+      "3371"
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
