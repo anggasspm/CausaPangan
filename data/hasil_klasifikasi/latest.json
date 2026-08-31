@@ -791,5 +791,20 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/912469/perokok-dewasa-mulai-beralih-ke-produk-tembakau-alternatif",
+    "judul": "Perokok Dewasa Mulai Beralih ke Produk Tembakau Alternatif",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-19T10:03:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
