@@ -806,5 +806,37 @@
     "llm_certainty": 0.99,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8249591/viral-bocah-jadi-korban-challenge-cabai-freezer-pria-depok-ditangkap",
+    "judul": "Viral Bocah jadi Korban Challenge Cabai-Freezer, Pria Depok Ditangkap",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-19T00:54:29+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [
+      "3276"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/opini/912860/anomali-ekonomi-beras-perubahan-kebijakan-mendesak",
+    "judul": "Anomali Ekonomi Beras: Perubahan Kebijakan Mendesak",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T15:15:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
