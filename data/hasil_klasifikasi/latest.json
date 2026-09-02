@@ -1006,5 +1006,50 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/pandangan-jogja/menelusuri-jejak-kuliner-jawa-di-serat-centhini-ada-kuluban-hingga-beras-kencur-27pAVJ6BTQd",
+    "judul": "Menelusuri Jejak Kuliner Jawa di Serat Centhini, Ada Kuluban hingga Beras Kencur",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-20T01:12:09+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5661631/bulog-bengkulu-lampaui-target-serapan-gabah-hingga-127-persen",
+    "judul": "Bulog Bengkulu lampaui target serapan gabah hingga 127 persen",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-22T11:13:29+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5678693/pihps-harga-cabai-rawit-rp61450-kg-telur-ayam-rp31800-kg",
+    "judul": "PIHPS: Harga cabai rawit Rp61.450/kg, telur ayam Rp31.800/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-08-03T19:18:01+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
