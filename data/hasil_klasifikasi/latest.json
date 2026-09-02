@@ -853,5 +853,158 @@
     "llm_certainty": 0.85,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/politik-dan-hukum/912746/prabowo-soroti-kebocoran-ekonomi-dan-kelangkaan-minyak-goreng",
+    "judul": "Prabowo Soroti Kebocoran Ekonomi dan Kelangkaan Minyak Goreng",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-20T05:59:00+00:00",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8251595/kebakaran-di-djakarta-theater-ternyata-berasal-dari-dapur-xxi",
+    "judul": "Kebakaran di Djakarta Theater Ternyata Berasal dari Dapur XXI",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-21T16:34:26+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1083851/harga-pangan-rabu-ini-cabai-rawit-rp55150-per-kg-dan-telur-ayam-rp29600-per-kg",
+    "judul": "Harga pangan Rabu ini, cabai rawit Rp55.150 per kg dan telur ayam Rp29.600 per kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-21T19:57:11+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5661139/kementan-percepat-ltt-padi-18882-ha-di-kalsel-untuk-swasembada-pangan",
+    "judul": "Kementan percepat LTT padi 18.882 ha di Kalsel untuk swasembada pangan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-22T05:52:12+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/914204/15-dampak-jarang-makan-sayur-bagi-kesehatan",
+    "judul": "15 Dampak Jarang Makan Sayur bagi Kesehatan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T09:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/914480/zulkifli-hasan-pastikan-stok-pangan-nasional-aman",
+    "judul": "Zulkifli Hasan Pastikan Stok Pangan Nasional Aman",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-24T05:58:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/teknologi/914753/nasa-gunakan-ai-untuk-prediksi-badai-matahari-sebelum-mengancam-bumi",
+    "judul": "NASA Gunakan AI untuk Prediksi Badai Matahari Sebelum Mengancam Bumi",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-25T04:40:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700267/bulog-cirebon-serap-257832-ton-gabah-dari-petani-hingga-juli-ini",
+    "judul": "Bulog Cirebon serap 257.832 ton gabah dari petani hingga Juli ini",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-25T09:09:16+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3209",
+      "3274"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/915281/bersahabat-dengan-el-nino-petani-pidie-aceh-panen-bawang-merah",
+    "judul": "Bersahabat dengan El Nino, Petani Pidie Aceh Panen Bawang Merah",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-27T06:54:00+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700509/dtph-jabar-indramayu-rajai-produksi-padi-jawa-barat-dan-sukabumi-tergiat",
+    "judul": "DTPH Jabar: Indramayu rajai produksi padi Jawa Barat dan Sukabumi tergiat",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:20:54+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
