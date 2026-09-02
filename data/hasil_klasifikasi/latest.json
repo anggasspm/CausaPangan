@@ -838,5 +838,20 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tigk8h370/el-nino-ekstrem-jadi-alasan-pemerintah-perkuat-program-sphp-beras",
+    "judul": "El Nino Ekstrem Jadi Alasan Pemerintah Perkuat Program SPHP Beras",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-19T22:21:53+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah memperkuat penyaluran beras program SPHP dan bantuan pangan untuk menjaga stabilitas harga dan pasokan beras.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
