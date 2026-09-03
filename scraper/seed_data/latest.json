@@ -6369,5 +6369,46 @@
       "32"
     ],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Stok beras Kabupaten Madiun surplus capai 4.897 ton",
+    "url": "https://www.antaranews.com/video/5725056/stok-beras-kabupaten-madiun-surplus-capai-4897-ton",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-09-03T08:03:31Z",
+    "isi_teks": "ANTARA - Dinas Ketahanan Pangan dan Peternakan (DKPP) Kabupaten Madiun mengklaim stok beras hingga hingga akhir bulan Agustus dalam kondisi aman karena ketersediaan yang mencapai 4.897 ton. Jumlah tersebut masih bisa bertambah karena ada sejumlah areal persawahan yang masih belum panen. (Rindhu Dwi Kartiko/Arif Prada/Rijalul Vikry)",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3577"
+    ],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Wamenko: Harga gabah tembus Rp8.000 per kg, HET-HPP masih dikaji",
+    "url": "https://www.antaranews.com/berita/5724973/wamenko-harga-gabah-tembus-rp8000-per-kg-het-hpp-masih-dikaji",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-09-03T06:57:28Z",
+    "isi_teks": "Jakarta (ANTARA) - Wakil Menteri Koordinator Bidang Pangan Hanif Faisol Nurofiq mengatakan pemerintah masih mengkaji kemungkinan penyesuaian harga eceran tertinggi (HET) beras dan harga pembelian pemerintah (HPP) gabah, seiring kenaikan harga gabah di sejumlah daerah yang telah menembus Rp8.000 per kilogram.\n“Penyesuaian HET, HPP itu kan mempunyai konsekuensi yang cukup kompleks. Kita tidak mau nanti kemudian ini justru menjadi pemicu inflasi. Jadi ini dikaji lebih dalam,” kata Hanif saat ditemui di Jakarta, Kamis.\nPernyataan tersebut disampaikan Hanif sekaligus merespons laporan Badan Pusat Statistik (BPS) yang mencatat harga beras di penggilingan, grosir, dan eceran terus naik selama delapan bulan berturut-turut pada Januari hingga Agustus 2026.\nHanif mengatakan pemerintah perlu memperhitungkan berbagai konsekuensi sebelum mengambil keputusan terkait penyesuaian HET dan HPP.\nAdapun HPP gabah di tingkat petani saat ini ditetapkan Rp6.500 per kilogram, tetapi di sejumlah daerah harga gabah dilaporkan mencapai Rp7.700 per kilogram bahkan melampaui Rp8.000 per kilogram.\nDi sisi lain, Hanif mengatakan pemerintah saat ini tengah melakukan penghitungan ulang ketahanan pangan nasional untuk memetakan dampak El Nino yang berlangsung lebih panjang dari perkiraan awal.\nMenurut Hanif, meskipun ketersediaan stok pangan saat ini masih terjaga, pemerintah perlu memperhitungkan kondisi ke depan, terutama karena fenomena El Nino disertai curah hujan yang sangat rendah.\n“Kita tentu tidak mau diam pada saat harga gabah di beberapa tempat sudah mencapai Rp8.000. Maka kita lakukan langkah-langkah rekalkulasi,” ujarnya.\nPemerintah, lanjutnya, mengaktifkan satuan tugas untuk menghitung ulang ketahanan pangan pada seluruh komoditas yang berpotensi terdampak El Nino.\nHanif menambahkan kebijakan pangan tidak dapat dipisahkan dari kebijakan impor dan ekspor. Oleh karena itu, pemerintah perlu mengetahui secara rinci kondisi setiap komoditas yang mengalami gangguan akibat kondisi iklim.\nIa juga mengingatkan El Nino tidak boleh ditanggapi dengan enteng karena dampaknya dapat mempengaruhi ketahanan pangan nasional.\n“Kita ternyata belum mampu, belum tahan pada saat didera El Nino dengan curah hujan yang sangat rendah ini dengan sebaik-baiknya,” ujarnya.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Bank Mandiri: El Nino Berpeluang Bikin Inflasi Sentuh 3,5 Persen di Akhir 2026",
+    "url": "https://mediaindonesia.com/ekonomi/929543/bank-mandiri-el-nino-berpeluang-bikin-inflasi-sentuh-35-persen-di-akhir-2026",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-09-03T08:20:00Z",
+    "isi_teks": "Industri pengolahan menopang suplus perdagangan Juli 2026.\nPTBank Mandiri(Persero) Tbk memproyeksikan fenomenaEl Ninoyang terjadi saat ini berpotensi mendoronginflasinasional hingga menyentuh angka 3,5% en pada akhir tahun 2026. Proyeksi ini telah mempertimbangkan berbagai risiko kenaikan harga komoditas akibat gangguan cuaca.\nHead of Macroeconomic & Financial Market Research Department Bank Mandiri, Dian Ayu Yustina, menjelaskan bahwa pihaknya telah mengantisipasi dampak El Nino yang diperkirakan menguat pada semester II tahun ini. Angka 3,5% tersebut merupakanheadline inflationyang sudah mencakup risiko anomali cuaca tersebut.\n“Kita sudah antisipasi ya, ada potensi dampak El Nino terjadi di semester II ini. Jadiforecastinflasi kita di akhir tahun 3,5 persen itu sebenarnya sudah mencakup risiko kenaikan El Nino,” ujar Dian dalam acara Mandiri Macro & Market Brief Q3 2026 yang digelar secara virtual di Jakarta, Kamis (3/9).",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
