@@ -1066,5 +1066,95 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8252399/mendagri-bangga-10-lulusan-terbaik-ipdn-berasal-dari-keluarga-sederhana",
+    "judul": "Mendagri Bangga, 10 Lulusan Terbaik IPDN Berasal dari Keluarga Sederhana",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-22T06:33:30+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5662915/kalsel-optimistis-produksi-padi-13-juta-ton-meski-hadapi-kemarau",
+    "judul": "Kalsel optimistis produksi padi 1,3 juta ton meski hadapi kemarau",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-23T04:25:05+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/914015/dampak-kekeringan-sumur-warga-indramayu-berasa-asin",
+    "judul": "Dampak Kekeringan, Sumur Warga Indramayu Berasa Asin",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T04:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/photo/read/8253577/mentari-pagi-menyinari-hamparan-sawah-di-samahani-aceh-besar",
+    "judul": "Mentari Pagi Menyinari Hamparan Sawah di Samahani Aceh Besar",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-23T21:47:11+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/914531/akad-massal-di-batang-perluas-jangkauan-kpr-subsidi-ke-perdesaan",
+    "judul": "Akad Massal di Batang Perluas Jangkauan KPR Subsidi ke Perdesaan",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-24T07:51:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5668708/pihps-harga-cabai-rawit-rp47500-kg-telur-ayam-rp25000-kg",
+    "judul": "PIHPS: Harga cabai rawit Rp47.500/kg, telur ayam Rp25.000/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-27T19:02:26+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
