@@ -1156,5 +1156,65 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.liputan6.com/news/read/8251656/4-perwira-terbaik-tni-polri-raih-adhi-makayasa-dari-prabowo",
+    "judul": "4 Perwira Terbaik TNI-Polri Raih Adhi Makayasa dari Prabowo",
+    "sumber_media": "Liputan6 - News",
+    "tanggal_terbit": "2026-07-21T19:03:56+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5668524/bapanas-perkuat-intervensi-pasar-jaga-ketersediaan-beras-premium",
+    "judul": "Bapanas perkuat intervensi pasar jaga ketersediaan beras premium",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-27T11:15:37+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Bapanas memperkuat intervensi pasar dan program SPHP untuk mengendalikan fluktuasi harga beras.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700476/produksi-padi-jabar-meningkat-meski-produktivitas-terkikis",
+    "judul": "Produksi padi Jabar meningkat meski produktivitas terkikis",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T09:12:30+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/915343/bertahun-tahun-diusulkan-irigasi-di-desa-bukit-padi-anambas-direhabilitasi",
+    "judul": "Bertahun-tahun Diusulkan, Irigasi di Desa Bukit Padi Anambas Direhabilitasi",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-27T09:03:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
