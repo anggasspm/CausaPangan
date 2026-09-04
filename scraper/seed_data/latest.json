@@ -6574,5 +6574,31 @@
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Panel Surya Diduga Picu Kebakaran di Kantor Bea Cukai Batam",
+    "url": "https://mediaindonesia.com/nusantara/929935/panel-surya-diduga-picu-kebakaran-di-kantor-bea-cukai-batam",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-09-04T08:40:00Z",
+    "isi_teks": "BGN sebut 80% kasus keracunan MBG disebabkan pelanggaran SOP.\nKEBAKARANmelanda bagian atap gedung belakang Kantor Pelayanan Utama (KPU) Bea dan Cukai Tipe BBatam, Kepulauan Riau, pada Kamis (3/9). Kobaran api yang muncul di arearooftoptersebut berhasil dipadamkan sekitar 45 menit setelah petugas pemadam kebakaran dikerahkan ke lokasi.\nKepala Bidang Bimbingan Kepatuhan dan Layanan Informasi (BKLI) KPU Bea dan Cukai Tipe B Batam, Setiawan Rosyidi, mengungkapkan bahwa api pertama kali diketahui muncul setelah kumandang azan zuhur. Dugaan awal menyebutkan api berasal dari instalasi panel surya (solar panel) yang berada di bagian atas gedung.\n“Asal api diduga dari panel surya dirooftop. Kemungkinan karena kondisi fisik yang sudah lama dan terpapar panas matahari secara terus-menerus,” ujar Setiawan kepada wartawan, Jumat (4/9).",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Kebakaran 20 Lapak di Kedoya Selatan Diduga akibat Korsleting Listrik",
+    "url": "https://mediaindonesia.com/megapolitan/929895/kebakaran-20-lapak-di-kedoya-selatan-diduga-akibat-korsleting-listrik",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-09-04T07:26:00Z",
+    "isi_teks": "BGN sebut 80% kasus keracunan MBG disebabkan pelanggaran SOP.\nKEBAKARAN hebat melanda kawasan permukiman di Jalan Kedoya Raya RT.4/RW.3, Kedoya Selatan, Kebon Jeruk, Jakarta Barat, pada Jumat siang. Insiden tersebut menghanguskan sedikitnya 20 unit lapak dan bedeng milik warga.\nKomandan Pleton A Satuan Pelaksana (Satpel) Suku Dinas Penanggulangan Kebakaran dan Penyelamatan (Gulkarmat) Kebon Jeruk, Suripto, mengungkapkan bahwa api diduga kuat berasal dari arus pendek listrik atau korsleting.\n\"Menurut saksi mata, diduga dari korsleting listrik di salah satu bedeng yang bersebelahan dengan gudang rongsokan. Makanya api cepat membesar,\" ujar Suripto saat dikonfirmasi di Jakarta, Jumat.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
   }
 ]
