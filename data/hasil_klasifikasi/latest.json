@@ -1246,5 +1246,155 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5661895/pihps-harga-cabai-rawit-rp95000-kg-telur-ayam-rp35000-kg",
+    "judul": "PIHPS: Harga cabai rawit Rp95.000/kg, telur ayam Rp35.000/kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-22T19:02:52+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5662349/bulog-ntt-pastikan-stok-beras-30000-ton-aman-tiga-bulan",
+    "judul": "Bulog NTT pastikan stok beras 30.000 ton aman tiga bulan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-23T00:16:08+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1084125/harga-cabai-rawit-tembus-rp95000-per-kilogram",
+    "judul": "Harga cabai rawit tembus Rp95.000 per kilogram",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-22T19:35:01+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tim5ks370/pemerintah-salurkan-bantuan-beras-tahap-kedua-untuk-3324-juta-kpm-mulai-agustus",
+    "judul": "Pemerintah Salurkan Bantuan Beras Tahap Kedua untuk 33,24 Juta KPM Mulai Agustus",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-22T22:50:52+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Penyaluran bantuan pangan beras dan program SPHP oleh pemerintah berhasil menopang stabilitas harga dan melandaikan inflasi beras.",
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/914145/jaga-stabilitas-harga-bahan-pokok-pemko-padang-gelar-pasar-murah-di-kecamatan-padang-timur",
+    "judul": "Jaga Stabilitas Harga Bahan Pokok, Pemko Padang Gelar Pasar Murah di Kecamatan Padang Timur",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-23T06:59:00+00:00",
+    "komoditas_terdeteksi": [
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Pemerintah Kota Padang menggelar operasi pasar murah untuk menjaga stabilitas harga bahan pokok.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1084461/harga-pangan-jumat-ini-cabai-rawit-rp46200-kg-dan-telur-ayam-rp28200-kg",
+    "judul": "Harga pangan Jumat ini, cabai rawit Rp46.200/kg dan telur ayam Rp28.200/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-23T20:44:12+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5665420/bulog-serap-35-juta-ton-setara-beras-petani-demi-perkuat-pangan-ri",
+    "judul": "Bulog serap 3,5 juta ton setara beras petani demi perkuat pangan RI",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-24T20:11:09+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1084701/harga-pangan-sabtu-ini-cabai-rawit-rp54400-kg-dan-telur-ayam-rp29600-kg",
+    "judul": "Harga pangan Sabtu ini, cabai rawit Rp54.400/kg dan telur ayam Rp29.600/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-24T19:34:31+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/teknologi/914672/gelombang-metalik-misterius-muncul-di-mars-ini-penjelasan-ilmiah-di-baliknya",
+    "judul": "Gelombang Metalik Misterius Muncul di Mars, Ini Penjelasan Ilmiah di Baliknya",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-25T02:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/914818/16-tips-mengatasi-rambut-gatal",
+    "judul": "16 Tips Mengatasi Rambut Gatal",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-25T09:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.99,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
