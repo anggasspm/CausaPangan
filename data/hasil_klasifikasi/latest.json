@@ -1216,5 +1216,35 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/913618/petani-di-boyolali-berantas-hama-wereng-gunakan-drone",
+    "judul": "Petani di Boyolali Berantas Hama Wereng Gunakan Drone",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-22T04:51:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/ekonomi/916372/jelaskan-pidato-prabowo-mentan-tegaskan-rp2-triliun-bukan-untung-penggilingan-tapi-merampas-hak-rakyat",
+    "judul": "Jelaskan Pidato Prabowo, Mentan Tegaskan Rp2 Triliun Bukan Untung Penggilingan tapi Merampas Hak Rakyat",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-29T22:00:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
