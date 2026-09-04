@@ -1426,5 +1426,38 @@
     "llm_certainty": 0.98,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5665923/bulog-cirebon-serap-257832-ton-gabah-dari-petani-hingga-23-juli-2026",
+    "judul": "Bulog Cirebon serap 257.832 ton gabah dari petani hingga 23 Juli 2026",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-25T05:35:09+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3274",
+      "3209"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jateng.antaranews.com/berita/640181/bulog-pastikan-kualitas-beras-mitra-di-demak",
+    "judul": "Bulog pastikan kualitas beras mitra di Demak",
+    "sumber_media": "Antara Jateng - Ekonomi",
+    "tanggal_terbit": "2026-07-29T05:06:13+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
