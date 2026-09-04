@@ -1396,5 +1396,35 @@
     "llm_certainty": 0.99,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1084715/bulog-serap-35-juta-ton-setara-beras-petani-demi-perkuat-pangan-ri",
+    "judul": "Bulog serap 3,5 juta ton setara beras petani demi perkuat pangan RI",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-24T20:14:58+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700469/disparbud-garut-sebut-anggaran-festival-layang-layang-tidak-sentuh-apbd",
+    "judul": "Disparbud Garut sebut anggaran festival layang-layang tidak sentuh APBD",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T09:03:26+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.98,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
