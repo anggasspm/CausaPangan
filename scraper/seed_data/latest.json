@@ -6746,8 +6746,8 @@
       "beras"
     ],
     "wilayah_terdeteksi": [
-      "3204",
-      "3273"
+      "3273",
+      "3204"
     ],
     "provinsi_terdeteksi": [],
     "isi_teks_status": "fallback"
@@ -6771,6 +6771,32 @@
     "sumber_media": "Kumparan",
     "tanggal_terbit": "2026-09-05T04:00:04Z",
     "isi_teks": "5 September 2026 18:00 WIB·waktu baca 2 menit\nPerumBulogakan menggelontorkan 110.000 ton beras September ini untuk menjaga stabilitasharga. Sebanyak 75.000 ton merupakan beras premium yang akan disalurkan ke ritel modern dan pasar Sistem Pemantauan Pasar Kebutuhan Pokok (SP2KP) di seluruh Indonesia dan 35.000 ton beras medium.\nDirektur Utama Perum Bulog Ahmad Rizal Ramdhani mengatakan langkah tersebut dilakukan untuk mengantisipasi kenaikan harga beras premium yang terjadi di pasaran.\n“Jadi kami mengantisipasi akan kenaikan inflasi. Itu yang paling utama. Karena penugasan Bulog yang paling utama adalah menjaga stabilisasi harga khususnya jangan sampai naik inflasi. Karena kalau sudah naik, maka otomatis kita mau enggak mau harus lebih berat kerjanya,” kata Rizal di Pasar Jatinegara, Jakarta Timur, Sabtu (5/9).\nRizal menekankan gelontoran pangan tersebut tidak hanya dilakukan di Jakarta, tetapi mencakup seluruh wilayah Indonesia. Dia mengatakan jajaran pimpinan wilayah hingga pimpinan cabang Bulog telah diminta melakukan pemantauan di pasar masing-masing.\n“Tadi kita juga melaksanakan zoom langsung. Sengaja kami perintahkan zoom di pasar masing-masing di seluruh tanah air, baik seluruh pimpinan wilayah sampai dengan pimpinan cabang di kabupaten atau kota. Kami perintahkan lebih dari 500 pimpinan cabang kami melaksanakan zoom di pasar,” tutur Rizal.\nRizal mengungkapkan penyaluran beras tersebut mulai dilakukan pada pekan ini. Beras akan disalurkan ke ritel modern dan pasar-pasar SP2KP di seluruh Indonesia.\nSejumlah perusahaan ritel modern yang telah memesan di antaranya PT Indomarco Prismatama, PT Megah Daya Inti, PT Inti Cakrawala Citra, PT Sumber Alfaria Trijaya. Lalu, PT Lion Super Indo, PT Swalayan Sukses Abadi, PT Matahari Putra Prima, PT Tip Top Supermarket, PT Midi Utama Indonesia dan PT Hero Retail Nusantara.\nBulog juga menggandeng pihak swasta untuk mendukung upaya menjaga harga pangan. Rizal mengatakan pihaknya mengimbau pelaku usaha agar menjual produk dengan harga sesuai HET.",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Biji Cabai tidak Terbukti Sebabkan Usus Buntu, ini Faktanya",
+    "url": "https://mediaindonesia.com/kesehatan/930261/biji-cabai-tidak-terbukti-sebabkan-usus-buntu-ini-faktanya",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-09-05T08:50:00Z",
+    "isi_teks": "BGN sebut 80% kasus keracunan MBG disebabkan pelanggaran SOP.\nMEMAKANbiji cabaisering dianggap dapat menyebabkanusus buntu, karena diyakini bisa menumpuk dan memicu peradangan. Lantas, benarkah makan biji cabai dapat menyebabkan usus buntu?\nUsus buntu atau apendiks merupakan kantong kecil berbentuk seperti jari yang menempel pada usus besar dan berada di sisi kanan bawah perut. Apendisitis terjadi ketika organ tersebut mengalami peradangan, yang umumnya diawali oleh sumbatan pada saluran di dalam usus.\nSumbatan tersebut dapat memicu infeksi sehingga bakteri berkembang biak dan menyebabkan usus buntu membengkak serta berisi nanah. Jika tidak segera ditangani, usus buntu dapat pecah dan menyebabkan infeksi menyebar ke dalam rongga perut.",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "provinsi_terdeteksi": [],
+    "isi_teks_status": "fallback"
+  },
+  {
+    "judul": "Obat Eksperimental Diranersen Janjikan Harapan Baru untuk Pasien Alzheimer Tahap Awal",
+    "url": "https://mediaindonesia.com/kesehatan/930259/obat-eksperimental-diranersen-janjikan-harapan-baru-untuk-pasien-alzheimer-tahap-awal",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-09-05T08:40:00Z",
+    "isi_teks": "BGN sebut 80% kasus keracunan MBG disebabkan pelanggaran SOP.\nPENELITIAN terbaru mengenaipenyakit Alzheimermemberikan harapan baru setelah obat eksperimental bernamadiranersenmenunjukkan hasil yang menjanjikan dalam memperlambat penurunan kemampuan kognitif pada pasien dengan Alzheimer tahap awal.\nHasil penelitian tersebut berasal dari uji klinis fase 2 bernama CELIA yang melibatkan 416 orang dengan penyakit Alzheimer dini. Temuan penelitian dipresentasikan dalam Alzheimer’s Association International Conference (AAIC) 2026 di London, Inggris.\nDiranersen merupakan terapi eksperimental yang dirancang untuk menurunkan produksi protein tau. Protein ini secara alami terdapat di otak, tetapi pada penyakit Alzheimer, tau dapat mengalami perubahan dan membentuk kumpulan abnormal yang dikenal sebagai tau tangles. Kondisi tersebut berkaitan dengan kerusakan sel saraf dan penurunan kemampuan berpikir serta daya ingat.",
     "komoditas_terdeteksi": [
       "beras"
     ],
