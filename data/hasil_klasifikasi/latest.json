@@ -1535,5 +1535,20 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tiq1ta423/zulhas-sebut-nelayan-kini-jadi-kelompok-termiskin-pemerintah-siapkan-2000-kampung-nelayan",
+    "judul": "Zulhas Sebut Nelayan Kini Jadi Kelompok Termiskin, Pemerintah Siapkan 2.000 Kampung Nelayan",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-25T01:19:58+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
