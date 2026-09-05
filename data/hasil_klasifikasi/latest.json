@@ -1459,5 +1459,81 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1084933/harga-telur-ayam-rp29600-per-kg-bawang-merah-rp42150-per-kg-pada-minggu",
+    "judul": "Harga telur ayam Rp29.600 per kg, bawang merah Rp42.150 per kg pada Minggu",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-25T21:25:37+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5666715/menambah-masa-tanam-untuk-dongkrak-produksi-padi-di-perbatasan",
+    "judul": "Menambah masa tanam untuk dongkrak produksi padi di perbatasan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-26T04:07:01+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/humaniora/915166/bgn-larang-dapur-makan-bergizi-gratis-gunakan-gas-melon-beras-sphp-dan-minyakita",
+    "judul": "BGN Larang Dapur Makan Bergizi Gratis Gunakan Gas Melon, Beras SPHP, dan MinyaKita",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-27T02:25:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras",
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tiuvjk472/panen-raya-serentak-di-43-titik-setelah-beras-pemerintah-pacu-kemandirian-gula-dan-kedelai",
+    "judul": "Panen Raya Serentak di 43 Titik, Setelah Beras Pemerintah Pacu Kemandirian Gula dan Kedelai",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-27T15:52:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700508/bulog-jabar-pastikan-ketahanan-pangan-regional-aman-dengan-stok-beras-capai-847-ribu-ton",
+    "judul": "Bulog Jabar pastikan ketahanan pangan regional aman dengan stok beras capai 847 ribu ton",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:13:57+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
