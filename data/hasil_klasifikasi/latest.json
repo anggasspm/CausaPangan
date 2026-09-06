@@ -1672,5 +1672,20 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5668632/bulog-cianjur-pastikan-penyerapan-gkg-terus-dilakukan",
+    "judul": "Bulog Cianjur pastikan penyerapan GKG terus dilakukan",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-27T17:07:10+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Penyaluran beras bantuan pangan dan penyerapan gabah oleh Bulog dilakukan untuk menjaga stabilitas harga.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
