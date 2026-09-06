@@ -1550,5 +1550,127 @@
     "llm_certainty": 0.95,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5666339/pihps-harga-telur-ayam-rp29600-per-kg-bawang-merah-rp42150-per-kg",
+    "judul": "PIHPS: Harga telur ayam Rp29.600 per kg, bawang merah Rp42.150 per kg",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-25T20:05:28+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/914949/kebakaran-ruko-di-pasar-modern-bsb-semarang-diduga-akibat-kebocoran-gas",
+    "judul": "Kebakaran Ruko di Pasar Modern BSB Semarang, Diduga akibat Kebocoran Gas",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-26T03:02:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3374"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5668556/pemkab-hss-terapkan-metode-pertanian-modern-dengan-padi-ip200",
+    "judul": "Pemkab HSS terapkan metode pertanian modern dengan padi IP200",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-27T15:34:32+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jatim.antaranews.com/berita/1085459/harga-pangan-selasa-ini-cabai-rawit-rp47500-kg-dan-telur-ayam-rp25000-kg",
+    "judul": "Harga pangan Selasa ini, cabai rawit Rp47.500/kg dan telur ayam Rp25.000/kg",
+    "sumber_media": "Antara Jatim - Ekonomi",
+    "tanggal_terbit": "2026-07-27T19:03:38+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5670788/strategi-logistik-hijau-pengendalian-inflasi",
+    "judul": "Strategi logistik hijau pengendalian inflasi",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-28T23:54:54+00:00",
+    "komoditas_terdeteksi": [
+      "cabai_rawit_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/jabar/berita/916588/bank-indonesia-jawa-barat-dorong-pengembangan-padi-organik",
+    "judul": "Bank Indonesia Jawa Barat Dorong Pengembangan Padi Organik",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T05:30:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/916532/el-nino-petani-di-pidie-aceh-makin-tertarik-menanam-bawang-merah",
+    "judul": "El Nino, Petani di Pidie Aceh makin Tertarik Menanam Bawang Merah",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-30T04:26:00+00:00",
+    "komoditas_terdeteksi": [
+      "bawang_merah"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5675149/dirut-bulog-ajak-masyarakat-kenali-mutu-beras-sesuai-standar",
+    "judul": "Dirut Bulog ajak masyarakat kenali mutu beras sesuai standar",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-31T08:35:29+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
