@@ -1687,5 +1687,66 @@
     "llm_certainty": 0.85,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700505/dtph-jabar-sebut-penyesuaian-hpp-gabah-dinikmati-petani-dengan-sukacita",
+    "judul": "DTPH Jabar sebut penyesuaian HPP gabah dinikmati petani dengan sukacita",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:10:19+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": "kebijakan_pemerintah",
+    "penyebab_detail": "Penyesuaian Harga Pembelian Pemerintah (HPP) mendorong kenaikan harga gabah di tingkat petani.",
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://mediaindonesia.com/nusantara/915528/calon-paskibraka-sultra-jalani-diklat-24-hari-jelang-hut-ke-81-ri",
+    "judul": "Calon Paskibraka Sultra Jalani Diklat 24 Hari Jelang HUT Ke-81 RI",
+    "sumber_media": "Media Indonesia",
+    "tanggal_terbit": "2026-07-28T00:40:00+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://ekonomi.republika.co.id/berita/tixbsc370/bgn-pastikan-program-mbg-tidak-gunakan-minyakita-beras-sphp-dan-lpg-3-kg",
+    "judul": "BGN Pastikan Program MBG Tidak Gunakan Minyakita, Beras SPHP, dan LPG 3 Kg",
+    "sumber_media": "Republika - Ekonomi",
+    "tanggal_terbit": "2026-07-28T23:38:36+00:00",
+    "komoditas_terdeteksi": [
+      "beras",
+      "minyak_goreng"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://www.antaranews.com/berita/5674253/mentan-amran-80-persen-temuan-beras-fortifikasi-tak-sesuai-standar",
+    "judul": "Mentan Amran: 80 persen temuan beras fortifikasi tak sesuai standar",
+    "sumber_media": "Antara - Bisnis",
+    "tanggal_terbit": "2026-07-31T01:21:49+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
