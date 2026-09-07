@@ -1748,5 +1748,37 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700503/bulog-cianjur-pastikan-penyerapan-gkg-tetap-dilakukan",
+    "judul": "Bulog Cianjur pastikan penyerapan GKG tetap dilakukan",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T22:08:53+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700544/petani-di-cirebon-sebut-harga-gabah-masih-menguntungkan-usai-panen",
+    "judul": "Petani di Cirebon sebut harga gabah masih menguntungkan usai panen",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T03:48:06+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3209"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.85,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
