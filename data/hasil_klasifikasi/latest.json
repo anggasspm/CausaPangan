@@ -1780,5 +1780,35 @@
     "llm_certainty": 0.85,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700492/realisasi-distribusi-pupuk-subsidi",
+    "judul": "Realisasi distribusi pupuk subsidi",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-27T21:10:48+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparanbisnis/amran-ada-mafia-jual-beras-fortifikasi-rp-42-ribu-kg-kerugian-capai-rp-71-9-t-27t8BuHwq0s",
+    "judul": "Amran: Ada Mafia Jual Beras Fortifikasi Rp 42 Ribu/Kg, Kerugian Capai Rp 71,9 T",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-30T00:32:54+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.9,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
