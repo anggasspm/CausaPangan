@@ -1810,5 +1810,52 @@
     "llm_certainty": 0.9,
     "provider_used": "gemini",
     "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://kumparan.com/kumparanhits/gelar-konser-di-surabaya-28-november-dewa-19-dan-padi-reborn-bakal-tukar-lagu-27sJsfUYbXy",
+    "judul": "Gelar Konser di Surabaya 28 November, Dewa 19 dan Padi Reborn Bakal Tukar Lagu",
+    "sumber_media": "Kumparan",
+    "tanggal_terbit": "2026-07-28T01:07:53+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [
+      "3578"
+    ],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 1.0,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700599/petani-garut-tetap-tanam-padi-manfaatkan-irigasi-di-tengah-kemarau",
+    "judul": "Petani Garut tetap tanam padi manfaatkan irigasi di tengah kemarau",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-28T18:16:34+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
+  },
+  {
+    "url": "https://jabar.antaranews.com/berita/700773/stok-beras-bulog-di-jawa-barat",
+    "judul": "Stok beras Bulog di Jawa Barat",
+    "sumber_media": "Antara Jabar - Ekonomi",
+    "tanggal_terbit": "2026-07-30T04:04:22+00:00",
+    "komoditas_terdeteksi": [
+      "beras"
+    ],
+    "wilayah_terdeteksi": [],
+    "penyebab": null,
+    "penyebab_detail": null,
+    "llm_certainty": 0.95,
+    "provider_used": "gemini",
+    "model_used": "gemini-flash-latest"
   }
 ]
